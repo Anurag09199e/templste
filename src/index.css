@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-slate-800 dark:text-slate-100 bg-slate-50 dark:bg-[#0B0F19];
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism Styles */
+  .glass-card {
+    @apply bg-white/70 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 shadow-xl shadow-slate-200/40 dark:shadow-black/50;
+  }
+  
+  .glass-nav {
+    @apply bg-white/80 dark:bg-[#0B0F19]/80 backdrop-blur-md border-b border-slate-200/60 dark:border-slate-800/60;
+  }
+
+  .glass-panel {
+    @apply bg-white/40 dark:bg-slate-900/40 backdrop-blur-lg border border-white/40 dark:border-slate-800/40;
+  }
+
+  /* Custom Gradients */
+  .text-gradient {
+    @apply bg-gradient-to-r from-amber-500 via-orange-500 to-red-600 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-sky-400 via-blue-600 to-indigo-600 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-amber-300 via-yellow-500 to-orange-500 bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-gold {
+    @apply bg-gradient-to-r from-amber-500 to-orange-600;
+  }
+
+  .bg-gradient-dark {
+    @apply bg-gradient-to-b from-[#0B0F19] via-[#131B2E] to-[#0B0F19];
+  }
+
+  /* Glow Effects */
+  .glow-gold {
+    box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.4);
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 35px -5px rgba(59, 130, 246, 0.3);
+  }
+
+  .glow-brand {
+    box-shadow: 0 0 40px -10px rgba(234, 88, 12, 0.35);
+  }
+
+  /* Subtle background pattern */
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(226, 232, 240, 0.4) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(226, 232, 240, 0.4) 1px, transparent 1px);
+  }
+
+  .dark .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, rgba(30, 41, 59, 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(30, 41, 59, 0.3) 1px, transparent 1px);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.1);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.5);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.8);
+}
