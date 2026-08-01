@@ -100,7 +100,7 @@ export const Navbar: React.FC = () => {
           </div>
           <div className="flex flex-col">
             <span className="font-heading font-black text-2xl tracking-tight text-white leading-tight">
-              Krislingua
+              DGmadhavan
             </span>
             <span className="text-[9px] sm:text-[10px] font-extrabold text-white/90 tracking-widest uppercase -mt-0.5">
               THE GERMAN LANGUAGE INSTITUTE
