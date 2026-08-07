@@ -565,7 +565,7 @@ export const FAQS: FAQItem[] = [
 
 export const STATS = [
   { label: 'Goethe & Telc Pass Rate', value: 98.4, suffix: '%', icon: 'Award' },
-  { label: 'Students Placed in Germany', value: 4850, suffix: '+', icon: 'GraduationCap' },
-  { label: 'Native & Goethe Certified Trainers', value: 24, suffix: '', icon: 'Users' },
-  { label: 'Scholarships & Visas Secured', value: 1200, suffix: '+', icon: 'Globe' },
+  { label: 'Students Taught', value: 5000, suffix: '+', icon: 'Globe' },
+  { label: 'Students Placed', value: 500, suffix: '+', icon: 'GraduationCap' },
+  { label: 'Certified Trainers', value: 30, suffix: '+', icon: 'Users' },
 ];

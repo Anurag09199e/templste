@@ -1,45 +1,45 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Users, BookOpen, Video, Award, HeartHandshake } from 'lucide-react';
+import { BookOpen, GraduationCap, Briefcase, Award, Users, Tag } from 'lucide-react';
 import { SectionTitle } from '../common/SectionTitle';
 import { GlassCard } from '../common/GlassCard';
 
 const FEATURES = [
   {
-    icon: ShieldCheck,
-    title: 'Certified Goethe & Telc Standards',
-    desc: 'Our curriculum is built strictly according to official Goethe Institute & Telc evaluation benchmarks for 100% exam readiness.',
-    badge: 'Official Standards'
-  },
-  {
-    icon: Users,
-    title: 'Small Interactive Batches (Max 12)',
-    desc: 'Never get lost in a crowd of 50+. Small batch sizes guarantee daily individual speaking practice with instructors.',
-    badge: 'Personalized Focus'
-  },
-  {
-    icon: Video,
-    title: 'HD Recording & Digital LMS Access',
-    desc: 'Missed a lecture? Access 1080p recorded sessions, interactive flashcards, and PDF lecture notes anytime on mobile.',
-    badge: '24/7 Portal Access'
-  },
-  {
     icon: BookOpen,
-    title: '1-on-1 Goethe Mock Interviews',
-    desc: 'Participate in realistic speaking and writing mock tests evaluated by senior Goethe certified examiners.',
-    badge: 'Exam Mastery'
+    title: 'Goethe, TELC & ÖSD Success',
+    desc: 'Master every exam with structured preparation, regular mock tests, speaking practice, and expert feedback aligned with official certification standards.',
+    badge: 'EXAM EXCELLENCE'
+  },
+  {
+    icon: GraduationCap,
+    title: 'Beyond Language Classes',
+    desc: 'We support you beyond the classroom with university admissions, Ausbildung guidance, visa assistance, APS support, and placements.',
+    badge: '360° GUIDANCE'
+  },
+  {
+    icon: Briefcase,
+    title: 'Learn. Qualify. Get Placed.',
+    desc: 'Access trusted pathways to Ausbildung programs and employment opportunities in Germany through dedicated career guidance and industry connections.',
+    badge: 'CAREER PATHWAYS'
   },
   {
     icon: Award,
-    title: 'End-to-End Visa & APS Guidance',
-    desc: 'We assist with APS certificate verification, blocked accounts, motivation letters, and university applications in Germany.',
-    badge: 'Complete Pathway'
+    title: 'A1 to C2 German Training',
+    desc: 'Progress confidently through internationally recognized CEFR levels with a structured curriculum designed for real-world communication and exam success.',
+    badge: 'CEFR CERTIFIED'
   },
   {
-    icon: HeartHandshake,
-    title: 'Ausbildung & Employer Placement',
-    desc: 'Direct connections with German hospitals and tech firms offering dual vocational training with €1,200+ monthly stipend.',
-    badge: 'Career Guarantee'
+    icon: Users,
+    title: "We Stay Until You're Placed",
+    desc: "Passing an exam isn't the finish line for us; it's the midpoint. We work with you through applications and placements until you're actually on your way to Germany.",
+    badge: 'THE LAST MILE'
+  },
+  {
+    icon: Tag,
+    title: 'Quality Guidance Without the Price Tag',
+    desc: "A strong path to Germany shouldn't cost a fortune. We keep this accessible, so good guidance isn't reserved for people who can afford lakhs in consultancy fees.",
+    badge: 'VALUE, NOT MARKUP'
   }
 ];
 
@@ -47,12 +47,12 @@ export const WhyUs: React.FC = () => {
   return (
     <section className="py-20 relative bg-slate-900/20 dark:bg-slate-950/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <SectionTitle
-          badge="Why DeutschKraft Institute"
-          title="Designed for Unmatched"
-          highlightedText="German Excellence"
-          subtitle="Why thousands of international students and career professionals choose DeutschKraft for their journey to Germany."
+          badge="Why Choose Us"
+          title="Why Choose"
+          highlightedText="German Language Studio?"
+          subtitle="Everything You Need to Build Your Future in Germany. From learning German to securing your next opportunity, GLS combines internationally recognized training with personalized guidance for every stage of your journey."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

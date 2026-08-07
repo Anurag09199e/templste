@@ -9,12 +9,7 @@ import { ScrollToTop } from './components/common/ScrollToTop';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { GermanCourses } from './pages/GermanCourses';
-import { A1Course } from './pages/A1Course';
-import { A2Course } from './pages/A2Course';
-import { B1Course } from './pages/B1Course';
-import { B2Course } from './pages/B2Course';
-import { C1Course } from './pages/C1Course';
-import { C2Course } from './pages/C2Course';
+
 import { StudyInGermany } from './pages/StudyInGermany';
 import { Ausbildung } from './pages/Ausbildung';
 import { Trainers } from './pages/Trainers';
@@ -44,12 +39,7 @@ export const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<GermanCourses />} />
-          <Route path="/courses/a1" element={<A1Course />} />
-          <Route path="/courses/a2" element={<A2Course />} />
-          <Route path="/courses/b1" element={<B1Course />} />
-          <Route path="/courses/b2" element={<B2Course />} />
-          <Route path="/courses/c1" element={<C1Course />} />
-          <Route path="/courses/c2" element={<C2Course />} />
+
           <Route path="/study-in-germany" element={<StudyInGermany />} />
           <Route path="/ausbildung" element={<Ausbildung />} />
           <Route path="/trainers" element={<Trainers />} />

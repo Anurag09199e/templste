@@ -14,7 +14,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
-import { MegaMenu } from './MegaMenu';
+import glsLogo from '../../img/gls-logo.png';
 
 export const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
@@ -31,80 +31,56 @@ export const Navbar: React.FC = () => {
     {
       name: 'About Us',
       path: '/about',
+      hasDropdown: false,
+    },
+    {
+      name: 'Exams',
+      path: '/exams',
       hasDropdown: true,
       subItems: [
-        { name: 'About Institute', path: '/about' },
-        { name: 'Faculty & Trainers', path: '/trainers' },
-        { name: 'Student Reviews', path: '/testimonials' },
-        { name: 'Photo Gallery', path: '/gallery' },
-        { name: 'FAQs', path: '/faq' },
+        { name: 'Goethe Exams', path: '/exams/goethe' },
+        { name: 'TELC Exams', path: '/exams/telc' },
+        { name: 'ÖSD Exams', path: '/exams/osd' },
       ],
-    },
-    {
-      name: 'Courses',
-      path: '/courses',
-      hasMegaMenu: true,
-      hasDropdown: true,
-    },
-    {
-      name: 'ÖSD Exam',
-      path: '/courses',
-      hasDropdown: false,
     },
     {
       name: 'Ausbildung',
       path: '/ausbildung',
+      hasDropdown: false,
+    },
+    {
+      name: 'Courses',
+      path: '/courses',
       hasDropdown: true,
       subItems: [
-        { name: 'Ausbildung Overview', path: '/ausbildung' },
-        { name: 'Nursing & Healthcare', path: '/ausbildung' },
-        { name: 'IT & Technical', path: '/ausbildung' },
-        { name: 'Hospitality & Business', path: '/ausbildung' },
+        { name: 'A1', path: '/courses#A1' },
+        { name: 'A2', path: '/courses#A2' },
+        { name: 'B1', path: '/courses#B1' },
+        { name: 'B2', path: '/courses#B2' },
+        { name: 'C1', path: '/courses#C1' },
+        { name: 'C2', path: '/courses#C2' },
       ],
     },
     {
-      name: 'Study In Germany',
-      path: '/study-in-germany',
-      hasDropdown: true,
-      subItems: [
-        { name: 'University Admissions', path: '/study-in-germany' },
-        { name: 'Public Universities Guide', path: '/study-in-germany' },
-        { name: 'APS & Visa Support', path: '/study-in-germany' },
-      ],
+      name: 'Placements',
+      path: '/placements',
+      hasDropdown: false,
     },
     {
-      name: 'Blogs',
-      path: '/blog',
-      hasDropdown: true,
-      subItems: [
-        { name: 'Latest Posts', path: '/blog' },
-        { name: 'German Learning Tips', path: '/blog' },
-        { name: 'Germany Career Guides', path: '/blog' },
-      ],
-    },
-    {
-      name: 'Contact',
+      name: 'Contact Us',
       path: '/contact',
       hasDropdown: false,
     },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 bg-[#0B6653] text-white shadow-lg transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-amber-500/20 text-white shadow-lg transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-        
+
         {/* Brand Logo - Match Screenshot Style */}
-        <Link to="/" className="flex items-center gap-3.5 group">
-          <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-            <BookOpen className="w-6 h-6 text-[#0B6653]" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-heading font-black text-2xl tracking-tight text-white leading-tight">
-              DGmadhavan
-            </span>
-            <span className="text-[9px] sm:text-[10px] font-extrabold text-white/90 tracking-widest uppercase -mt-0.5">
-              THE GERMAN LANGUAGE INSTITUTE
-            </span>
+        <Link to="/" className="flex items-center group">
+          <div className="h-14 sm:h-16 w-auto bg-white rounded-lg p-1.5 shadow-md group-hover:scale-105 transition-transform">
+            <img src={glsLogo} alt="GLS German Language Studio" className="h-full w-auto object-contain" />
           </div>
         </Link>
 
@@ -114,40 +90,7 @@ export const Navbar: React.FC = () => {
             const isActive = location.pathname === link.path;
             const isOpen = activeDropdown === link.name;
 
-            if (link.hasMegaMenu) {
-              return (
-                <div
-                  key={link.name}
-                  className="relative"
-                  onMouseEnter={() => setActiveDropdown(link.name)}
-                  onMouseLeave={() => setActiveDropdown(null)}
-                >
-                  <Link
-                    to={link.path}
-                    className={`px-3 py-2 text-sm font-semibold rounded-lg flex items-center gap-1 transition-all ${
-                      isActive || isOpen
-                        ? 'bg-white/15 text-white font-bold'
-                        : 'text-white/95 hover:bg-white/10 hover:text-white'
-                    }`}
-                  >
-                    {link.name}
-                    <ChevronDown
-                      className={`w-4 h-4 transition-transform duration-200 ${
-                        isOpen ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </Link>
 
-                  <AnimatePresence>
-                    {isOpen && (
-                      <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-screen max-w-5xl">
-                        <MegaMenu onClose={() => setActiveDropdown(null)} />
-                      </div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              );
-            }
 
             if (link.hasDropdown && link.subItems) {
               return (
@@ -159,17 +102,15 @@ export const Navbar: React.FC = () => {
                 >
                   <button
                     onClick={() => setActiveDropdown(isOpen ? null : link.name)}
-                    className={`px-3 py-2 text-sm font-semibold rounded-lg flex items-center gap-1 transition-all ${
-                      isActive || isOpen
-                        ? 'bg-white/15 text-white font-bold'
-                        : 'text-white/95 hover:bg-white/10 hover:text-white'
-                    }`}
+                    className={`px-3 py-2 text-sm font-semibold rounded-lg flex items-center gap-1 transition-all ${isActive || isOpen
+                      ? 'bg-white/15 text-white font-bold'
+                      : 'text-white/95 hover:bg-white/10 hover:text-white'
+                      }`}
                   >
                     {link.name}
                     <ChevronDown
-                      className={`w-4 h-4 transition-transform duration-200 ${
-                        isOpen ? 'rotate-180' : ''
-                      }`}
+                      className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''
+                        }`}
                     />
                   </button>
 
@@ -188,7 +129,7 @@ export const Navbar: React.FC = () => {
                               key={sub.name}
                               to={sub.path}
                               onClick={() => setActiveDropdown(null)}
-                              className="block px-4 py-2.5 rounded-xl text-xs font-semibold hover:bg-emerald-500/10 hover:text-[#0B6653] dark:hover:text-emerald-400 transition-colors"
+                              className="block px-4 py-2.5 rounded-xl text-xs font-semibold hover:bg-amber-500/10 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
                             >
                               {sub.name}
                             </Link>
@@ -205,11 +146,10 @@ export const Navbar: React.FC = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`px-3 py-2 text-sm font-semibold rounded-lg transition-all ${
-                  isActive
-                    ? 'bg-white/15 text-white font-bold'
-                    : 'text-white/95 hover:bg-white/10 hover:text-white'
-                }`}
+                className={`px-3 py-2 text-sm font-semibold rounded-lg transition-all ${isActive
+                  ? 'bg-white/15 text-white font-bold'
+                  : 'text-white/95 hover:bg-white/10 hover:text-white'
+                  }`}
               >
                 {link.name}
               </Link>
@@ -253,7 +193,7 @@ export const Navbar: React.FC = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-[#095243] border-t border-white/10 px-4 pt-3 pb-6 space-y-2"
+            className="lg:hidden bg-slate-950/95 backdrop-blur-md border-t border-amber-500/20 px-4 pt-3 pb-6 space-y-2"
           >
             {navLinks.map((link) => (
               <div key={link.name}>

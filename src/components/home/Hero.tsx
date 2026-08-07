@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* Left Hero Text Content (7 cols) */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -44,12 +44,12 @@ export const Hero: React.FC = () => {
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-slate-900 dark:text-white leading-[1.15] tracking-tight">
-              Master <span className="text-gradient">German</span> Fluency for University & Career Success.
+              German Language Training That Opens Doors to <span className="text-gradient">Germany</span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Certified CEFR training from <strong className="text-slate-900 dark:text-white font-bold">A1 to C2</strong>. Guaranteed Goethe & Telc exam preparation with native German pedogogy, tuition-free university prep, and Ausbildung job pathways.
+              From your first German lesson to your first opportunity in Germany. GLS helps you build fluency through CEFR-certified training, succeed in Goethe, TELC, and ÖSD exams, and confidently pursue university, Ausbildung, or career opportunities with expert guidance under one roof.
             </p>
 
             {/* Bullet points */}
@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
                 <CheckCircle2 className="w-4 h-4 text-emerald-500" /> 98.4% Exam Pass Rate
               </div>
               <div className="flex items-center gap-1.5 bg-white/60 dark:bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500" /> Max 12 Students/Batch
+                <CheckCircle2 className="w-4 h-4 text-emerald-500" /> 95% Successful Placements
               </div>
               <div className="flex items-center gap-1.5 bg-white/60 dark:bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800">
                 <CheckCircle2 className="w-4 h-4 text-emerald-500" /> Goethe Certified Trainers
@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <Link to="/book-demo" className="w-full sm:w-auto">
                 <GradientButton size="lg" icon={ArrowRight} fullWidth>
-                  Book Free Demo Class
+                  Study & Work in Germany
                 </GradientButton>
               </Link>
               <Link to="/courses" className="w-full sm:w-auto">
@@ -83,10 +83,11 @@ export const Hero: React.FC = () => {
             <div className="pt-6 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-center lg:justify-start gap-4">
               <div className="flex -space-x-3">
                 {[
-                  'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80',
-                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80',
-                  'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80',
-                  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80',
+                  'src/img/student-1.png',
+                  'src/img/student-2.png',
+                  'src/img/student-3.png',
+                  'src/img/student-4.png',
+                  'src/img/student-5.png',
                 ].map((url, i) => (
                   <img
                     key={i}
@@ -118,7 +119,7 @@ export const Hero: React.FC = () => {
             className="lg:col-span-5 relative"
           >
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              
+
               {/* Main Image Frame with Ambient Glow */}
               <div className="relative rounded-4xl overflow-hidden p-2 bg-gradient-to-tr from-amber-500/30 via-orange-500/20 to-red-500/30 backdrop-blur-xl shadow-2xl border border-white/20 dark:border-slate-800">
                 <img
@@ -127,24 +128,7 @@ export const Hero: React.FC = () => {
                   className="w-full h-[450px] object-cover rounded-3xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-                
-                {/* Play Video Pill Overlay */}
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="glass-card p-3 rounded-2xl flex items-center justify-between backdrop-blur-md">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center shadow-lg animate-pulse">
-                        <Play className="w-5 h-5 fill-current ml-0.5" />
-                      </div>
-                      <div>
-                        <h4 className="text-xs font-bold text-slate-900 dark:text-white">Watch Campus Tour</h4>
-                        <p className="text-[10px] text-slate-500 dark:text-slate-400">Munich & Berlin Campuses</p>
-                      </div>
-                    </div>
-                    <span className="text-[11px] font-extrabold text-amber-500 bg-amber-500/10 px-2.5 py-1 rounded-lg">
-                      2:45 MIN
-                    </span>
-                  </div>
-                </div>
+
               </div>
 
               {/* Floating Glass Widget 1: Goethe Accreditation */}

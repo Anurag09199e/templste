@@ -4,7 +4,6 @@ import { StatCounter } from '../components/home/StatCounter';
 import { WhyUs } from '../components/home/WhyUs';
 import { Roadmap } from '../components/home/Roadmap';
 import { CefrCards } from '../components/home/CefrCards';
-import { UpcomingBatches } from '../components/home/UpcomingBatches';
 import { SectionTitle } from '../components/common/SectionTitle';
 import { GlassCard } from '../components/common/GlassCard';
 import { GradientButton } from '../components/common/GradientButton';
@@ -13,6 +12,7 @@ import { TESTIMONIALS, TRAINERS, GALLERY_ITEMS, BLOG_POSTS, FAQS } from '../data
 import { Star, Quote, ArrowRight, CheckCircle2, ShieldCheck, Play, HelpCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { LevelBadge } from '../components/common/LevelBadge';
+import { TestimonialMarquee } from '../components/home/TestimonialMarquee';
 
 export const Home: React.FC = () => {
   return (
@@ -39,70 +39,26 @@ export const Home: React.FC = () => {
       {/* 6. Learning Roadmap */}
       <Roadmap />
 
-      {/* 7. Upcoming Batches */}
-      <UpcomingBatches />
-
       {/* 8. Student Testimonials Section */}
-      <section className="py-20 relative bg-slate-900/30 dark:bg-slate-950/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 relative bg-[#f9f7f1] dark:bg-[#0B0F19] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
           <SectionTitle
             badge="Student Success Stories"
             title="Real Goethe Results from"
             highlightedText="Our Graduates"
             subtitle="Read how our alumni passed their Goethe / Telc exams with high scores and secured admissions & job visas across Germany."
           />
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {TESTIMONIALS.map((test) => (
-              <GlassCard key={test.id} className="p-8 border border-slate-200/80 dark:border-slate-800 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center gap-3">
-                      <img
-                        src={test.avatar}
-                        alt={test.name}
-                        className="w-14 h-14 rounded-2xl object-cover border-2 border-amber-500/50 shadow-md"
-                      />
-                      <div>
-                        <h4 className="font-extrabold font-heading text-base text-slate-900 dark:text-white">
-                          {test.name}
-                        </h4>
-                        <p className="text-xs text-amber-600 dark:text-amber-400 font-semibold">
-                          {test.role} • {test.city}
-                        </p>
-                      </div>
-                    </div>
-                    <LevelBadge level={test.courseCompleted} size="md" />
-                  </div>
+        {/* New Scrolling Marquee Section */}
+        <TestimonialMarquee />
 
-                  <div className="mb-4 inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-extrabold text-xs rounded-xl border border-emerald-500/20">
-                    <ShieldCheck className="w-4 h-4" /> {test.goetheScore}
-                  </div>
-
-                  <p className="text-sm text-slate-600 dark:text-slate-300 italic leading-relaxed mb-6">
-                    "{test.quote}"
-                  </p>
-                </div>
-
-                <div className="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-xs font-bold text-slate-500">
-                  <span>Destination: {test.destination}</span>
-                  <div className="flex text-amber-400">
-                    {[...Array(test.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                    ))}
-                  </div>
-                </div>
-              </GlassCard>
-            ))}
-          </div>
-
-          <div className="mt-10 text-center">
-            <Link to="/testimonials">
-              <GradientButton variant="outline" icon={ArrowRight}>
-                Read All 150+ Student Testimonials
-              </GradientButton>
-            </Link>
-          </div>
+        <div className="mt-8 text-center relative z-20">
+          <Link to="/testimonials">
+            <GradientButton variant="outline" icon={ArrowRight}>
+              Read All 150+ Student Testimonials
+            </GradientButton>
+          </Link>
         </div>
       </section>
 
@@ -227,7 +183,7 @@ export const Home: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-8 text-center ">
             <Link to="/faq">
               <GradientButton variant="secondary" icon={ArrowRight}>
                 View All FAQs & Search Answers
@@ -239,28 +195,33 @@ export const Home: React.FC = () => {
 
       {/* 12. Final Contact CTA Banner */}
       <section className="py-20 relative px-4">
-        <div className="max-w-7xl mx-auto glass-card rounded-4xl p-10 sm:p-16 border-2 border-amber-500/40 shadow-2xl bg-gradient-to-r from-amber-500/20 via-orange-600/20 to-red-600/20 text-center space-y-6 relative overflow-hidden">
-          <div className="max-w-2xl mx-auto space-y-4 relative z-10">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-amber-500 text-white font-extrabold text-xs uppercase tracking-widest">
-              Ready to Start Learning German?
+        <div
+          className="max-w-7xl mx-auto rounded-[32px] p-10 sm:p-16 shadow-2xl text-center space-y-6 relative overflow-hidden"
+          style={{ background: 'linear-gradient(90deg, rgba(32, 14, 79, 1) 0%, rgba(189, 24, 30, 1) 29%, rgba(232, 180, 75, 1) 52%)' }}
+        >
+          {/* Subtle noise/texture layout if needed, but linear gradient handles the base */}
+          <div className="max-w-3xl mx-auto space-y-5 relative z-10">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-amber-500 text-white font-extrabold text-[11px] uppercase tracking-widest shadow-lg">
+              YOUR PATH TO GERMANY, SIMPLIFIED
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-slate-900 dark:text-white">
-              Transform Your Career with <span className="text-gradient">DeutschKraft</span> Today.
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-white leading-tight">
+              Transform Your Future with GLS Today.
             </h2>
-            <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300">
-              Book a 1-on-1 free trial session with our Goethe certified counselors. Learn about level placement, batch timings, and German university visa applications.
+            <p className="text-sm sm:text-base text-white/90 font-medium">
+              Book a free 1-on-1 session with our Goethe-certified counsellors. No more piecing it together on your own; get clarity on your course level, your pathway, and your next step, all in one conversation.
             </p>
-            <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link to="/contact" className="w-full sm:w-auto">
+                <GradientButton variant="outline" size="lg" fullWidth className="!text-white">
+                  Talk to Our Admissions Team
+                </GradientButton>
+              </Link>
               <Link to="/book-demo" className="w-full sm:w-auto">
                 <GradientButton size="lg" icon={ArrowRight} fullWidth>
-                  Book Free Demo Session
+                  Book Your Free Consultation
                 </GradientButton>
               </Link>
-              <Link to="/contact" className="w-full sm:w-auto">
-                <GradientButton variant="outline" size="lg" fullWidth>
-                  Contact Admissions Office
-                </GradientButton>
-              </Link>
+
             </div>
           </div>
         </div>
