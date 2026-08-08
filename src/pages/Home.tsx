@@ -116,49 +116,6 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 10. Gallery Preview */}
-      <section className="py-20 relative bg-slate-900/20 dark:bg-slate-950/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle
-            badge="Campus Life & Events"
-            title="Moments at DeutschKraft"
-            highlightedText="Institute & Germany"
-            subtitle="Explore our vibrant campus culture, Goethe exam pass celebrations, and student orientation trips in Munich."
-          />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {GALLERY_ITEMS.slice(0, 3).map((item) => (
-              <div key={item.id} className="relative rounded-3xl overflow-hidden group h-64 shadow-xl border border-slate-700/40">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent p-6 flex flex-col justify-end">
-                  <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 bg-amber-500/80 text-white rounded-md w-fit mb-2">
-                    {item.category}
-                  </span>
-                  <h4 className="text-sm font-bold text-white group-hover:text-amber-400 transition-colors">
-                    {item.title}
-                  </h4>
-                  <p className="text-xs text-slate-300 line-clamp-1 mt-1">
-                    {item.caption}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-8 text-center">
-            <Link to="/gallery">
-              <GradientButton variant="outline" icon={ArrowRight}>
-                View Full Photo & Video Gallery
-              </GradientButton>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* 11. FAQ Accordion Section */}
       <section className="py-20 relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,7 +127,7 @@ export const Home: React.FC = () => {
           />
 
           <div className="space-y-4">
-            {FAQS.slice(0, 4).map((faq) => (
+            {FAQS.map((faq) => (
               <GlassCard key={faq.id} className="p-6 border border-slate-200/80 dark:border-slate-800">
                 <h4 className="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2 mb-2 font-heading">
                   <HelpCircle className="w-5 h-5 text-amber-500 shrink-0" />
@@ -211,11 +168,6 @@ export const Home: React.FC = () => {
               Book a free 1-on-1 session with our Goethe-certified counsellors. No more piecing it together on your own; get clarity on your course level, your pathway, and your next step, all in one conversation.
             </p>
             <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/contact" className="w-full sm:w-auto">
-                <GradientButton variant="outline" size="lg" fullWidth className="!text-white">
-                  Talk to Our Admissions Team
-                </GradientButton>
-              </Link>
               <Link to="/book-demo" className="w-full sm:w-auto">
                 <GradientButton size="lg" icon={ArrowRight} fullWidth>
                   Book Your Free Consultation

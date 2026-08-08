@@ -95,7 +95,7 @@ export interface BlogPost {
 
 export interface FAQItem {
   id: string;
-  category: 'Exams' | 'Courses' | 'Study in Germany' | 'Ausbildung' | 'Visa & Fees';
+  category: 'Exams' | 'Courses' | 'Study in Germany' | 'Ausbildung' | 'Visa & Fees' | 'General' | 'Careers';
   question: string;
   answer: string;
 }

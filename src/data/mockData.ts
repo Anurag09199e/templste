@@ -527,39 +527,39 @@ export const BLOG_POSTS: BlogPost[] = [
 export const FAQS: FAQItem[] = [
   {
     id: 'faq-1',
-    category: 'Exams',
-    question: 'Are DeutschKraft course certificates recognized by German Universities & Embassies?',
-    answer: 'Yes! Our curriculum is strictly aligned with the Common European Framework of Reference for Languages (CEFR). We specifically prepare you for official Goethe-Zertifikat, Telc, TestDaF, and DSH examinations, which are universally accepted by German embassies, immigration authorities, and public universities worldwide.'
+    category: 'General',
+    question: 'How long has GLS been operating?',
+    answer: 'German Language Studio was founded in 2013 by Director Swati and has spent over 14 years training students and professionals for successful careers in Germany.'
   },
   {
     id: 'faq-2',
-    category: 'Courses',
-    question: 'What is the batch size and mode of instruction?',
-    answer: 'We maintain small interactive batches of maximum 12 to 15 students to guarantee personal attention and speaking time for every individual. Classes are conducted via Live Interactive Online Zoom HD sessions or in hybrid mode at our partner centers.'
+    category: 'Exams',
+    question: 'Is GLS a certified/recognized institute?',
+    answer: 'Yes. Our training is aligned with CEFR standards (A1–C2) and prepares students for globally recognized exams including the Goethe-Zertifikat, TestDaF, and ÖSD.'
   },
   {
     id: 'faq-3',
-    category: 'Study in Germany',
-    question: 'Do I really not need to pay tuition fees at German Public Universities?',
-    answer: 'Yes! Public universities in 15 of Germany’s 16 federal states offer 100% tuition-free education for undergraduate and master’s programs, regardless of whether you are an EU or non-EU student. You only pay a minimal semester contribution fee (€150–€350) which includes public transit access.'
+    category: 'General',
+    question: 'What makes GLS different from other German language institutes?',
+    answer: "We go beyond language classes. GLS combines rigorous exam preparation with industry-specific German training (Healthcare, IT, Engineering) and end-to-end career support — from Ausbildung and Master's guidance to job placement and German-style CV building."
   },
   {
     id: 'faq-4',
-    category: 'Ausbildung',
-    question: 'What level of German is required for an Ausbildung program?',
-    answer: 'Most Ausbildung employers in Germany require a minimum certified B2 level of German (Goethe or Telc B2). For some hospitality or technical roles, B1 may be accepted. DeutschKraft offers complete end-to-end preparation from A1 to B2 including interview training.'
+    category: 'Courses',
+    question: 'Who trains the students at GLS?',
+    answer: 'Our programs are led by experienced instructors under the direction of Swati, a German and Spanish language expert with hands-on experience as a translator, international volunteer, and researcher in Germany.'
   },
   {
     id: 'faq-5',
-    category: 'Visa & Fees',
-    question: 'What happens if I miss a live class?',
-    answer: 'Every live class is recorded in HD and uploaded to your personal DeutschKraft Student Portal within 2 hours, along with instructor class notes, PDF exercises, and digital flashcards.'
+    category: 'Careers',
+    question: 'Does GLS only help with language learning, or also with careers in Germany?',
+    answer: 'Both. Language mastery is our foundation, but our real focus is outcomes; helping students choose the right path (study, Ausbildung, or job) and supporting them all the way through visa, APS, and job placement processes.'
   },
   {
     id: 'faq-6',
-    category: 'Courses',
-    question: 'Can I fast-track my German learning from A1 to B2?',
-    answer: 'Yes! We offer Intensive Super-Fast Batches (3 hours per day, 5 days a week) allowing dedicated learners to complete A1 to B2 in 6 months.'
+    category: 'Exams',
+    question: "What is GLS's success rate?",
+    answer: 'We maintain a 90% success rate for Goethe-Zertifikat, TestDaF, and ÖSD exams, with over 10,000 alumni to date.'
   }
 ];
 
