@@ -23,7 +23,7 @@ export const Gallery: React.FC = () => {
           <span className="px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-500 font-extrabold text-xs uppercase tracking-widest border border-amber-500/20">
             Life at DeutschKraft
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
             Institute & Campus <span className="text-gradient">Gallery</span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-400">
@@ -85,7 +85,7 @@ export const Gallery: React.FC = () => {
               />
               <div>
                 <span className="text-xs font-bold text-amber-500 uppercase">{activeItem.category} • {activeItem.date}</span>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white font-heading mt-1">{activeItem.title}</h3>
+                <h3 className="text-xl font-bold text-[#200e4f] dark:text-white font-heading mt-1">{activeItem.title}</h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 mt-2">{activeItem.caption}</p>
               </div>
             </div>

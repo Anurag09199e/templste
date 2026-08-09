@@ -18,7 +18,7 @@ export const Trainers: React.FC = () => {
           <span className="px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-500 font-extrabold text-xs uppercase tracking-widest border border-amber-500/20">
             World-Class Faculty
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
             Native German & <span className="text-gradient">Goethe Senior Examiners</span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-400">
@@ -44,7 +44,7 @@ export const Trainers: React.FC = () => {
 
               <div className="space-y-3 flex-1">
                 <div>
-                  <h3 className="text-xl font-extrabold font-heading text-slate-900 dark:text-white">{t.name}</h3>
+                  <h3 className="text-xl font-extrabold font-heading text-[#200e4f] dark:text-white">{t.name}</h3>
                   <p className="text-xs font-bold text-amber-600 dark:text-amber-400">{t.title}</p>
                 </div>
 
@@ -86,7 +86,7 @@ export const Trainers: React.FC = () => {
                 className="w-20 h-20 rounded-2xl mx-auto object-cover border-2 border-amber-500"
               />
               <div className="bg-amber-500/10 p-4 rounded-2xl border border-amber-500/20">
-                <p className="text-sm font-semibold italic text-slate-900 dark:text-white mb-2">
+                <p className="text-sm font-semibold italic text-[#200e4f] dark:text-white mb-2">
                   "{selectedTrainer.greetingDe}"
                 </p>
                 <p className="text-xs text-slate-500 dark:text-slate-400">

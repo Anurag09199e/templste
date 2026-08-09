@@ -11,6 +11,7 @@ const ROADMAP_STEPS = [
     subTitle: 'Career counselling & profile assessment',
     icon: Compass,
     color: 'from-blue-500 to-indigo-600',
+
   },
   {
     step: '02',
@@ -79,12 +80,6 @@ const TimelineStep = ({ step, index }: { step: any; index: number }) => {
   return (
     <div ref={ref} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group w-full mb-16 md:mb-20 last:mb-0">
 
-      {/* Node Marker that highlights when passing threshold */}
-      <div
-        className={`absolute left-2 md:left-1/2 flex items-center justify-center w-8 h-8 rounded-full border-4 border-slate-50 dark:border-[#0B0F19] z-20 transition-all duration-700 ease-out md:-translate-x-1/2 ${isInView ? 'bg-amber-500 scale-125' : 'bg-slate-300 dark:bg-slate-700 scale-100'}`}
-      >
-        <div className={`w-2 h-2 rounded-full bg-white transition-opacity duration-300 ${isInView ? 'opacity-100' : 'opacity-40'}`} />
-      </div>
 
       {/* Spacer for desktop layout (alternating empty side) */}
       <div className="hidden md:block w-[45%]" />
@@ -106,17 +101,28 @@ const TimelineStep = ({ step, index }: { step: any; index: number }) => {
           </div>
         </div>
 
-        <h3 className={`text-xl font-bold font-heading mb-2 transition-colors duration-500 ${isInView ? 'text-amber-500' : 'text-slate-900 dark:text-white'}`}>
+        <h3 className={`text-xl font-sans font-bold mb-2 transition-colors duration-500 ${isInView ? 'text-[#200e4f]' : 'text-[#200e4f] dark:text-white'}`}>
           {step.title}
         </h3>
 
-        <span className="inline-block px-3 py-1.5 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-400 text-[11px] font-bold mb-4 w-fit">
+        <span className="inline-block px-3 py-1.5 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-400 text-[11px] font-bold mb-3 w-fit">
           {step.subTitle}
         </span>
 
-        <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+        <p className="text-sm font-sans font-normal text-[#55536B] dark:text-slate-400 leading-relaxed">
           {step.desc}
         </p>
+
+        {step.buttonText && (
+          <div className="mt-6 pt-2 border-t border-slate-100 dark:border-slate-800">
+            <button className="flex items-center justify-between w-full sm:w-auto px-1.5 py-1.5 pl-6 bg-gradient-to-r from-[#BD181E] to-[#e8b44b] rounded-full text-white font-sans font-bold text-sm shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]">
+              <span className="pr-4">{step.buttonText}</span>
+              <div className="w-8 h-8 rounded-full bg-[#3B2E7A] flex items-center justify-center shrink-0">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+              </div>
+            </button>
+          </div>
+        )}
       </motion.div>
     </div>
   );

@@ -46,7 +46,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onClose }) => {
                   {course.level}
                 </div>
                 <div>
-                  <h5 className="font-bold text-xs text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                  <h5 className="font-bold text-xs text-[#200e4f] dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
                     {course.title}
                   </h5>
                   <p className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1">
@@ -69,7 +69,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onClose }) => {
               onClick={onClose}
               className="p-3 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 hover:border-amber-500/50 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all block group"
             >
-              <div className="flex items-center gap-2 text-xs font-bold text-slate-900 dark:text-white group-hover:text-amber-500">
+              <div className="flex items-center gap-2 text-xs font-bold text-[#200e4f] dark:text-white group-hover:text-amber-500">
                 <BookOpen className="w-4 h-4 text-sky-500" /> Study in Germany
               </div>
               <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">
@@ -82,7 +82,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onClose }) => {
               onClick={onClose}
               className="p-3 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 hover:border-amber-500/50 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all block group"
             >
-              <div className="flex items-center gap-2 text-xs font-bold text-slate-900 dark:text-white group-hover:text-amber-500">
+              <div className="flex items-center gap-2 text-xs font-bold text-[#200e4f] dark:text-white group-hover:text-amber-500">
                 <Briefcase className="w-4 h-4 text-emerald-500" /> Ausbildung Programs
               </div>
               <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">
@@ -98,7 +98,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onClose }) => {
             <span className="inline-flex items-center gap-1 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-md bg-amber-500 text-white mb-2">
               Goethe & Telc Standard
             </span>
-            <h5 className="font-bold text-sm text-slate-900 dark:text-white">
+            <h5 className="font-bold text-sm text-[#200e4f] dark:text-white">
               98.4% Pass Rate in First Attempt
             </h5>
             <ul className="mt-2 space-y-1.5 text-xs text-slate-600 dark:text-slate-300">

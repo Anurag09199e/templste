@@ -9,6 +9,8 @@ export interface Course {
   fullDesc: string;
   durationHours: number;
   durationWeeks: number;
+  durationString?: string;
+  classDurationString?: string;
   priceEUR: number;
   priceLocal: string;
   recommendedFor: string;
@@ -25,6 +27,18 @@ export interface Course {
   enrolledStudents: number;
   badgeTag: string;
   image: string;
+  ctaText?: string;
+  trustText?: string;
+  learningFeatures?: {
+    icon: 'MessageCircle' | 'Users' | 'Clock' | 'ShoppingBag' | 'PenTool';
+    title: string;
+    description: string;
+  }[];
+  learningFeaturesSubtitle?: string;
+  faqs?: {
+    question: string;
+    answer: string;
+  }[];
 }
 
 export interface Trainer {

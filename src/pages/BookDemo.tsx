@@ -28,7 +28,7 @@ export const BookDemo: React.FC = () => {
           <span className="px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-500 font-extrabold text-xs uppercase tracking-widest border border-amber-500/20">
             Free 1-on-1 Trial Class
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
             Book Your Free <span className="text-gradient">Demo Class</span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-400">
@@ -42,7 +42,7 @@ export const BookDemo: React.FC = () => {
               
               {/* Step 1: Select CEFR Level */}
               <div>
-                <label className="block text-sm font-bold font-heading text-slate-900 dark:text-white mb-3">
+                <label className="block text-sm font-bold font-heading text-[#200e4f] dark:text-white mb-3">
                   1. Select Target CEFR Level:
                 </label>
                 <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
@@ -66,7 +66,7 @@ export const BookDemo: React.FC = () => {
               {/* Step 2: Mode & Timing Slot */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-bold font-heading text-slate-900 dark:text-white mb-2">
+                  <label className="block text-sm font-bold font-heading text-[#200e4f] dark:text-white mb-2">
                     2. Class Mode:
                   </label>
                   <div className="space-y-2">
@@ -89,13 +89,13 @@ export const BookDemo: React.FC = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold font-heading text-slate-900 dark:text-white mb-2">
+                  <label className="block text-sm font-bold font-heading text-[#200e4f] dark:text-white mb-2">
                     3. Preferred Time Slot:
                   </label>
                   <select
                     value={preferredSlot}
                     onChange={(e) => setPreferredSlot(e.target.value)}
-                    className="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-xs font-semibold text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500 focus:outline-none"
+                    className="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-xs font-semibold text-[#200e4f] dark:text-white focus:ring-2 focus:ring-amber-500 focus:outline-none"
                   >
                     <option>Morning (08:00 AM IST / 04:30 AM CET)</option>
                     <option>Afternoon (02:00 PM IST / 10:30 AM CET)</option>
@@ -107,7 +107,7 @@ export const BookDemo: React.FC = () => {
 
               {/* Step 3: Contact Info */}
               <div className="space-y-4 pt-4 border-t border-slate-200/60 dark:border-slate-800">
-                <h4 className="text-sm font-bold font-heading text-slate-900 dark:text-white">
+                <h4 className="text-sm font-bold font-heading text-[#200e4f] dark:text-white">
                   4. Enter Contact Details:
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -117,7 +117,7 @@ export const BookDemo: React.FC = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Full Name *"
-                    className="px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-xs text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500 focus:outline-none"
+                    className="px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-xs text-[#200e4f] dark:text-white focus:ring-2 focus:ring-amber-500 focus:outline-none"
                   />
                   <input
                     type="email"
@@ -125,7 +125,7 @@ export const BookDemo: React.FC = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email Address *"
-                    className="px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-xs text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500 focus:outline-none"
+                    className="px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-xs text-[#200e4f] dark:text-white focus:ring-2 focus:ring-amber-500 focus:outline-none"
                   />
                   <input
                     type="tel"
@@ -133,7 +133,7 @@ export const BookDemo: React.FC = () => {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder="WhatsApp Phone Number *"
-                    className="px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-xs text-slate-900 dark:text-white focus:ring-2 focus:ring-amber-500 focus:outline-none"
+                    className="px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-xs text-[#200e4f] dark:text-white focus:ring-2 focus:ring-amber-500 focus:outline-none"
                   />
                 </div>
               </div>
@@ -147,7 +147,7 @@ export const BookDemo: React.FC = () => {
               <div className="w-20 h-20 rounded-full bg-amber-500 text-white flex items-center justify-center mx-auto text-3xl shadow-xl animate-bounce">
                 <Sparkles className="w-10 h-10" />
               </div>
-              <h3 className="text-3xl font-extrabold font-heading text-slate-900 dark:text-white">
+              <h3 className="text-3xl font-extrabold font-heading text-[#200e4f] dark:text-white">
                 Demo Class Confirmed!
               </h3>
               <p className="text-sm text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed">

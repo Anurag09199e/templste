@@ -6,12 +6,19 @@ export default {
     extend: {
       colors: {
         brand: {
+          blue: '#200e4f',
+          subtext: '#55536B',
+          gold: '#e8b44b',
+          terracotta: '#D96C4A',
+          page: '#f9f7f1',
+          card: '#f5f0e6',
+          royal: '#3B2E7A',
           50: '#fff7ed',
           100: '#ffedd5',
           200: '#fed7aa',
           300: '#fdba74',
           400: '#fb923c',
-          500: '#f97316', // Vibrant Amber Gold accent
+          500: '#f97316',
           600: '#ea580c',
           700: '#c2410c',
           800: '#9a3412',
@@ -31,8 +38,8 @@ export default {
         darkcard: '#131B2E',
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
-        heading: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Inter', 'sans-serif'],
       },
       borderRadius: {
         '2xl': '16px',

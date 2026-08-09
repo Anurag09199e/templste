@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 interface SectionTitleProps {
   badge?: string;
-  title: string;
+  title: string | React.ReactNode;
   highlightedText?: string;
   subtitle?: string;
   align?: 'left' | 'center' | 'right';
@@ -38,7 +38,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
           {badge}
         </span>
       )}
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-heading text-slate-900 dark:text-white leading-tight">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white leading-tight">
         {title}{' '}
         {highlightedText && (
           <span className="text-gradient">{highlightedText}</span>

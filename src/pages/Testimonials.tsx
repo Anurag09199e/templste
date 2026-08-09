@@ -14,7 +14,7 @@ export const Testimonials: React.FC = () => {
           <span className="px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-500 font-extrabold text-xs uppercase tracking-widest border border-amber-500/20">
             Verified Reviews
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
             What Our <span className="text-gradient">Students Say</span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-400">
@@ -34,7 +34,7 @@ export const Testimonials: React.FC = () => {
                       className="w-14 h-14 rounded-2xl object-cover border-2 border-amber-500/50"
                     />
                     <div>
-                      <h4 className="font-extrabold font-heading text-base text-slate-900 dark:text-white">{test.name}</h4>
+                      <h4 className="font-extrabold font-heading text-base text-[#200e4f] dark:text-white">{test.name}</h4>
                       <p className="text-xs text-amber-600 dark:text-amber-400 font-semibold">{test.role}</p>
                     </div>
                   </div>

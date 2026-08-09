@@ -24,7 +24,7 @@ export const A1Course: React.FC = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white">
+            <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
               {course.title}
             </h1>
 
@@ -63,7 +63,7 @@ export const A1Course: React.FC = () => {
               <div className="flex items-center justify-between font-heading">
                 <div>
                   <span className="text-xs text-slate-400 font-bold block">Tuition Fee</span>
-                  <span className="text-2xl font-extrabold text-slate-900 dark:text-white">
+                  <span className="text-2xl font-extrabold text-[#200e4f] dark:text-white">
                     {course.priceLocal}
                   </span>
                 </div>
@@ -77,7 +77,7 @@ export const A1Course: React.FC = () => {
 
         {/* Curriculum Breakdown */}
         <div className="space-y-8">
-          <h2 className="text-3xl font-extrabold font-heading text-slate-900 dark:text-white text-center">
+          <h2 className="text-3xl font-extrabold font-heading text-[#200e4f] dark:text-white text-center">
             A1 Syllabus & Module Breakdown
           </h2>
 
@@ -88,7 +88,7 @@ export const A1Course: React.FC = () => {
                   <div className="w-8 h-8 rounded-xl bg-amber-500 text-white font-bold flex items-center justify-center">
                     {mod.moduleNumber}
                   </div>
-                  <h3 className="font-bold text-base font-heading text-slate-900 dark:text-white">
+                  <h3 className="font-bold text-base font-heading text-[#200e4f] dark:text-white">
                     {mod.title}
                   </h3>
                 </div>
@@ -107,7 +107,7 @@ export const A1Course: React.FC = () => {
 
         {/* Live Batches Table */}
         <div className="pt-16">
-          <h3 className="text-2xl font-bold font-heading text-slate-900 dark:text-white mb-6">
+          <h3 className="text-2xl font-bold font-heading text-[#200e4f] dark:text-white mb-6">
             Upcoming A1 Batches & Schedules
           </h3>
           <BatchTable />

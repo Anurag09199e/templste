@@ -11,6 +11,7 @@ import {
   Play,
   ShieldCheck,
   Star,
+  Users,
 } from 'lucide-react';
 import { GradientButton } from '../common/GradientButton';
 import { GlassCard } from '../common/GlassCard';
@@ -39,28 +40,28 @@ export const Hero: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
               </span>
-              <span>Germany's Leading Language & Career Institute 2026</span>
+              <span>Collaborating with NSDC to Build Skilled Pathways to Europe </span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-slate-900 dark:text-white leading-[1.15] tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-sans font-bold italic text-[#200e4f] dark:text-white leading-[1.15] tracking-tight">
               German Language Training That Opens Doors to <span className="text-gradient">Germany</span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg text-[#55536B] dark:text-slate-300 font-sans font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
               From your first German lesson to your first opportunity in Germany. GLS helps you build fluency through CEFR-certified training, succeed in Goethe, TELC, and ÖSD exams, and confidently pursue university, Ausbildung, or career opportunities with expert guidance under one roof.
             </p>
 
             {/* Bullet points */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300">
-              <div className="flex items-center gap-1.5 bg-white/60 dark:bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800">
+              <div className="flex items-center gap-1.5 bg-[#f5f0e6] dark:bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800">
                 <CheckCircle2 className="w-4 h-4 text-emerald-500" /> 98.4% Exam Pass Rate
               </div>
-              <div className="flex items-center gap-1.5 bg-white/60 dark:bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800">
+              <div className="flex items-center gap-1.5 bg-[#f5f0e6] dark:bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800">
                 <CheckCircle2 className="w-4 h-4 text-emerald-500" /> 95% Successful Placements
               </div>
-              <div className="flex items-center gap-1.5 bg-white/60 dark:bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800">
+              <div className="flex items-center gap-1.5 bg-[#f5f0e6] dark:bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-800">
                 <CheckCircle2 className="w-4 h-4 text-emerald-500" /> Goethe Certified Trainers
               </div>
             </div>
@@ -102,7 +103,7 @@ export const Hero: React.FC = () => {
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-current" />
                   ))}
-                  <span className="text-slate-900 dark:text-white font-extrabold ml-1">4.9/5.0</span>
+                  <span className="text-[#200e4f] dark:text-white font-extrabold ml-1">4.9/5.0</span>
                 </div>
                 <p className="text-slate-500 dark:text-slate-400">
                   Trusted by <strong>4,850+</strong> successful alumni in Germany
@@ -123,7 +124,7 @@ export const Hero: React.FC = () => {
               {/* Main Image Frame with Ambient Glow */}
               <div className="relative rounded-4xl overflow-hidden p-2 bg-gradient-to-tr from-amber-500/30 via-orange-500/20 to-red-500/30 backdrop-blur-xl shadow-2xl border border-white/20 dark:border-slate-800">
                 <img
-                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80"
+                  src="src/img/home page.png"
                   alt="DeutschKraft Students in Germany"
                   className="w-full h-[450px] object-cover rounded-3xl"
                 />
@@ -141,23 +142,24 @@ export const Hero: React.FC = () => {
                   <Award className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-extrabold text-slate-900 dark:text-white">Goethe & Telc Prep</h4>
+                  <h4 className="text-xs font-extrabold text-[#200e4f] dark:text-white">Goethe & Telc Prep</h4>
                   <p className="text-[10px] text-slate-500 dark:text-slate-400">Certified Standard</p>
                 </div>
               </motion.div>
 
-              {/* Floating Glass Widget 2: Study in Germany Success */}
+              {/* Floating Glass Widget 2: Custom Alumni Counter */}
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                className="absolute -bottom-6 -right-6 hidden sm:flex items-center gap-3 glass-card p-4 rounded-2xl shadow-xl border border-emerald-500/30 backdrop-blur-xl bg-white/90 dark:bg-slate-900/90"
+                className="absolute -bottom-6 -right-6 hidden sm:flex items-center gap-3 glass-card p-4 rounded-2xl shadow-xl backdrop-blur-xl bg-white/90 dark:bg-slate-900/90"
+                style={{ borderColor: 'rgba(59, 46, 122, 0.3)', borderWidth: '1px' }}
               >
-                <div className="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-bold">
-                  <Globe className="w-5 h-5" />
+                <div className="w-10 h-10 rounded-xl overflow-hidden shrink-0 border border-[#3B2E7A]/20">
+                  <img src="src/img/student-1.png" alt="Trusted Alumni" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-extrabold text-slate-900 dark:text-white">€0 Public Tuition</h4>
-                  <p className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">TUM, LMU, Heidelberg</p>
+                  <h4 className="text-[13px] font-extrabold text-[#200e4f] dark:text-white">Trusted by 10,000+</h4>
+                  <p className="text-[11px] font-bold" style={{ color: '#3B2E7A' }}>Alumni</p>
                 </div>
               </motion.div>
 

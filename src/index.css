@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply antialiased text-slate-800 dark:text-slate-100 bg-[#f9f7f1] dark:bg-[#0B0F19];
+    @apply antialiased text-[#200e4f] dark:text-slate-100 bg-[#f9f7f1] dark:bg-[#0B0F19];
   }
 
   h1,
@@ -21,7 +21,7 @@
 
   /* Glassmorphism Styles */
   .glass-card {
-    @apply bg-white/70 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 shadow-xl shadow-slate-200/40 dark:shadow-black/50;
+    @apply bg-[#f5f0e6] dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 shadow-xl shadow-slate-200/40 dark:shadow-black/50;
   }
 
   .glass-nav {

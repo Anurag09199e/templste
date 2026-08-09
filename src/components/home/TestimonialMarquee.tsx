@@ -20,14 +20,14 @@ const TestimonialCard = ({ test }: { test: typeof TESTIMONIALS[0] }) => {
         .substring(0, 2);
 
     return (
-        <div className="flex-shrink-0 w-80 md:w-96 p-6 rounded-2xl bg-white dark:bg-[#131B2E] border border-slate-200/80 dark:border-slate-800 shadow-xl flex flex-col justify-between whitespace-normal mx-3">
+        <div className="flex-shrink-0 w-80 md:w-96 p-6 rounded-2xl bg-[#f5f0e6] dark:bg-[#131B2E] border border-slate-200/80 dark:border-slate-800 shadow-xl flex flex-col justify-between whitespace-normal mx-3">
             <div>
                 <div className="flex text-amber-500 mb-4">
                     {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-4 h-4 fill-current" />
                     ))}
                 </div>
-                <h4 className="font-bold text-slate-900 dark:text-white mb-3">
+                <h4 className="font-bold text-[#200e4f] dark:text-white mb-3">
                     {test.goetheScore}
                 </h4>
                 <p className="text-sm text-slate-600 dark:text-slate-400 italic mb-6">
@@ -40,7 +40,7 @@ const TestimonialCard = ({ test }: { test: typeof TESTIMONIALS[0] }) => {
                     {initials}
                 </div>
                 <div>
-                    <h5 className="font-bold text-sm text-slate-900 dark:text-white">{test.name}</h5>
+                    <h5 className="font-bold text-sm text-[#200e4f] dark:text-white">{test.name}</h5>
                     <p className="text-xs text-slate-500 dark:text-slate-500">{test.role}</p>
                 </div>
             </div>

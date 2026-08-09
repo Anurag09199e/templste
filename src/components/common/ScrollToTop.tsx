@@ -32,7 +32,7 @@ export const ScrollToTop: React.FC = () => {
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
           aria-label="Scroll to top"
-          className="fixed bottom-6 left-6 z-40 w-11 h-11 bg-slate-900/80 dark:bg-white/90 text-white dark:text-slate-900 backdrop-blur-md rounded-2xl flex items-center justify-center border border-slate-700/50 shadow-xl"
+          className="fixed bottom-6 left-6 z-40 w-11 h-11 bg-slate-900/80 dark:bg-white/90 text-white dark:text-[#200e4f] backdrop-blur-md rounded-2xl flex items-center justify-center border border-slate-700/50 shadow-xl"
         >
           <ArrowUp className="w-5 h-5" />
         </motion.button>

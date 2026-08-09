@@ -62,59 +62,7 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 9. Trainer Cards Preview */}
-      <section className="py-20 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle
-            badge="Native German Pedagogy"
-            title="Learn from Senior"
-            highlightedText="Goethe Certified Trainers"
-            subtitle="Our faculty comprises native German speakers and Goethe-certified master instructors with years of academic excellence."
-          />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {TRAINERS.map((trainer) => (
-              <GlassCard key={trainer.id} className="text-center p-6 border border-slate-200/80 dark:border-slate-800">
-                <div className="relative w-24 h-24 mx-auto mb-4">
-                  <img
-                    src={trainer.avatar}
-                    alt={trainer.name}
-                    className="w-full h-full object-cover rounded-2xl border-2 border-amber-500/40 shadow-lg"
-                  />
-                  {trainer.nativeSpeaker && (
-                    <span className="absolute -bottom-2 -right-2 px-2 py-0.5 bg-amber-500 text-white font-extrabold text-[10px] rounded-md shadow">
-                      NATIVE
-                    </span>
-                  )}
-                </div>
-
-                <h4 className="font-extrabold font-heading text-lg text-slate-900 dark:text-white">
-                  {trainer.name}
-                </h4>
-                <p className="text-xs font-bold text-amber-600 dark:text-amber-400 mb-2">
-                  {trainer.title}
-                </p>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-2 mb-4">
-                  {trainer.bio}
-                </p>
-
-                <div className="pt-3 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-[11px] font-semibold text-slate-500">
-                  <span>{trainer.experienceYears} Yrs Exp</span>
-                  <span className="text-amber-500">{trainer.studentsTaught}+ Students</span>
-                </div>
-              </GlassCard>
-            ))}
-          </div>
-
-          <div className="mt-10 text-center">
-            <Link to="/trainers">
-              <GradientButton variant="secondary" icon={ArrowRight}>
-                View All Instructors & Bios
-              </GradientButton>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* 11. FAQ Accordion Section */}
       <section className="py-20 relative">
@@ -129,7 +77,7 @@ export const Home: React.FC = () => {
           <div className="space-y-4">
             {FAQS.map((faq) => (
               <GlassCard key={faq.id} className="p-6 border border-slate-200/80 dark:border-slate-800">
-                <h4 className="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2 mb-2 font-heading">
+                <h4 className="font-bold text-base text-[#200e4f] dark:text-white flex items-center gap-2 mb-2 font-heading">
                   <HelpCircle className="w-5 h-5 text-amber-500 shrink-0" />
                   {faq.question}
                 </h4>
@@ -153,27 +101,54 @@ export const Home: React.FC = () => {
       {/* 12. Final Contact CTA Banner */}
       <section className="py-20 relative px-4">
         <div
-          className="max-w-7xl mx-auto rounded-[32px] p-10 sm:p-16 shadow-2xl text-center space-y-6 relative overflow-hidden"
-          style={{ background: 'linear-gradient(90deg, rgba(32, 14, 79, 1) 0%, rgba(189, 24, 30, 1) 29%, rgba(232, 180, 75, 1) 52%)' }}
+          className="max-w-[1400px] mx-auto rounded-[32px] shadow-2xl relative overflow-hidden min-h-[600px] flex items-center"
         >
-          {/* Subtle noise/texture layout if needed, but linear gradient handles the base */}
-          <div className="max-w-3xl mx-auto space-y-5 relative z-10">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-amber-500 text-white font-extrabold text-[11px] uppercase tracking-widest shadow-lg">
-              YOUR PATH TO GERMANY, SIMPLIFIED
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-white leading-tight">
-              Transform Your Future with GLS Today.
-            </h2>
-            <p className="text-sm sm:text-base text-white/90 font-medium">
-              Book a free 1-on-1 session with our Goethe-certified counsellors. No more piecing it together on your own; get clarity on your course level, your pathway, and your next step, all in one conversation.
-            </p>
-            <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/book-demo" className="w-full sm:w-auto">
-                <GradientButton size="lg" icon={ArrowRight} fullWidth>
-                  Book Your Free Consultation
-                </GradientButton>
-              </Link>
+          {/* Background Image Mockup */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src="src/img/img-3.png"
+              alt="Train passing"
+              className="w-full h-full object-cover"
+            />
+            {/* Dark gradient mapping to the right to make the white text legible */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent "></div>
+          </div>
 
+          <div className="relative z-10 w-full px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-12 gap-8 my-10">
+            <div className="hidden md:block md:col-span-4 lg:col-span-5">{/* Empty spacing for the left image element */}</div>
+
+            {/* Right column for the text content */}
+            <div className="md:col-span-8 lg:col-span-7 flex flex-col justify-center space-y-6 relative">
+
+              {/* Paper Airplane and dotted path SVG */}
+              <div className="absolute -top-[70px] left-[-30px] w-full h-[100px] pointer-events-none hidden md:block">
+                <svg className="w-full h-full text-white" viewBox="0 0 500 100" fill="none" preserveAspectRatio="none">
+                  {/* The curved trajectory */}
+                  <path d="M 0 90 Q 200 10 400 30" stroke="currentColor" strokeWidth="2" strokeDasharray="8 8" fill="transparent" strokeDashoffset="0" className="opacity-70" />
+                </svg>
+                {/* Airplane icon placed at the end of the line */}
+                <svg className="absolute top-[18px] right-[70px] w-8 h-8 text-white transform -rotate-12 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                </svg>
+              </div>
+
+              <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold font-heading text-white leading-[1.1] tracking-tight drop-shadow-md">
+                Ready to Start Your <br className="hidden lg:block" />
+                <span className="italic font-medium opacity-90">German Journey?</span>
+              </h2>
+
+              <p className="text-sm md:text-base lg:text-[17px] text-gray-200 font-medium max-w-[550px] leading-relaxed drop-shadow-sm mt-3">
+                Book a free counseling session and find the right path — Ausbildung, Masters, or direct job placement
+              </p>
+
+              <div className="pt-5 flex items-center gap-4">
+                <Link to="/book-demo">
+                  <button className="bg-white text-[#1f1a14] hover:bg-gray-100 font-bold px-8 py-3.5 rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group">
+                    Book Free Consultation
+                    <ArrowRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

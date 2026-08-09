@@ -31,11 +31,10 @@ export const CefrCards: React.FC = () => {
               <button
                 key={course.level}
                 onClick={() => setSelectedLevel(course.level)}
-                className={`px-5 py-3 rounded-2xl font-heading font-extrabold text-sm sm:text-base transition-all duration-200 flex items-center gap-2 ${
-                  isSelected
+                className={`px-5 py-3 rounded-2xl font-heading font-extrabold text-sm sm:text-base transition-all duration-200 flex items-center gap-2 ${isSelected
                     ? 'bg-gradient-to-r from-amber-500 to-orange-600 text-white shadow-lg shadow-orange-500/30 scale-105 border border-amber-400/40'
                     : 'glass-card text-slate-700 dark:text-slate-300 hover:border-amber-500/50'
-                }`}
+                  }`}
               >
                 <span>CEFR {course.level}</span>
               </button>
@@ -50,9 +49,9 @@ export const CefrCards: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <GlassCard className="p-8 sm:p-12 border-2 border-amber-500/40 shadow-2xl bg-gradient-to-br from-white/90 via-white/80 to-amber-500/5 dark:from-slate-900/90 dark:via-slate-900/80 dark:to-amber-950/20">
+          <GlassCard className="p-8 sm:p-12 border-2 border-amber-500/40 shadow-2xl bg-gradient-to-br from-[#f5f0e6] via-[#f5f0e6]/90 to-amber-500/5 dark:from-slate-900/90 dark:via-slate-900/80 dark:to-amber-950/20">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              
+
               {/* Left Details (7 cols) */}
               <div className="lg:col-span-7 space-y-6">
                 <div className="flex flex-wrap items-center gap-3">
@@ -65,7 +64,7 @@ export const CefrCards: React.FC = () => {
                   </span>
                 </div>
 
-                <h3 className="text-3xl font-extrabold font-heading text-slate-900 dark:text-white">
+                <h3 className="text-3xl font-extrabold font-heading text-[#200e4f] dark:text-white">
                   {currentCourse.title}
                 </h3>
 

@@ -21,7 +21,7 @@ export const BatchTable: React.FC = () => {
               <th className="py-4 px-6 text-right">Action</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-slate-200/60 dark:divide-slate-800/60 text-xs sm:text-sm font-medium text-slate-800 dark:text-slate-200">
+          <tbody className="divide-y divide-slate-200/60 dark:divide-slate-800/60 text-xs sm:text-sm font-medium text-[#200e4f] dark:text-slate-200">
             {UPCOMING_BATCHES.map((batch) => (
               <tr
                 key={batch.id}
@@ -30,7 +30,7 @@ export const BatchTable: React.FC = () => {
                 <td className="py-4 px-6">
                   <div className="flex items-center gap-2">
                     <LevelBadge level={batch.courseLevel} size="sm" />
-                    <span className="font-bold font-heading text-slate-900 dark:text-white">
+                    <span className="font-bold font-heading text-[#200e4f] dark:text-white">
                       {batch.courseLevel} Batch
                     </span>
                   </div>

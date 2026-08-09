@@ -28,7 +28,7 @@ export const FAQ: React.FC = () => {
           <span className="px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-500 font-extrabold text-xs uppercase tracking-widest border border-amber-500/20">
             Support & Information Center
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
             Frequently Asked <span className="text-gradient">Questions</span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-400">
@@ -44,7 +44,7 @@ export const FAQ: React.FC = () => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Type your question (e.g., Goethe certificate, batch timings, visa)..."
-            className="w-full pl-12 pr-4 py-3.5 text-sm rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-amber-500 shadow-sm"
+            className="w-full pl-12 pr-4 py-3.5 text-sm rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-[#200e4f] dark:text-white focus:outline-none focus:ring-2 focus:ring-amber-500 shadow-sm"
           />
         </div>
 
@@ -76,7 +76,7 @@ export const FAQ: React.FC = () => {
                 onClick={() => setOpenFaqId(isOpen ? null : faq.id)}
               >
                 <div className="flex items-center justify-between gap-4">
-                  <h3 className="font-extrabold font-heading text-base text-slate-900 dark:text-white flex items-center gap-3">
+                  <h3 className="font-extrabold font-heading text-base text-[#200e4f] dark:text-white flex items-center gap-3">
                     <HelpCircle className="w-5 h-5 text-amber-500 shrink-0" />
                     {faq.question}
                   </h3>

@@ -19,6 +19,8 @@ import { Blog } from './pages/Blog';
 import { FAQ } from './pages/FAQ';
 import { Contact } from './pages/Contact';
 import { BookDemo } from './pages/BookDemo';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { CourseLevel } from './pages/CourseLevel';
 
 const ScrollToTopOnNavigate = () => {
   const { pathname } = useLocation();
@@ -39,6 +41,7 @@ export const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<GermanCourses />} />
+          <Route path="/courses/:levelId" element={<CourseLevel />} />
 
           <Route path="/study-in-germany" element={<StudyInGermany />} />
           <Route path="/ausbildung" element={<Ausbildung />} />
@@ -49,6 +52,7 @@ export const App: React.FC = () => {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/book-demo" element={<BookDemo />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
       </main>
 

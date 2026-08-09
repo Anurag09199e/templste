@@ -4,7 +4,7 @@ import { Instagram, Linkedin } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-[#f9f7f1] text-slate-900 pt-20 pb-10 border-t border-slate-200 overflow-hidden">
+    <footer className="relative bg-[#f9f7f1] text-[#200e4f] pt-20 pb-10 border-t border-slate-200 overflow-hidden">
       {/* Background glow effects matching the yellow tinge aesthetic */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-yellow-300/25 rounded-full blur-[100px] pointer-events-none -translate-y-1/3 translate-x-1/4" />
 
@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           {/* Column 1: Brand Info (2 cols width on lg) */}
           <div className="lg:col-span-2 space-y-6">
             <div className="flex flex-col">
-              <span className="font-heading font-black text-2xl sm:text-3xl text-slate-900 tracking-tight">
+              <span className="font-heading font-black text-2xl sm:text-3xl text-[#200e4f] tracking-tight">
                 German Language Studio
               </span>
               <span className="text-sm text-amber-600 font-extrabold tracking-wider uppercase mt-1">
@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
 
           {/* Column 2: Courses */}
           <div className="space-y-6 lg:pl-10">
-            <h4 className="font-heading font-bold text-slate-900 text-base uppercase tracking-wider">
+            <h4 className="font-heading font-bold text-[#200e4f] text-base uppercase tracking-wider">
               German Courses
             </h4>
             <ul className="space-y-3 text-sm text-slate-600 font-medium tracking-wide">
@@ -63,7 +63,7 @@ export const Footer: React.FC = () => {
 
           {/* Column 3: Quick Links */}
           <div className="space-y-6">
-            <h4 className="font-heading font-bold text-slate-900 text-base uppercase tracking-wider">
+            <h4 className="font-heading font-bold text-[#200e4f] text-base uppercase tracking-wider">
               Quick Links
             </h4>
             <ul className="space-y-3 text-sm text-slate-600 font-medium tracking-wide">
@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
 
           {/* Column 4: Contact Details */}
           <div className="space-y-6">
-            <h4 className="font-heading font-bold text-slate-900 text-base uppercase tracking-wider">
+            <h4 className="font-heading font-bold text-[#200e4f] text-base uppercase tracking-wider">
               Contact Us
             </h4>
             <ul className="space-y-4 text-sm text-slate-600">
@@ -98,7 +98,7 @@ export const Footer: React.FC = () => {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium tracking-wide">
           <p>© {new Date().getFullYear()} German Language Studio. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-amber-600 transition-colors">Privacy Policy</a>
+            <Link to="/privacy" className="hover:text-amber-600 transition-colors">Privacy Policy</Link>
             <a href="#" className="hover:text-amber-600 transition-colors">Terms of Service</a>
           </div>
         </div>

@@ -17,7 +17,7 @@ export const Ausbildung: React.FC = () => {
           <span className="px-4 py-1.5 rounded-full bg-emerald-500/10 text-emerald-500 font-extrabold text-xs uppercase tracking-widest border border-emerald-500/20">
             Paid Vocational Apprenticeship in Germany
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
             Ausbildung Programs with <span className="text-gradient">€1,200+ Monthly Stipend</span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-400">
@@ -37,7 +37,7 @@ export const Ausbildung: React.FC = () => {
                   <LevelBadge level={prog.requiredLevel} size="md" />
                 </div>
 
-                <h3 className="text-2xl font-extrabold font-heading text-slate-900 dark:text-white mb-2">
+                <h3 className="text-2xl font-extrabold font-heading text-[#200e4f] dark:text-white mb-2">
                   {prog.title}
                 </h3>
 

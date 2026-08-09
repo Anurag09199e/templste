@@ -11,51 +11,107 @@ const QUESTIONS = [
     id: 1,
     question: 'What is your current level of experience with the German language?',
     options: [
-      { text: 'I am a complete beginner with zero prior knowledge.', result: 'A1' },
-      { text: 'I know basic words (numbers, greetings) but struggle with full sentences.', result: 'A1' },
-      { text: 'I can form simple past sentences & introduce myself with basic grammar.', result: 'A2' },
-      { text: 'I can discuss daily topics fluently and express opinions.', result: 'B1' },
-      { text: 'I can read complex news articles & debate abstract workplace ideas.', result: 'B2' }
+      { text: 'I am a complete beginner with zero prior knowledge.', value: 'A1' },
+      { text: 'I know basic words (numbers, greetings) but struggle with full sentences.', value: 'A2' },
+      { text: 'I can form simple past sentences & introduce myself with basic grammar.', value: 'B1' },
+      { text: 'I can discuss daily topics fluently and express opinions.', value: 'B2' },
+      { text: 'I can read complex news articles & debate abstract workplace ideas.', value: 'C1' }
     ]
   },
   {
     id: 2,
     question: 'What is your main goal for learning German?',
     options: [
-      { text: 'Relocating to Germany for a Spouse Visa or Family Reunification.', result: 'A1' },
-      { text: 'Applying for Dual Vocational Training (Ausbildung in Nursing/IT).', result: 'B2' },
-      { text: 'Enrolling in a Tuition-Free German Public University (Bachelors/Masters).', result: 'B2' },
-      { text: 'Working as a Doctor, Nurse, Engineer, or IT Professional in Germany.', result: 'B2' },
-      { text: 'High-level academic research, litigation, or diplomacy.', result: 'C1' }
+      { text: 'Enrolling in a German Public University (Bachelors/Masters).', value: 'courses' },
+      { text: 'Applying for Dual Vocational Training (Ausbildung).', value: 'ausbildung' },
+      { text: 'Working as a Professional in Germany (Job Placement).', value: 'placements' },
+      { text: 'Preparing for official Zertifikat examinations.', value: 'exams' },
+      { text: 'I am not sure yet, I just want to understand my options.', value: 'contact' }
     ]
   }
 ];
 
 export const LevelQuiz: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
-  const [recommendedLevel, setRecommendedLevel] = useState<CEFRLevel | null>(null);
+  const [selectedLevel, setSelectedLevel] = useState<string | null>(null);
+  const [selectedGoal, setSelectedGoal] = useState<string | null>(null);
 
-  const handleSelect = (resultLevel: CEFRLevel) => {
-    setSelectedOption(resultLevel);
+  // Track the current step's active selection before moving on
+  const [tempSelection, setTempSelection] = useState<string | null>(null);
+
+  const [isComplete, setIsComplete] = useState(false);
+
+  const handleSelect = (val: string) => {
+    setTempSelection(val);
   };
 
   const handleNext = () => {
-    if (!selectedOption) return;
+    if (!tempSelection) return;
 
-    if (currentStep < QUESTIONS.length - 1) {
-      setCurrentStep(currentStep + 1);
-      setSelectedOption(null);
+    if (currentStep === 0) {
+      setSelectedLevel(tempSelection);
+      setCurrentStep(1);
+      setTempSelection(null);
     } else {
-      setRecommendedLevel(selectedOption as CEFRLevel);
+      setSelectedGoal(tempSelection);
+      setIsComplete(true);
     }
   };
 
   const resetQuiz = () => {
     setCurrentStep(0);
-    setSelectedOption(null);
-    setRecommendedLevel(null);
+    setSelectedLevel(null);
+    setSelectedGoal(null);
+    setTempSelection(null);
+    setIsComplete(false);
   };
+
+  const getRecommendation = () => {
+    if (!selectedLevel || !selectedGoal) return null;
+
+    const level = selectedLevel;
+
+    switch (selectedGoal) {
+      case 'courses':
+        return {
+          headline: `We recommend starting with CEFR ${level}`,
+          subtext: `Based on your responses, our Goethe-certified ${level} curriculum will build the fluency German universities require — alongside guidance on shortlisting, applications, and visa prep.`,
+          btnText: `Explore ${level} Courses`,
+          btnLink: `/courses/${level.toLowerCase()}`
+        };
+      case 'ausbildung':
+        return {
+          headline: `We recommend starting with CEFR ${level}`,
+          subtext: `Based on your responses, our ${level} curriculum builds the German you'll need — then we guide you through Ausbildung program matching and employer placement.`,
+          btnText: `Explore Ausbildung`,
+          btnLink: `/ausbildung`
+        };
+      case 'placements':
+        return {
+          headline: `We recommend starting with CEFR ${level}`,
+          subtext: `Based on your responses, our ${level} curriculum gets your German workplace-ready — then we help connect your qualifications to real job opportunities in Germany.`,
+          btnText: `Explore Placements`,
+          btnLink: `/placements`
+        };
+      case 'exams':
+        return {
+          headline: `We recommend starting with CEFR ${level}`,
+          subtext: `Based on your responses, our Goethe, TELC & ÖSD-certified ${level} training will get you exam-ready with focused mock tests and speaking practice.`,
+          btnText: `Explore Exams`,
+          btnLink: `/exams`
+        };
+      case 'contact':
+      default:
+        return {
+          headline: `Let's find your right starting point — CEFR ${level}`,
+          subtext: `Based on your responses, we recommend starting at ${level} German. Not sure which direction from there? Our team will help you find whether university, Ausbildung, or career is right for you.`,
+          btnText: `Book a Free Consultation`,
+          btnLink: `/contact-us`
+        };
+    }
+  };
+
+  const rec = getRecommendation();
 
   return (
     <GlassCard className="p-8 sm:p-10 border border-amber-500/30 max-w-3xl mx-auto shadow-2xl">
@@ -64,7 +120,7 @@ export const LevelQuiz: React.FC = () => {
           <Sparkles className="w-5 h-5" />
         </div>
         <div>
-          <h3 className="text-xl font-bold font-heading text-slate-900 dark:text-white">
+          <h3 className="text-xl font-bold font-heading text-[#200e4f] dark:text-white">
             Find Your Ideal German Course Level
           </h3>
           <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -73,7 +129,7 @@ export const LevelQuiz: React.FC = () => {
         </div>
       </div>
 
-      {!recommendedLevel ? (
+      {!isComplete ? (
         <div className="space-y-6">
           <div className="flex items-center justify-between text-xs font-bold text-slate-400">
             <span>Question {currentStep + 1} of {QUESTIONS.length}</span>
@@ -87,7 +143,7 @@ export const LevelQuiz: React.FC = () => {
             />
           </div>
 
-          <h4 className="text-lg font-bold text-slate-900 dark:text-white font-heading">
+          <h4 className="text-lg font-bold text-[#200e4f] dark:text-white font-heading">
             {QUESTIONS[currentStep].question}
           </h4>
 
@@ -95,15 +151,14 @@ export const LevelQuiz: React.FC = () => {
             {QUESTIONS[currentStep].options.map((opt, idx) => (
               <button
                 key={idx}
-                onClick={() => handleSelect(opt.result as CEFRLevel)}
-                className={`w-full text-left p-4 rounded-2xl border transition-all text-sm font-medium flex items-center justify-between ${
-                  selectedOption === opt.result
+                onClick={() => handleSelect(opt.value)}
+                className={`w-full text-left p-4 rounded-2xl border transition-all text-sm font-medium flex items-center justify-between ${tempSelection === opt.value
                     ? 'border-amber-500 bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold shadow-md'
-                    : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 text-slate-800 dark:text-slate-200'
-                }`}
+                    : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 text-[#200e4f] dark:text-slate-200'
+                  }`}
               >
                 <span>{opt.text}</span>
-                {selectedOption === opt.result && <CheckCircle2 className="w-5 h-5 text-amber-500" />}
+                {tempSelection === opt.value && <CheckCircle2 className="w-5 h-5 text-amber-500" />}
               </button>
             ))}
           </div>
@@ -111,7 +166,7 @@ export const LevelQuiz: React.FC = () => {
           <div className="flex justify-end pt-2">
             <GradientButton
               onClick={handleNext}
-              disabled={!selectedOption}
+              disabled={!tempSelection}
               icon={ArrowRight}
             >
               {currentStep === QUESTIONS.length - 1 ? 'Show Recommendation' : 'Next Question'}
@@ -127,17 +182,17 @@ export const LevelQuiz: React.FC = () => {
           <span className="inline-block px-4 py-1.5 rounded-full bg-amber-500/15 text-amber-500 border border-amber-500/30 text-xs font-extrabold uppercase">
             Recommended Starting Point
           </span>
-          <h4 className="text-4xl font-extrabold font-heading text-slate-900 dark:text-white">
-            We recommend starting with <span className="text-gradient">CEFR {recommendedLevel}</span>
+          <h4 className="text-3xl sm:text-4xl font-extrabold font-heading text-[#200e4f] dark:text-white leading-tight">
+            {rec?.headline.split('CEFR')[0]} <span className="text-gradient">CEFR {selectedLevel}</span>
           </h4>
-          <p className="text-sm text-slate-600 dark:text-slate-400 max-w-lg mx-auto">
-            Based on your responses, our Goethe certified curriculum for level {recommendedLevel} will give you the exact training required for your visa and academic aspirations.
+          <p className="text-sm text-slate-600 dark:text-slate-400 max-w-lg mx-auto leading-relaxed">
+            {rec?.subtext}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <Link to={`/courses/${recommendedLevel.toLowerCase()}`}>
+            <Link to={rec?.btnLink || "#"}>
               <GradientButton size="lg" icon={ArrowRight}>
-                Explore CEFR {recommendedLevel} Course
+                {rec?.btnText}
               </GradientButton>
             </Link>
             <button

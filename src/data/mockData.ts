@@ -1,23 +1,29 @@
 import { Course, Trainer, Testimonial, UpcomingBatch, GalleryItem, BlogPost, FAQItem, AusbildungProgram } from '../types';
+import a1Img from '../img/a1.png';
+import a2Img from '../img/a2.png';
+import b1Img from '../img/b1.png';
+import b2Img from '../img/b2.png';
+import c1img from '../img/c1.png';
+import c2img from '../img/c2.jpg';
 
 export const COURSES: Course[] = [
   {
     id: 'a1-grundstufe',
     level: 'A1',
     title: 'A1 Beginner German',
-    germanTitle: 'A1 Grundstufe - Start Deutsch 1',
-    shortDesc: 'Build your initial foundation in German vocabulary, everyday conversations, and essential grammar.',
-    fullDesc: 'The A1 German course is designed for absolute beginners with no prior knowledge of German. You will master basic greetings, self-introductions, ordering food, shopping, asking for directions, and forming fundamental sentences.',
+    germanTitle: 'A1 GRUNDSTUFE – START DEUTSCH 1',
+    shortDesc: 'Start from zero and build real confidence with the German language. This level focuses on everyday vocabulary, basic sentence structure, and simple conversations — designed for complete beginners with no prior German knowledge.',
+    fullDesc: 'No prior knowledge needed. GLS builds your foundation from your first "Hallo" to real conversations: vocabulary, grammar, and confidence, all structured around how you\'ll actually use German in Germany..',
     durationHours: 80,
     durationWeeks: 8,
+    durationString: '50–90 Days (Weekday/Weekend) · Available Online & Offline',
+    classDurationString: 'Class Duration: 90 mins (weekdays) / 150 mins (weekends)',
     priceEUR: 349,
     priceLocal: '€349 / ₹28,500',
-    recommendedFor: 'Complete beginners, prospective students, and job seekers aiming for Goethe-Zertifikat A1.',
+    recommendedFor: 'Complete beginners, prospective students aiming for Studienkolleg, job seekers preparing for Germany, and individuals applying for a Family Reunion (Spouse) Visa needing the Goethe-Zertifikat A1.',
     outcomes: [
-      'Understand and use familiar everyday expressions and basic phrases',
-      'Introduce yourself and ask others about personal details',
-      'Interact in a simple way provided the other person speaks slowly and clearly',
-      'Pass the official Goethe-Zertifikat A1: Start Deutsch 1 exam with confidence'
+      'Hold basic conversations: greetings, introductions, and everyday questions',
+      'Read and write simple sentences using core grammar rules'
     ],
     syllabusModules: [
       { moduleNumber: 1, title: 'Alphabet, Pronunciation & Greetings', topics: ['German Phonetics', 'Greetings & Courtesies', 'Numbers 1-100', 'Basic Nouns & Articles'] },
@@ -31,25 +37,76 @@ export const COURSES: Course[] = [
     rating: 4.9,
     enrolledStudents: 1420,
     badgeTag: 'Most Popular for Beginners',
-    image: 'https://images.unsplash.com/photo-1527891751199-7225231a68dd?auto=format&fit=crop&w=800&q=80'
+    image: a1Img,
+    ctaText: 'Get Free Course Guidance',
+    learningFeaturesSubtitle: "From your very first word to real conversations, here's what the Deutsch A1 Anfängerkurs course covers.",
+    learningFeatures: [
+      {
+        icon: 'MessageCircle',
+        title: 'Greetings & Introductions',
+        description: 'Introduce yourself, greet others, and share basic personal details.'
+      },
+      {
+        icon: 'Users',
+        title: 'Family & Daily Life',
+        description: 'Talk about your family, your routine, and everyday activities.'
+      },
+      {
+        icon: 'Clock',
+        title: 'Numbers, Time & Dates',
+        description: 'Use numbers, tell the time, and talk about days and months.'
+      },
+      {
+        icon: 'ShoppingBag',
+        title: 'Shopping & Simple Conversations',
+        description: 'Order food, ask prices, and handle everyday interactions.'
+      },
+      {
+        icon: 'PenTool',
+        title: 'Basic Sentence Building',
+        description: 'Form simple, correct sentences using core German grammar.'
+      }
+    ],
+    faqs: [
+      {
+        question: 'Do I need any prior knowledge of German to join A1?',
+        answer: 'No, this course is built for complete beginners.'
+      },
+      {
+        question: 'Which exam does A1 prepare me for?',
+        answer: 'Goethe-Zertifikat A1 (Start Deutsch 1) and telc A1.'
+      },
+      {
+        question: 'Does the A1 certificate expire?',
+        answer: 'No, it doesn\'t expire but visa and immigration applications often ask for a certificate issued within the last 6–12 months, so check your specific requirement before applying.'
+      },
+      {
+        question: 'Is A1 enough for a German visa?',
+        answer: 'A1 is commonly required for certain visa categories, such as spouse/family reunification visas. It is not sufficient on its own for study or work visas.'
+      },
+      {
+        question: 'What happens after I finish A1?',
+        answer: 'You move on to A2 Elementary German, building on this foundation.'
+      }
+    ]
   },
   {
     id: 'a2-grundstufe-2',
     level: 'A2',
     title: 'A2 Elementary German',
-    germanTitle: 'A2 Grundstufe 2 - Goethe Zertifikat A2',
-    shortDesc: 'Expand your expressiveness to describe your background, work, environment, and daily interactions.',
+    germanTitle: 'A2 GRUNDSTUFE 2 – GOETHE ZERTIFIKAT A2',
+    shortDesc: 'Move beyond the basics into everyday fluency. You\'ll learn to talk about your routine, family, work, and surroundings, while strengthening grammar fundamentals needed for the Goethe A2 exam.',
     fullDesc: 'A2 elevates your language skills from simple phrases to connected sentences. Express past events, navigate public transportation, talk about health, career history, and handle routine social situations in Germany.',
     durationHours: 90,
     durationWeeks: 9,
+    durationString: '55–90 Days (Weekday/Weekend) · Available Online & Offline',
+    classDurationString: 'Class Duration: 90 mins (weekdays) / 150 mins (weekends)',
     priceEUR: 399,
     priceLocal: '€399 / ₹32,000',
     recommendedFor: 'Learners who completed A1 or possess elementary vocabulary.',
     outcomes: [
-      'Understand sentences and frequently used expressions related to areas of immediate relevance',
-      'Communicate in routine tasks requiring a simple exchange of information',
-      'Describe in simple terms aspects of your background and immediate environment',
-      'Prepare thoroughly for Goethe / Telc A2 examination'
+      'Describe your background, environment, and daily routine with ease',
+      'Handle short, routine exchanges in familiar situations'
     ],
     syllabusModules: [
       { moduleNumber: 1, title: 'Past Events & Memory', topics: ['Perfekt Tense with haben/sein', 'Regular & Irregular Partizip II', 'Talking about holidays & childhood'] },
@@ -63,26 +120,42 @@ export const COURSES: Course[] = [
     rating: 4.95,
     enrolledStudents: 1150,
     badgeTag: 'Essential Step',
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80'
+    image: a2Img,
+    ctaText: 'Get Free Course Guidance',
+    trustText: 'Trusted by 10,000+ students across 14 years',
+    learningFeaturesSubtitle: "From basic phrases to confident everyday conversations, here's what the Deutsch A2 Grundstufe course covers.",
+    learningFeatures: [
+      { icon: 'Users', title: 'Expanded Everyday Conversations', description: 'Talk more naturally about your work, environment, and daily life.' },
+      { icon: 'Clock', title: 'Past & Future Events', description: 'Describe things that already happened and make simple plans.' },
+      { icon: 'ShoppingBag', title: 'Directions & Travel Basics', description: 'Ask for and understand directions in everyday situations.' },
+      { icon: 'MessageCircle', title: 'Likes, Dislikes & Opinions', description: 'Express preferences and share simple opinions with ease.' },
+      { icon: 'PenTool', title: 'Everyday Grammar in Use', description: 'Strengthen sentence structure for smoother, more natural speech.' }
+    ],
+    faqs: [
+      { question: 'Do I need to complete A1 before joining A2?', answer: 'Yes, A2 assumes A1-level knowledge — basic vocabulary, sentence structure, and everyday phrases.' },
+      { question: 'Which exam does A2 prepare me for?', answer: 'Goethe-Zertifikat A2 and telc A2.' },
+      { question: 'Does the A2 certificate expire?', answer: 'No — but as with A1, some visa or institutional applications may require a certificate issued within the last 6–12 months.' },
+      { question: 'Is A2 enough to work or study in Germany?', answer: 'A2 is generally not sufficient for work or university admission; it primarily supports everyday communication and certain visa categories.' },
+      { question: 'What happens after I finish A2?', answer: 'You move on to B1 Intermediate German, the level typically needed for greater independence in Germany.' }
+    ]
   },
   {
     id: 'b1-mittelstufe-1',
     level: 'B1',
     title: 'B1 Intermediate German',
-    germanTitle: 'B1 Zertifikat Deutsch - Goethe & Telc B1',
-    shortDesc: 'Achieve true communicative independence for university admission, job seeking, and German residency.',
-    fullDesc: 'B1 is the turning point where you become an independent user of the German language. Crucial for spouse visa, student visa, job applications, and citizenship eligibility in Germany.',
+    germanTitle: 'B1 ZERTIFIKAT DEUTSCH – GOETHE & TELC B1',
+    shortDesc: 'This is where German starts working for your career. Gain the independence to hold detailed conversations at work, university, or in daily life, a key requirement for admissions, job applications, and settling into life in Germany.',
+    fullDesc: 'This is where German starts working for your career — hold detailed conversations at work, university, or in daily life across Germany. B1 is the turning point where you become an independent user of the German language. Crucial for spouse visa, student visa, job applications, and citizenship eligibility in Germany.',
     durationHours: 120,
     durationWeeks: 12,
+    durationString: '80–105 Days (Weekday/Weekend) · Available Online & Offline',
+    classDurationString: 'Class Duration: 90 mins (weekdays) / 150 mins (weekends)',
     priceEUR: 499,
     priceLocal: '€499 / ₹39,500',
     recommendedFor: 'Students planning university enrollment in Germany, Job seekers, and Spouse Visa applicants.',
     outcomes: [
-      'Understand the main points of clear standard input on familiar matters regularly encountered',
-      'Deal with most situations likely to arise whilst travelling in a German-speaking area',
-      'Produce simple connected text on topics which are familiar or of personal interest',
-      'Describe experiences, events, dreams, hopes & ambitions and briefly give reasons for opinions',
-      '100% Goethe / Telc B1 Exam readiness guaranteed'
+      'Communicate confidently in academic, professional, and social settings',
+      'Handle unexpected situations while travelling or living in a German-speaking country'
     ],
     syllabusModules: [
       { moduleNumber: 1, title: 'Complex Sentence Structures', topics: ['Genitive Case & Genitive Prepositions', 'Relative Clauses (Relativsätze)', 'Adjective Endings in all cases'] },
@@ -96,25 +169,42 @@ export const COURSES: Course[] = [
     rating: 4.98,
     enrolledStudents: 1890,
     badgeTag: 'High Career Demand',
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80'
+    image: b1Img,
+    ctaText: 'Get Free Course Guidance',
+    trustText: 'Trusted by 10,000+ students across 14 years',
+    learningFeaturesSubtitle: "From everyday German to real independence, here's what the Deutsch B1 Mittelstufe course covers.",
+    learningFeatures: [
+      { icon: 'MessageCircle', title: 'University & Work-Ready German', description: 'Communicate confidently in academic and professional settings.' },
+      { icon: 'Users', title: 'Connected, Detailed Speech', description: 'Explain your thoughts clearly, beyond short phrases.' },
+      { icon: 'Clock', title: 'Handling Real-Life Situations', description: 'Manage travel, appointments, and unexpected situations on your own.' },
+      { icon: 'ShoppingBag', title: 'Calls, Messages & Writing', description: 'Use the phone, write messages, and handle everyday correspondence.' },
+      { icon: 'PenTool', title: 'Confident Everyday Independence', description: 'Navigate daily life in Germany without needing help.' }
+    ],
+    faqs: [
+      { question: 'Do I need A2 before joining B1?', answer: 'Yes, B1 builds directly on A2-level grammar and vocabulary.' },
+      { question: 'Which exam does B1 prepare me for?', answer: 'Goethe-Zertifikat B1 and telc B1.' },
+      { question: 'Is B1 required for a German visa?', answer: 'B1 is commonly requested for certain visa categories, including spouse/family reunification visas. Requirements vary by visa type, so confirm with the relevant authority.' },
+      { question: 'Is B1 enough for German university admission?', answer: 'Not for programs taught in German; most German universities require C1 level German (typically via TestDaF or DSH) for German-taught programs.' },
+      { question: 'What happens after I finish B1?', answer: 'You move on to B2 Upper Intermediate German, which strengthens your German for professional and academic settings.' }
+    ]
   },
   {
     id: 'b2-mittelstufe-2',
     level: 'B2',
     title: 'B2 Upper Intermediate',
-    germanTitle: 'B2 Goethe-Zertifikat / Telc B2 Professional',
-    shortDesc: 'Master professional workplace fluency, university academic discussions, and complex technical texts.',
-    fullDesc: 'B2 German is required by most German universities, medical licensing bodies (Approbation), and engineering firms. Gain fluency to converse spontaneously without strain for native speakers.',
+    germanTitle: 'B2 GOETHE-ZERTIFIKAT / TELC B2 PROFESSIONAL',
+    shortDesc: 'Step into fluency that works for you — professionally and personally. At this level, you\'ll navigate workplace discussions, academic settings, and complex conversations with genuine confidence, not just textbook German.',
+    fullDesc: 'Navigate workplace discussions, academic settings, and complex conversations with confidence — not just textbook German. B2 German is required by most German universities, medical licensing bodies (Approbation), and engineering firms. Gain fluency to converse spontaneously without strain for native speakers.',
     durationHours: 140,
     durationWeeks: 14,
+    durationString: '80 Days (Weekdays) · Available Online & Offline',
+    classDurationString: 'Class Duration: 90 mins (Mon–Friday)',
     priceEUR: 599,
     priceLocal: '€599 / ₹47,000',
     recommendedFor: 'Doctors, Nurses, Engineers, IT Professionals, and Master degree applicants.',
     outcomes: [
-      'Understand the main ideas of complex text on both concrete and abstract topics',
-      'Interact with a degree of fluency and spontaneity with native speakers',
-      'Produce clear, detailed text on a wide range of subjects',
-      'Explain a viewpoint on a topical issue giving the advantages and disadvantages'
+      'Discuss detailed topics and technical subjects with clarity',
+      'Interact naturally with native speakers without constant hesitation'
     ],
     syllabusModules: [
       { moduleNumber: 1, title: 'Advanced Grammar & Connectors', topics: ['Two-part connectors (je... desto, sowohl... als auch)', 'Nomen-Verb-Verbindungen', 'Subjunctive I & II (Konjunktiv I for indirect speech)'] },
@@ -128,25 +218,42 @@ export const COURSES: Course[] = [
     rating: 4.97,
     enrolledStudents: 1320,
     badgeTag: 'Professional Standard',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80'
+    image: b2Img,
+    ctaText: 'Get Free Course Guidance',
+    trustText: 'Trusted by 10,000+ students across 14 years',
+    learningFeaturesSubtitle: "From confident conversation to professional fluency, here's what the Deutsch B2 Fortgeschrittene Mittelstufe course covers.",
+    learningFeatures: [
+      { icon: 'Users', title: 'Professional Fluency', description: 'Hold detailed conversations at work and in academic settings.' },
+      { icon: 'Clock', title: 'Understanding Complex Texts', description: 'Grasp the main ideas in technical or detailed material.' },
+      { icon: 'MessageCircle', title: 'Natural, Spontaneous Conversation', description: 'Interact with native speakers without searching for words.' },
+      { icon: 'PenTool', title: 'Expressing Views Clearly', description: 'Discuss and debate topics with structure and confidence.' },
+      { icon: 'ShoppingBag', title: 'Workplace & Academic Readiness', description: 'Handle discussions, meetings, and coursework in German.' }
+    ],
+    faqs: [
+      { question: 'Do I need B1 before joining B2?', answer: 'Yes, B2 assumes solid B1-level grammar and everyday communication skills.' },
+      { question: 'Which exam does B2 prepare me for?', answer: 'Goethe-Zertifikat B2 and telc B2 Professional.' },
+      { question: 'Is B2 enough for German university admission?', answer: 'Not for programs taught in German — most universities require C1 level. B2 is a stepping stone toward that requirement.' },
+      { question: 'Is the B2 certificate valid indefinitely?', answer: 'Yes, it doesn\'t expire — but always check whether the institution or authority you\'re applying to requires a recently issued certificate.' },
+      { question: 'What happens after I finish B2?', answer: 'You move on to C1 Advanced German, the level most German universities require for German-taught programs.' }
+    ]
   },
   {
     id: 'c1-oberstufe-1',
     level: 'C1',
     title: 'C1 Advanced German',
-    germanTitle: 'C1 Goethe-Zertifikat / TestDaF / DSH Prep',
-    shortDesc: 'Express yourself fluently and spontaneously for academic research, executive roles, and legal practice.',
-    fullDesc: 'C1 is the gateway to native-level academic and professional integration in Germany. Recommended for PhD candidates, researchers, legal professionals, and executive leadership.',
+    germanTitle: 'C1 GOETHE-ZERTIFIKAT / TESTDAF / DSH PREP',
+    shortDesc: 'Built for those heading into academic research, executive roles, or legal and technical fields. This level sharpens your ability to express complex ideas precisely in writing, in meetings, and in high-stakes conversations.',
+    fullDesc: 'Built for academic research, executive roles, and technical fields, express complex ideas precisely, in writing and in high-stakes conversations. Only 5% of German learners reach this level of mastery.',
     durationHours: 160,
     durationWeeks: 16,
+    durationString: '80 Days (Weekdays) · Available Online & Offline',
+    classDurationString: 'Class Duration: 90 mins (Mon–Friday)',
     priceEUR: 699,
     priceLocal: '€699 / ₹55,000',
     recommendedFor: 'University students needing TestDaF / DSH-2, Executives, Medical Specialists.',
     outcomes: [
-      'Understand a wide range of demanding, longer texts, and recognize implicit meaning',
-      'Express ideas fluently and spontaneously without much obvious searching for expressions',
-      'Use language flexibly and effectively for social, academic and professional purposes',
-      'Pass Goethe C1, TestDaF (TDN 4/5) or DSH-2/3 exams'
+      'Follow and contribute to demanding academic or professional discussions',
+      'Express nuanced ideas fluently, without searching for words'
     ],
     syllabusModules: [
       { moduleNumber: 1, title: 'Academic Discourse & Syntax', topics: ['Complex nominal style (Nominalstil)', 'Advanced passive constructions', 'Stylistic refining'] },
@@ -160,25 +267,42 @@ export const COURSES: Course[] = [
     rating: 4.99,
     enrolledStudents: 680,
     badgeTag: 'Academic Mastery',
-    image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80'
+    image: c1img,
+    ctaText: 'Get Free Course Guidance',
+    trustText: 'Trusted by 10,000+ students across 14 years',
+    learningFeaturesSubtitle: "From professional fluency to academic precision, here's what the Deutsch C1 Fortgeschrittenenkurs course covers.",
+    learningFeatures: [
+      { icon: 'MessageCircle', title: 'Precision in Complex Topics', description: 'Express nuanced ideas fluently in technical or legal contexts.' },
+      { icon: 'Clock', title: 'Advanced Reading Comprehension', description: 'Understand long, demanding texts with implicit meaning.' },
+      { icon: 'Users', title: 'Confident Public & Professional Speech', description: 'Present and argue your point in high-stakes settings.' },
+      { icon: 'PenTool', title: 'Structured Academic Writing', description: 'Write clear, well-organized texts for study or work.' },
+      { icon: 'ShoppingBag', title: 'Fluency Under Pressure', description: 'Communicate smoothly even in unfamiliar or demanding situations.' }
+    ],
+    faqs: [
+      { question: 'Do I need B2 before joining C1?', answer: 'Yes, C1 builds on B2-level fluency and comprehension.' },
+      { question: 'Which exam does C1 prepare me for?', answer: 'Goethe-Zertifikat C1, TestDaF, and DSH.' },
+      { question: 'Is C1 enough for German university admission?', answer: 'Yes — most German universities require C1-level proficiency (via TestDaF Level 4 in all sections, or DSH-2 or higher) for programs taught in German.' },
+      { question: 'Do I need C1 if my program is taught in English?', answer: 'Not necessarily — English-taught programs usually require proof of English proficiency (TOEFL/IELTS) instead, though some universities may still ask for basic German (A1/A2) for daily life and integration.' },
+      { question: 'What happens after I finish C1?', answer: 'You move on to C2 Oberstufe, the highest level of German proficiency.' }
+    ]
   },
   {
     id: 'c2-oberstufe-2',
     level: 'C2',
     title: 'C2 Native Mastery',
-    germanTitle: 'C2 Großes Deutsches Sprachdiplom (GDS)',
-    shortDesc: 'Achieve flawless mastery equivalent to a educated native speaker of German.',
-    fullDesc: 'The highest CEFR level qualification. Recognized worldwide as proof of supreme German language mastery required for university lecturing, court translation, and diplomacy.',
-    durationHours: 180,
-    durationWeeks: 18,
-    priceEUR: 899,
-    priceLocal: '€899 / ₹71,000',
+    germanTitle: 'C2 GROSSES DEUTSCHES SPRACHDIPLOM (GDS)',
+    shortDesc: 'Final step to learn German that feels indistinguishable from a native speaker\'s. This level is for those aiming for top MNC roles in Germany or full academic and professional integration into German-speaking life.',
+    fullDesc: 'German that feels indistinguishable from a native speaker\'s — for top MNC roles or full academic and professional integration into German-speaking life. This is the highest qualification recognizing native-level mastery.',
+    durationHours: 160,
+    durationWeeks: 16,
+    durationString: '80 Days (Weekdays)  · Available Online & Offline',
+    classDurationString: 'Class Duration: 90 mins (Mon–Friday)',
+    priceEUR: 799,
+    priceLocal: '€799 / ₹64,000',
     recommendedFor: 'Translators, University Lecturers, Diplomats, Literature Scholars.',
     outcomes: [
-      'Understand with ease virtually everything heard or read',
-      'Summarise information from different spoken and written sources, reconstructing arguments',
-      'Express yourself spontaneously, very fluently and precisely, differentiating finer shades of meaning',
-      'Obtain the prestigious Goethe-Zertifikat C2: GDS'
+      'Understand virtually anything heard or read, without effort',
+      'Communicate with the nuance, tone, and precision of a native speaker'
     ],
     syllabusModules: [
       { moduleNumber: 1, title: 'Literary & Juridical German', topics: ['Classical & Contemporary German literature', 'Legal & administrative texts', 'Stylistic nuances'] },
@@ -192,7 +316,24 @@ export const COURSES: Course[] = [
     rating: 5.0,
     enrolledStudents: 340,
     badgeTag: 'Ultimate Distinction',
-    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80'
+    image: c2img,
+    ctaText: 'Get Free Course Guidance',
+    trustText: 'Trusted by 10,000+ students across 14 years',
+    learningFeaturesSubtitle: "From advanced fluency to near-native mastery, here's what the Deutsch C2 Oberstufe course covers.",
+    learningFeatures: [
+      { icon: 'MessageCircle', title: 'Near-Native Comprehension', description: 'Understand virtually anything heard or read, without effort.' },
+      { icon: 'Users', title: 'Effortless, Nuanced Expression', description: 'Speak with the tone and precision of a native speaker.' },
+      { icon: 'ShoppingBag', title: 'Mastery Across Contexts', description: 'Navigate academic, professional, and social German fluently.' },
+      { icon: 'PenTool', title: 'Subtle Meaning & Tone', description: 'Pick up on nuance, humor, and implication naturally.' },
+      { icon: 'Clock', title: 'Total Communicative Confidence', description: 'Speak, write, and think in German without hesitation' }
+    ],
+    faqs: [
+      { question: 'Do I need C1 before joining C2?', answer: 'Yes, C2 is the final level and builds directly on C1 fluency.' },
+      { question: 'Which certification does C2 prepare me for?', answer: 'The Große Deutsche Sprachdiplom (GDS).' },
+      { question: 'Is C2 required for admission to a German university?', answer: 'No, most universities require C1, not C2, for German-taught programs. C2 goes beyond the standard requirement, geared toward advanced academic or professional roles.' },
+      { question: 'Is a C2 certificate necessary for most jobs in Germany?', answer: 'Not typically. C1 is usually sufficient for most professional roles. C2 is relevant for specialized academic, research, or high-level professional positions.' },
+      { question: 'Is this the highest level of German certification?', answer: 'Yes, C2 is the highest level on the CEFR framework.' }
+    ]
   }
 ];
 

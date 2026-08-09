@@ -45,12 +45,12 @@ const FEATURES = [
 
 export const WhyUs: React.FC = () => {
   return (
-    <section className="py-20 relative bg-slate-900/20 dark:bg-slate-950/40">
+    <section className="py-20 relative bg-[#f5f0e6] dark:bg-slate-950/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <SectionTitle
           badge="Why Choose Us"
-          title="Why Choose"
+          title={<i className="italic">Why choose</i>}
           highlightedText="German Language Studio?"
           subtitle="Everything You Need to Build Your Future in Germany. From learning German to securing your next opportunity, GLS combines internationally recognized training with personalized guidance for every stage of your journey."
         />
@@ -71,7 +71,7 @@ export const WhyUs: React.FC = () => {
                 <span className="text-[10px] font-extrabold uppercase tracking-widest text-amber-500 bg-amber-500/10 px-2.5 py-1 rounded-full mb-3 inline-block">
                   {feat.badge}
                 </span>
-                <h3 className="text-xl font-bold font-heading text-slate-900 dark:text-white mb-2">
+                <h3 className="text-xl font-bold font-heading text-[#200e4f] dark:text-white mb-2">
                   {feat.title}
                 </h3>
                 <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">

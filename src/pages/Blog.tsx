@@ -22,7 +22,7 @@ export const Blog: React.FC = () => {
           <span className="px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-500 font-extrabold text-xs uppercase tracking-widest border border-amber-500/20">
             German Learning Journal
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
             Articles & <span className="text-gradient">German Hacks</span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-400">
@@ -69,7 +69,7 @@ export const Blog: React.FC = () => {
                   <span>{post.publishedDate}</span>
                 </div>
 
-                <h3 className="font-extrabold font-heading text-lg text-slate-900 dark:text-white group-hover:text-amber-500 transition-colors mb-2">
+                <h3 className="font-extrabold font-heading text-lg text-[#200e4f] dark:text-white group-hover:text-amber-500 transition-colors mb-2">
                   {post.title}
                 </h3>
 

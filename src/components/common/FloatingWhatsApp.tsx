@@ -31,7 +31,7 @@ export const FloatingWhatsApp: React.FC = () => {
                   DK
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-slate-900 dark:text-white">DeutschKraft Admissions</h4>
+                  <h4 className="font-bold text-sm text-[#200e4f] dark:text-white">DeutschKraft Admissions</h4>
                   <p className="text-xs text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" /> Online Now
                   </p>
@@ -47,7 +47,7 @@ export const FloatingWhatsApp: React.FC = () => {
 
             {/* Chat Body */}
             <div className="bg-slate-100 dark:bg-slate-950/70 rounded-2xl p-3 mb-4 space-y-2 text-xs">
-              <div className="bg-white dark:bg-slate-800 p-3 rounded-xl rounded-tl-none shadow-sm max-w-[85%] text-slate-800 dark:text-slate-200">
+              <div className="bg-white dark:bg-slate-800 p-3 rounded-xl rounded-tl-none shadow-sm max-w-[85%] text-[#200e4f] dark:text-slate-200">
                 Guten Tag! 👋 How can our Goethe certified advisors assist your German journey today?
                 <span className="block text-[10px] text-slate-400 text-right mt-1 flex items-center justify-end gap-1">
                   16:20 <CheckCheck className="w-3 h-3 text-emerald-500" />
@@ -62,7 +62,7 @@ export const FloatingWhatsApp: React.FC = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Ask about A1-C2, Visa, Fees..."
-                className="flex-1 px-3.5 py-2 text-xs rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="flex-1 px-3.5 py-2 text-xs rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900 text-[#200e4f] dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
               />
               <button
                 type="submit"

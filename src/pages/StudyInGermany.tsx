@@ -22,7 +22,7 @@ export const StudyInGermany: React.FC = () => {
           <span className="px-4 py-1.5 rounded-full bg-sky-500/10 text-sky-500 font-extrabold text-xs uppercase tracking-widest border border-sky-500/20">
             Tuition-Free Higher Education
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
             Study at Germany's Top <span className="text-gradient">Public Universities</span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-400">
@@ -40,7 +40,7 @@ export const StudyInGermany: React.FC = () => {
           ].map((item, idx) => (
             <GlassCard key={idx} className="p-6 border border-sky-500/30">
               <span className="text-3xl font-black font-heading text-sky-500 mb-2 block">{item.step}</span>
-              <h3 className="font-bold text-base font-heading text-slate-900 dark:text-white mb-2">{item.title}</h3>
+              <h3 className="font-bold text-base font-heading text-[#200e4f] dark:text-white mb-2">{item.title}</h3>
               <p className="text-xs text-slate-600 dark:text-slate-400">{item.desc}</p>
             </GlassCard>
           ))}
@@ -62,7 +62,7 @@ export const StudyInGermany: React.FC = () => {
                   <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 bg-amber-500/10 text-amber-500 rounded">
                     {uni.ranking}
                   </span>
-                  <h4 className="font-bold text-base font-heading text-slate-900 dark:text-white">{uni.name}</h4>
+                  <h4 className="font-bold text-base font-heading text-[#200e4f] dark:text-white">{uni.name}</h4>
                   <p className="text-xs text-slate-500">{uni.courses}</p>
                 </div>
                 <GraduationCap className="w-8 h-8 text-amber-500 shrink-0" />
@@ -74,7 +74,7 @@ export const StudyInGermany: React.FC = () => {
         {/* CTA Banner */}
         <div className="pt-16">
           <GlassCard className="p-10 text-center border-2 border-amber-500/30 bg-gradient-to-r from-amber-500/10 to-orange-500/10">
-            <h3 className="text-2xl font-extrabold font-heading text-slate-900 dark:text-white mb-3">
+            <h3 className="text-2xl font-extrabold font-heading text-[#200e4f] dark:text-white mb-3">
               Want a Free Profile Evaluation for German Universities?
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-xl mx-auto mb-6">
