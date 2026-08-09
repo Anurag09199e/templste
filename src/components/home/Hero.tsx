@@ -132,7 +132,7 @@ export const Hero: React.FC = () => {
                 <img
                   src={homePageImg}
                   alt="DeutschKraft Students in Germany"
-                  className="w-full h-[450px] object-cover rounded-3xl"
+                  className="w-full h-auto object-contain rounded-3xl md:h-[450px] md:object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
 
