@@ -15,6 +15,12 @@ import {
 } from 'lucide-react';
 import { GradientButton } from '../common/GradientButton';
 import { GlassCard } from '../common/GlassCard';
+import student1 from '../../img/student-1.png';
+import student2 from '../../img/student-2.png';
+import student3 from '../../img/student-3.png';
+import student4 from '../../img/student-4.png';
+import student5 from '../../img/student-5.png';
+import homePageImg from '../../img/home page.png';
 
 export const Hero: React.FC = () => {
   return (
@@ -84,11 +90,11 @@ export const Hero: React.FC = () => {
             <div className="pt-6 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-center lg:justify-start gap-4">
               <div className="flex -space-x-3">
                 {[
-                  'src/img/student-1.png',
-                  'src/img/student-2.png',
-                  'src/img/student-3.png',
-                  'src/img/student-4.png',
-                  'src/img/student-5.png',
+                  student1,
+                  student2,
+                  student3,
+                  student4,
+                  student5,
                 ].map((url, i) => (
                   <img
                     key={i}
@@ -124,7 +130,7 @@ export const Hero: React.FC = () => {
               {/* Main Image Frame with Ambient Glow */}
               <div className="relative rounded-4xl overflow-hidden p-2 bg-gradient-to-tr from-amber-500/30 via-orange-500/20 to-red-500/30 backdrop-blur-xl shadow-2xl border border-white/20 dark:border-slate-800">
                 <img
-                  src="src/img/home page.png"
+                  src={homePageImg}
                   alt="DeutschKraft Students in Germany"
                   className="w-full h-[450px] object-cover rounded-3xl"
                 />
@@ -155,7 +161,7 @@ export const Hero: React.FC = () => {
                 style={{ borderColor: 'rgba(59, 46, 122, 0.3)', borderWidth: '1px' }}
               >
                 <div className="w-10 h-10 rounded-xl overflow-hidden shrink-0 border border-[#3B2E7A]/20">
-                  <img src="src/img/student-1.png" alt="Trusted Alumni" className="w-full h-full object-cover" />
+                  <img src={student1} alt="Trusted Alumni" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <h4 className="text-[13px] font-extrabold text-[#200e4f] dark:text-white">Trusted by 10,000+</h4>

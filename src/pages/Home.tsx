@@ -13,6 +13,13 @@ import { Star, Quote, ArrowRight, CheckCircle2, ShieldCheck, Play, HelpCircle } 
 import { Link } from 'react-router-dom';
 import { LevelBadge } from '../components/common/LevelBadge';
 import { TestimonialMarquee } from '../components/home/TestimonialMarquee';
+import student1 from '../img/student-1.png';
+import student2 from '../img/student-2.png';
+import student3 from '../img/student-3.png';
+import student4 from '../img/student-4.png';
+import student5 from '../img/student-5.png';
+import homePageImg from '../img/home page.png';
+import img3 from '../img/img-3.png';
 
 export const Home: React.FC = () => {
   return (
@@ -106,7 +113,7 @@ export const Home: React.FC = () => {
           {/* Background Image Mockup */}
           <div className="absolute inset-0 z-0">
             <img
-              src="src/img/img-3.png"
+              src={img3}
               alt="Train passing"
               className="w-full h-full object-cover"
             />

@@ -6,6 +6,11 @@ import { Award, ShieldCheck, HeartHandshake, Globe, CheckCircle2, ArrowRight, Bu
 import { Link } from 'react-router-dom';
 import { TRAINERS } from '../data/mockData';
 import { motion } from 'framer-motion';
+import about1 from '../img/about-1.png';
+import about2 from '../img/about-2.png';
+import about3 from '../img/about-3.png';
+import about01 from '../img/about-01.png';
+import img3 from '../img/img-3.png';
 
 export const About: React.FC = () => {
   return (
@@ -103,12 +108,12 @@ export const About: React.FC = () => {
             <div className="relative h-[500px] flex justify-center items-center">
               {/* Image 1 (Left/Bottom) */}
               <div className="absolute left-0 bottom-6 w-[60%] h-[320px] rounded-[32px] overflow-hidden shadow-2xl z-10 border-[6px] border-white dark:border-slate-900">
-                <img src="src/img/about-2.png" alt="Swati - Founder" className="w-full h-full object-cover" />
+                <img src={about2} alt="Swati - Founder" className="w-full h-full object-cover" />
               </div>
 
               {/* Image 2 (Right/Top) */}
               <div className="absolute right-4 top-4 w-[60%] h-[380px] rounded-[32px] overflow-hidden shadow-xl z-0">
-                <img src="src/img/about-1.png" alt="GLS Office" className="w-full h-full object-cover" />
+                <img src={about1} alt="GLS Office" className="w-full h-full object-cover" />
               </div>
 
               {/* Floating Badge */}
@@ -150,7 +155,7 @@ export const About: React.FC = () => {
         {/* Founder Story Image Collage */}
         <div className="w-full max-w-6xl mx-auto px-4 mb-24 relative z-10 -mt-10 lg:-mt-0">
           <img
-            src="src/img/about-3.png"
+            src={about3}
             alt="GLS Life and Germany Highlights"
             className="w-full h-auto rounded-[32px] shadow-2xl border-4 border-white dark:border-slate-800 object-cover hover:scale-[1.01] transition-transform duration-500"
           />
@@ -188,7 +193,7 @@ export const About: React.FC = () => {
           {/* Background Image */}
           <div className="absolute inset-0 z-0 pointer-events-none">
             <img
-              src="src/img/about-01.png"
+              src={about01}
               alt="Students Background"
               className="w-full h-full object-cover opacity-200 dark:opacity-100"
             />
@@ -565,7 +570,7 @@ export const About: React.FC = () => {
           {/* Background Image Mockup */}
           <div className="absolute inset-0 z-0">
             <img
-              src="src/img/img-3.png"
+              src={img3}
               alt="Train passing"
               className="w-full h-full object-cover"
             />
