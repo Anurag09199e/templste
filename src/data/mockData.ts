@@ -5,6 +5,11 @@ import b1Img from '../img/b1.png';
 import b2Img from '../img/b2.png';
 import c1img from '../img/c1.png';
 import c2img from '../img/c2.jpg';
+import ausbildung1Img from '../img/ausbildung.png';
+import ausbildung2Img from '../img/ausbildung-2.png';
+import ausbildung3Img from '../img/ausbildung-3.jpg';
+import ausbildung4Img from '../img/ausbildung-4.jpg';
+import ausbildung5Img from '../img/ausbildung-5.jpg';
 
 export const EXAMS: Exam[] = [
   {
@@ -608,7 +613,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-1',
     title: 'Goethe Exam Pass Celebration 2026',
     category: 'Graduation',
-    image: 'src/img/ausbildung.png',
+    image: ausbildung1Img,
     caption: 'Our B2 batch achieving a 98% first-attempt pass rate in Goethe-Zertifikat B2.',
     date: 'July 2026'
   },
@@ -616,7 +621,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-2',
     title: 'German Culture & Oktoberfest Day',
     category: 'Events',
-    image: 'src/img/ausbildung-2.png',
+    image: ausbildung2Img,
     caption: 'Students practicing German conversation while experiencing traditional Bavarian pretzel baking and cultural immersion.',
     date: 'October 2025'
   },
@@ -624,7 +629,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-3',
     title: 'Interactive Smart Classroom Session',
     category: 'Classroom',
-    image: 'src/img/ausbildung-3.jpg',
+    image: ausbildung3Img,
     caption: 'Small batch size of max 12 students for maximum individual speaking practice.',
     date: 'June 2026'
   },
@@ -632,7 +637,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-4',
     title: 'Munich & Berlin Campus Orientation Tour',
     category: 'Germany Trips',
-    image: 'src/img/ausbildung-4.jpg',
+    image: ausbildung4Img,
     caption: 'Our students exploring Munich Marienplatz during their university welcome week in Germany.',
     date: 'April 2026'
   },
@@ -640,7 +645,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-5',
     title: 'Medical German Specialist Workshop',
     category: 'Classroom',
-    image: 'src/img/ausbildung-5.jpg',
+    image: ausbildung5Img,
     caption: 'Doctors and nurses participating in simulated patient consultations in German.',
     date: 'May 2026'
   },
