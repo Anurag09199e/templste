@@ -1,10 +1,58 @@
-import { Course, Trainer, Testimonial, UpcomingBatch, GalleryItem, BlogPost, FAQItem, AusbildungProgram } from '../types';
+import { Course, Trainer, Testimonial, UpcomingBatch, GalleryItem, BlogPost, FAQItem, AusbildungProgram, Exam } from '../types';
 import a1Img from '../img/a1.png';
 import a2Img from '../img/a2.png';
 import b1Img from '../img/b1.png';
 import b2Img from '../img/b2.png';
 import c1img from '../img/c1.png';
 import c2img from '../img/c2.jpg';
+
+export const EXAMS: Exam[] = [
+  {
+    id: 'goethe',
+    tags: ['GOETHE', 'Most Widely Recognised'],
+    quickInfo: 'Levels A1 to C2 · Accepted Worldwide',
+    title: 'Goethe Exam',
+    description: 'The most globally recognised German certification, accepted by universities, employers, and the German government for study, work, and visa applications.',
+    checklist: [
+      'Required by most German universities at B2 or higher',
+      'Accepted for skilled worker and Ausbildung visas from B1'
+    ],
+    infoBox: 'Accepted For: University Admission, Work Visas, Ausbildung',
+    ctaText: 'Learn About Goethe',
+    link: '/contact',
+    image: a1Img
+  },
+  {
+    id: 'telc',
+    tags: ['TELC', 'Best Value'],
+    quickInfo: 'Levels A1 to C2 · Accepted Across Germany',
+    title: 'telc Exam',
+    description: 'A widely accepted German certification, generally more affordable than Goethe, with a dedicated healthcare track for nursing and care roles.',
+    checklist: [
+      'Recognised by German employers and institutions',
+      'Includes a specialised Pflege certificate for healthcare pathways'
+    ],
+    infoBox: 'Accepted For: Work Visas, Ausbildung, Healthcare Roles',
+    ctaText: 'Learn About telc',
+    link: '/contact',
+    image: b1Img
+  },
+  {
+    id: 'osd',
+    tags: ['ÖSD', 'Best for Austria'],
+    quickInfo: 'Levels A1 to C2 · Accepted in Austria, Germany & Switzerland',
+    title: 'ÖSD Exam',
+    description: 'The official German language certificate of Austria, officially recognized across the DACH region for universities, work, and immigration.',
+    checklist: [
+      'Fully recognized for university admission in Germany and Austria',
+      'Optimal for health and IT professionals targeting Austrian pathways'
+    ],
+    infoBox: 'Accepted For: DACH Region Universities, Visas, Migration',
+    ctaText: 'Learn About ÖSD',
+    link: '/contact',
+    image: c1img
+  }
+];
 
 export const COURSES: Course[] = [
   {
@@ -560,7 +608,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-1',
     title: 'Goethe Exam Pass Celebration 2026',
     category: 'Graduation',
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
+    image: 'src/img/ausbildung.png',
     caption: 'Our B2 batch achieving a 98% first-attempt pass rate in Goethe-Zertifikat B2.',
     date: 'July 2026'
   },
@@ -568,7 +616,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-2',
     title: 'German Culture & Oktoberfest Day',
     category: 'Events',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80',
+    image: 'src/img/ausbildung-2.png',
     caption: 'Students practicing German conversation while experiencing traditional Bavarian pretzel baking and cultural immersion.',
     date: 'October 2025'
   },
@@ -576,7 +624,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-3',
     title: 'Interactive Smart Classroom Session',
     category: 'Classroom',
-    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80',
+    image: 'src/img/ausbildung-3.jpg',
     caption: 'Small batch size of max 12 students for maximum individual speaking practice.',
     date: 'June 2026'
   },
@@ -584,7 +632,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-4',
     title: 'Munich & Berlin Campus Orientation Tour',
     category: 'Germany Trips',
-    image: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800&q=80',
+    image: 'src/img/ausbildung-4.jpg',
     caption: 'Our students exploring Munich Marienplatz during their university welcome week in Germany.',
     date: 'April 2026'
   },
@@ -592,18 +640,10 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-5',
     title: 'Medical German Specialist Workshop',
     category: 'Classroom',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
+    image: 'src/img/ausbildung-5.jpg',
     caption: 'Doctors and nurses participating in simulated patient consultations in German.',
     date: 'May 2026'
   },
-  {
-    id: 'gal-6',
-    title: 'Annual Student Excellence Awards',
-    category: 'Events',
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80',
-    caption: 'Felicitation ceremony for top scorers in Goethe C1 & TestDaF examinations.',
-    date: 'March 2026'
-  }
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -709,4 +749,142 @@ export const STATS = [
   { label: 'Students Taught', value: 5000, suffix: '+', icon: 'Globe' },
   { label: 'Students Placed', value: 500, suffix: '+', icon: 'GraduationCap' },
   { label: 'Certified Trainers', value: 30, suffix: '+', icon: 'Users' },
+];
+
+export const EXAM_HUB_FAQS: FAQItem[] = [
+  {
+    id: 'f1',
+    category: 'General',
+    question: 'Which German language exams are accepted for Germany?',
+    answer: 'The Goethe, telc and ÖSD exams are all internationally recognised German proficiency exams. However, which certificate you need can depend on your university, employer, visa category, Ausbildung or other specific requirement.'
+  },
+  {
+    id: 'f2',
+    category: 'General',
+    question: 'What is the difference between Goethe, telc and ÖSD?',
+    answer: 'All three assess German proficiency, but they differ in exam format, structure, locations, scoring and specific use cases. The right choice depends on what you are applying for and which certificate your institution or authority accepts.'
+  },
+  {
+    id: 'f3',
+    category: 'General',
+    question: 'Which German exam should I take: Goethe, telc or ÖSD?',
+    answer: 'There is no single best exam for everyone. Your choice should be based on your goal, required level, destination, application requirements and exam availability. GLS counsellors can help you identify the most suitable option.'
+  },
+  {
+    id: 'f4',
+    category: 'General',
+    question: 'What German levels can I take exams for?',
+    answer: 'German proficiency is generally measured from A1 to C2 under the Common European Framework of Reference for Languages (CEFR). Different exams and exam providers offer different levels, so check the specific exam requirements for your goal.'
+  },
+  {
+    id: 'f5',
+    category: 'General',
+    question: 'What German level do I need to study or work in Germany?',
+    answer: 'It depends on your pathway. Some programmes may require B1 or B2, while university programmes, professional recognition or certain regulated professions may require B2, C1 or higher. Always check the exact requirement of your institution or programme.'
+  },
+  {
+    id: 'f6',
+    category: 'General',
+    question: 'Can I take a German exam without taking a German course?',
+    answer: 'Yes. You can generally register for a proficiency exam without completing a course with the exam provider. However, exam preparation can significantly help you understand the format, improve your skills and practise under exam conditions.'
+  },
+  {
+    id: 'f7',
+    category: 'General',
+    question: 'How should I prepare for a German proficiency exam?',
+    answer: 'Preparation should cover all relevant skills: reading, listening, writing and speaking. You should also become familiar with the specific exam format, question types, timing and assessment criteria of your chosen exam.'
+  },
+  {
+    id: 'f8',
+    category: 'General',
+    question: 'Are Goethe, telc and ÖSD exams difficult?',
+    answer: 'The difficulty depends on your current German proficiency and the level you are attempting. Knowing German alone isn\'t enough. Understanding the exam format and practising the required skills can make a significant difference.'
+  },
+  {
+    id: 'f9',
+    category: 'General',
+    question: 'How long does it take to reach B1 or B2 German?',
+    answer: 'There is no fixed timeline because it depends on your starting level, learning pace, previous exposure to German and how consistently you practise. A structured course combined with regular practice can help you progress more efficiently.'
+  },
+  {
+    id: 'f10',
+    category: 'General',
+    question: 'Can I retake a German language exam if I don\'t pass?',
+    answer: 'Yes, you can generally retake an exam, although retake rules and waiting periods can vary depending on the exam provider and examination centre. It is important to check the specific rules before registering again.'
+  },
+  {
+    id: 'f11',
+    category: 'General',
+    question: 'How long is a German language certificate valid?',
+    answer: 'Many German language certificates do not have a general expiry date. However, a university, employer, embassy, immigration authority or other organisation may require a certificate obtained within a particular period. Always check the requirements of the organisation you are applying to.'
+  },
+  {
+    id: 'f12',
+    category: 'General',
+    question: 'Can GLS help me choose and prepare for my German exam?',
+    answer: 'Yes. GLS can help you understand the differences between Goethe, telc and ÖSD, identify the appropriate level for your goals and prepare you for the exam through structured German language and exam preparation.'
+  },
+  {
+    id: 'f13',
+    category: 'General',
+    question: 'Where can I take Goethe, telc or ÖSD exams?',
+    answer: 'Exam availability depends on the exam provider and authorised examination centres. Before booking, make sure the centre is authorised for the specific exam and level you need.'
+  },
+  {
+    id: 'f14',
+    category: 'General',
+    question: 'Do I need a German certificate for a German visa?',
+    answer: 'It depends on the type of visa and your specific purpose for travelling to Germany. Language requirements can vary for study, work, Ausbildung, family reunification and other visa categories.'
+  }
+];
+
+export const AUSBILDUNG_FAQS: FAQItem[] = [
+  {
+    id: 'af1',
+    category: 'Ausbildung',
+    question: 'Who is eligible for Ausbildung in Germany?',
+    answer: 'Anyone who has completed 12th grade or an equivalent qualification, has at least B1 level German, and holds a valid passport. There is no strict upper age limit, though most applicants are between 18 and 30.'
+  },
+  {
+    id: 'af2',
+    category: 'Ausbildung',
+    question: 'Is Ausbildung really tuition free?',
+    answer: 'Yes. Ausbildung is a paid training program, not a university course, so there are no tuition fees. You earn a monthly stipend throughout the training instead of paying for it.'
+  },
+  {
+    id: 'af3',
+    category: 'Ausbildung',
+    question: 'How much can I earn during Ausbildung?',
+    answer: 'Stipends vary by sector and year of training, typically ranging from around €1,000 to €1,350 a month, with higher paying sectors like healthcare and IT often at the top of that range.'
+  },
+  {
+    id: 'af4',
+    category: 'Ausbildung',
+    question: 'How long does Ausbildung take?',
+    answer: 'Most programs run between 2 and 3.5 years, depending on the profession and how the training is structured.'
+  },
+  {
+    id: 'af5',
+    category: 'Ausbildung',
+    question: 'Do I need to already speak German?',
+    answer: 'No. If you are starting from zero, GLS trains you from A1 through B1 before you apply, so you meet the language requirement by the time your program begins.'
+  },
+  {
+    id: 'af6',
+    category: 'Ausbildung',
+    question: 'Can Ausbildung lead to permanent residency?',
+    answer: 'Yes. Under German immigration law, Ausbildung graduates who work in their trained field for 2 years and meet pension contribution requirements can apply for a settlement permit, faster than the standard 5-year path.'
+  },
+  {
+    id: 'af7',
+    category: 'Ausbildung',
+    question: 'What does GLS help with?',
+    answer: 'German language training from A1 to B1, Goethe or ÖSD exam preparation, document and application support, and visa assistance from start to finish.'
+  },
+  {
+    id: 'af8',
+    category: 'Ausbildung',
+    question: 'Is it difficult to get into an Ausbildung program?',
+    answer: 'It is competitive but achievable with the right preparation. Strong German skills and a clear, complete application are what make the biggest difference.'
+  }
 ];

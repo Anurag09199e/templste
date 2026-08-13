@@ -150,10 +150,9 @@ export const Home: React.FC = () => {
 
               <div className="pt-2 sm:pt-5 flex items-center gap-4">
                 <Link to="/book-demo">
-                  <button className="bg-white text-[#1f1a14] hover:bg-gray-100 font-bold px-8 py-3.5 rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group">
+                  <GradientButton size="lg" icon={ArrowRight}>
                     Book Free Consultation
-                    <ArrowRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                  </button>
+                  </GradientButton>
                 </Link>
               </div>
             </div>

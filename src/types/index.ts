@@ -41,6 +41,19 @@ export interface Course {
   }[];
 }
 
+export interface Exam {
+  id: string;
+  tags: string[];
+  quickInfo: string;
+  title: string;
+  description: string;
+  checklist: string[];
+  infoBox: string;
+  ctaText: string;
+  link: string;
+  image: string;
+}
+
 export interface Trainer {
   id: string;
   name: string;

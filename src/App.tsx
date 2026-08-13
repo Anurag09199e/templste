@@ -21,6 +21,11 @@ import { Contact } from './pages/Contact';
 import { BookDemo } from './pages/BookDemo';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { CourseLevel } from './pages/CourseLevel';
+import { GoetheExam } from './pages/GoetheExam';
+import { TelcExam } from './pages/TelcExam';
+import { OsdExam } from './pages/OsdExam';
+import { Placement } from './pages/Placement';
+import { ExamHub } from './pages/ExamHub';
 
 const ScrollToTopOnNavigate = () => {
   const { pathname } = useLocation();
@@ -42,9 +47,14 @@ export const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<GermanCourses />} />
           <Route path="/courses/:levelId" element={<CourseLevel />} />
+          <Route path="/exams" element={<ExamHub />} />
+          <Route path="/exams/goethe" element={<GoetheExam />} />
+          <Route path="/exams/telc" element={<TelcExam />} />
+          <Route path="/exams/osd" element={<OsdExam />} />
 
           <Route path="/study-in-germany" element={<StudyInGermany />} />
           <Route path="/ausbildung" element={<Ausbildung />} />
+          <Route path="/placements" element={<Placement />} />
           <Route path="/trainers" element={<Trainers />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/gallery" element={<Gallery />} />
