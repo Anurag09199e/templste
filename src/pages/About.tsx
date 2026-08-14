@@ -6,11 +6,11 @@ import { Award, ShieldCheck, HeartHandshake, Globe, CheckCircle2, ArrowRight, Bu
 import { Link } from 'react-router-dom';
 import { TRAINERS } from '../data/mockData';
 import { motion } from 'framer-motion';
-import about1 from '../img/about-1.png';
-import about2 from '../img/about-2.png';
-import about3 from '../img/about-3.png';
-import about01 from '../img/about-01.png';
-import img3 from '../img/img-3.png';
+import about1 from '../img/about-1.webp';
+import about2 from '../img/about-2.webp';
+import about3 from '../img/about-3.webp';
+import about01 from '../img/about-01.webp';
+import img3 from '../img/img-3.webp';
 
 export const About: React.FC = () => {
   return (

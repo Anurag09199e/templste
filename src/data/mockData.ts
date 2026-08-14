@@ -1,15 +1,15 @@
 import { Course, Trainer, Testimonial, UpcomingBatch, GalleryItem, BlogPost, FAQItem, AusbildungProgram, Exam } from '../types';
-import a1Img from '../img/a1.png';
-import a2Img from '../img/a2.png';
-import b1Img from '../img/b1.png';
-import b2Img from '../img/b2.png';
-import c1img from '../img/c1.png';
-import c2img from '../img/c2.jpg';
-import ausbildung1Img from '../img/ausbildung.png';
-import ausbildung2Img from '../img/ausbildung-2.png';
-import ausbildung3Img from '../img/ausbildung-3.jpg';
-import ausbildung4Img from '../img/ausbildung-4.jpg';
-import ausbildung5Img from '../img/ausbildung-5.jpg';
+import a1Img from '../img/a1.webp';
+import a2Img from '../img/a2.webp';
+import b1Img from '../img/b1.webp';
+import b2Img from '../img/b2.webp';
+import c1img from '../img/c1.webp';
+import c2img from '../img/c2.webp';
+import ausbildung1Img from '../img/ausbildung.webp';
+import ausbildung2Img from '../img/ausbildung-2.webp';
+import ausbildung3Img from '../img/ausbildung-3.webp';
+import ausbildung4Img from '../img/ausbildung-4.webp';
+import ausbildung5Img from '../img/ausbildung-5.webp';
 
 export const EXAMS: Exam[] = [
   {
@@ -715,7 +715,7 @@ export const FAQS: FAQItem[] = [
     id: 'faq-1',
     category: 'General',
     question: 'How long has GLS been operating?',
-    answer: 'German Language Studio was founded in 2013 by Director Swati and has spent over 14 years training students and professionals for successful careers in Germany.'
+    answer: 'German Language Studio was founded in 2013 by Director Swati and has spent over 13 years training students and professionals for successful careers in Germany.'
   },
   {
     id: 'faq-2',
@@ -750,10 +750,10 @@ export const FAQS: FAQItem[] = [
 ];
 
 export const STATS = [
-  { label: 'Goethe & Telc Pass Rate', value: 98.4, suffix: '%', icon: 'Award' },
-  { label: 'Students Taught', value: 5000, suffix: '+', icon: 'Globe' },
+  { label: 'Goethe & Telc Pass Rate', value: 90, suffix: '%', icon: 'Award' },
+  { label: 'Students Taught', value: 10000, suffix: '+', icon: 'Globe' },
   { label: 'Students Placed', value: 500, suffix: '+', icon: 'GraduationCap' },
-  { label: 'Certified Trainers', value: 30, suffix: '+', icon: 'Users' },
+  { label: 'Certified Trainers', value: 35, suffix: '+', icon: 'Users' },
 ];
 
 export const EXAM_HUB_FAQS: FAQItem[] = [

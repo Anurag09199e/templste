@@ -8,8 +8,8 @@ import { CheckCircle2, Briefcase, Euro, ShieldCheck, ArrowRight, Camera, HeartPu
 import { Link } from 'react-router-dom';
 import { GALLERY_ITEMS, AUSBILDUNG_FAQS } from '../data/mockData';
 import { motion, AnimatePresence } from 'framer-motion';
-import ausbildungImage from '../img/ausbildung.png';
-import img3 from '../img/img-3.png';
+import ausbildungImage from '../img/ausbildung.webp';
+import img3 from '../img/img-3.webp';
 
 export const Ausbildung: React.FC = () => {
   const [openFaq, setOpenFaq] = useState<string | null>(null);

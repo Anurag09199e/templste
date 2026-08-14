@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Filter, CheckCircle2, ArrowRight, GraduationCap, Briefcase, Globe, Info, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { GradientButton } from '../components/common/GradientButton';
-import goetheImg from '../img/goethe.png';
-import telcImg from '../img/about-2.png';
-import osdImg from '../img/about-3.png';
-import img3 from '../img/img-3.png';
+import goetheImg from '../img/goethe.webp';
+import telcImg from '../img/about-2.webp';
+import osdImg from '../img/about-3.webp';
+import img3 from '../img/img-3.webp';
 
 const exams = [
     {

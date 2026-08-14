@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Briefcase, GraduationCap, Award, Compass, Languages, Target, HeartPulse, Settings, Coffee, Wrench, Library, BookOpen, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { GradientButton } from '../components/common/GradientButton';
-import placement from '../img/placement-2.png';
-import placementImg from '../img/placement.png';
-import img3 from '../img/img-3.png';
+import placement from '../img/placement-2.webp';
+import placementImg from '../img/placement.webp';
+import img3 from '../img/img-3.webp';
 
 const placementFaqs = [
     {

@@ -4,9 +4,9 @@ import { ArrowRight, CheckCircle2, ShieldCheck, Award, Globe, HelpCircle, Chevro
 import { Link } from 'react-router-dom';
 import { SectionTitle } from '../components/common/SectionTitle';
 import { GlassCard } from '../components/common/GlassCard';
-import goetheImg from '../img/goethe.png';
-import img3 from '../img/img-3.png';
-import goethPrepImg from '../img/goeth-2.jpg';
+import goetheImg from '../img/goethe.webp';
+import img3 from '../img/img-3.webp';
+import goethPrepImg from '../img/goeth-2.webp';
 
 const GOETHE_FAQS = [
     {

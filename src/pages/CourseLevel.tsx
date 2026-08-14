@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { COURSES } from '../data/mockData';
 import { Search, MapPin, ArrowLeft, Clock, Calendar, Video, Star, Users, CheckCircle2, BookOpen, GraduationCap, ArrowRight, MessageCircle, ShoppingBag, PenTool } from 'lucide-react';
 import { GradientButton } from '../components/common/GradientButton';
-import ctaBgImage from '../img/img-3.png';
+import ctaBgImage from '../img/img-3.webp';
 
 const iconMap = {
     MessageCircle,

@@ -18,7 +18,6 @@ import { Gallery } from './pages/Gallery';
 import { Blog } from './pages/Blog';
 import { FAQ } from './pages/FAQ';
 import { Contact } from './pages/Contact';
-import { BookDemo } from './pages/BookDemo';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { CourseLevel } from './pages/CourseLevel';
 import { GoetheExam } from './pages/GoetheExam';
@@ -61,7 +60,6 @@ export const App: React.FC = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/book-demo" element={<BookDemo />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
       </main>

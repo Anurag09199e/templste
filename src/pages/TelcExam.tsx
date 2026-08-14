@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ShieldCheck, Award, Globe, CheckCircle2, HelpCircle, ChevronDown, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import goetheImg from '../img/goethe.png';
-import img3 from '../img/img-3.png';
-import telcPrepImg from '../img/goeth-2.jpg';
+import goetheImg from '../img/goethe.webp';
+import img3 from '../img/img-3.webp';
+import telcPrepImg from '../img/goeth-2.webp';
 import { SectionTitle } from '../components/common/SectionTitle';
 import { GlassCard } from '../components/common/GlassCard';
 

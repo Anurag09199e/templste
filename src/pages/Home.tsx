@@ -13,13 +13,13 @@ import { Star, Quote, ArrowRight, CheckCircle2, ShieldCheck, Play, HelpCircle } 
 import { Link } from 'react-router-dom';
 import { LevelBadge } from '../components/common/LevelBadge';
 import { TestimonialMarquee } from '../components/home/TestimonialMarquee';
-import student1 from '../img/student-1.png';
-import student2 from '../img/student-2.png';
-import student3 from '../img/student-3.png';
-import student4 from '../img/student-4.png';
+import student1 from '../img/student-1.webp';
+import student2 from '../img/student-2.webp';
+import student3 from '../img/student-3.webp';
+import student4 from '../img/student-4.webp';
 import student5 from '../img/student-5.png';
-import homePageImg from '../img/home page.png';
-import img3 from '../img/img-3.png';
+import homePageImg from '../img/home page.webp';
+import img3 from '../img/img-3.webp';
 
 export const Home: React.FC = () => {
   return (
@@ -59,14 +59,6 @@ export const Home: React.FC = () => {
 
         {/* New Scrolling Marquee Section */}
         <TestimonialMarquee />
-
-        <div className="mt-8 text-center relative z-20">
-          <Link to="/testimonials">
-            <GradientButton variant="outline" icon={ArrowRight}>
-              Read All 150+ Student Testimonials
-            </GradientButton>
-          </Link>
-        </div>
       </section>
 
 
@@ -95,20 +87,20 @@ export const Home: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-8 text-center ">
+          {/* <div className="mt-8 text-center ">
             <Link to="/faq">
               <GradientButton variant="secondary" icon={ArrowRight}>
                 View All FAQs & Search Answers
               </GradientButton>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* 12. Final Contact CTA Banner */}
       <section className="py-20 relative px-4">
         <div
-          className="max-w-[1400px] mx-auto rounded-[32px] shadow-2xl relative overflow-hidden md:min-h-[600px] flex items-center bg-[#0B0F19]"
+          className="max-w-[1400px] mx-auto rounded-[32px] shadow-2xl relative overflow-hidden md:min-h-[6`00px] flex items-center bg-[#0B0F19]"
         >
           {/* Background Image Mockup */}
           <div className="w-full relative md:absolute md:inset-0 md:z-0">

@@ -15,12 +15,12 @@ import {
 } from 'lucide-react';
 import { GradientButton } from '../common/GradientButton';
 import { GlassCard } from '../common/GlassCard';
-import student1 from '../../img/student-1.png';
-import student2 from '../../img/student-2.png';
-import student3 from '../../img/student-3.png';
-import student4 from '../../img/student-4.png';
-import student5 from '../../img/student-5.png';
-import homePageImg from '../../img/home page.png';
+import student1 from '../../img/student-1.webp';
+import student2 from '../../img/student-2.webp';
+import student3 from '../../img/student-3.webp';
+import student4 from '../../img/student-4.webp';
+import student5 from '../../img/student-5.webp';
+import homePageImg from '../../img/home-header.webp';
 
 export const Hero: React.FC = () => {
   return (
@@ -50,8 +50,8 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-sans font-bold italic text-[#200e4f] dark:text-white leading-[1.15] tracking-tight">
-              German Language Training That Opens Doors to <span className="text-gradient">Germany</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-sans font-bold  text-[#200e4f] dark:text-white leading-[1.15] tracking-tight">
+              German Language Training That Opens Doors to <span className="text-gradient italic">Germany</span>
             </h1>
 
             {/* Subtitle */}
@@ -74,7 +74,7 @@ export const Hero: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <Link to="/book-demo" className="w-full sm:w-auto">
+              <Link to="/contact" className="w-full sm:w-auto">
                 <GradientButton size="lg" icon={ArrowRight} fullWidth>
                   Study & Work in Germany
                 </GradientButton>
@@ -112,7 +112,7 @@ export const Hero: React.FC = () => {
                   <span className="text-[#200e4f] dark:text-white font-extrabold ml-1">4.9/5.0</span>
                 </div>
                 <p className="text-slate-500 dark:text-slate-400">
-                  Trusted by <strong>4,850+</strong> successful alumni in Germany
+                  Trusted by <strong>10,000+</strong> successful alumni in Germany
                 </p>
               </div>
             </div>
