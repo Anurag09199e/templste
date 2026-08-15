@@ -34,7 +34,7 @@ export const Contact: React.FC = () => {
           <div className="lg:col-span-5 space-y-6">
             <GlassCard className="p-8 border border-amber-500/30 space-y-6">
               <h3 className="text-2xl font-bold font-heading text-[#200e4f] dark:text-white">
-                Munich Campus Office
+                New Delhi Office
               </h3>
 
               <ul className="space-y-4 text-sm text-slate-700 dark:text-slate-300">
@@ -42,7 +42,7 @@ export const Contact: React.FC = () => {
                   <MapPin className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-[#200e4f] dark:text-white font-bold">Address</strong>
-                    <span>Leopoldstraße 48, 80802 München, Bayern, Germany</span>
+                    <span>B 78, Basement, Gulmohar Park, New Delhi, 110049</span>
                   </div>
                 </li>
 
@@ -57,8 +57,8 @@ export const Contact: React.FC = () => {
                 <li className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="block text-[#200e4f] dark:text-white font-bold">Email Admissions</strong>
-                    <span>admissions@deutschkraft-institute.de</span>
+                    <strong className="block text-[#200e4f] dark:text-white font-bold">Email</strong>
+                    <span>director@germanlanguagestudio.com</span>
                   </div>
                 </li>
 
@@ -78,7 +78,7 @@ export const Contact: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 to-orange-500/20" />
                 <div className="relative z-10 text-center space-y-1">
                   <MapPin className="w-8 h-8 text-amber-500 mx-auto animate-bounce" />
-                  <span className="block text-white font-bold">Munich & Berlin Campuses</span>
+                  <span className="block text-white font-bold">New Delhi Office</span>
                   <span className="text-[10px] text-slate-300">Interactive Location Map</span>
                 </div>
               </div>

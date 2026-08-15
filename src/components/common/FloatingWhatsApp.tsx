@@ -15,7 +15,7 @@ export const FloatingWhatsApp: React.FC = () => {
   const handleSend = (e: React.FormEvent) => {
     e.preventDefault();
     const encodedMsg = encodeURIComponent(message || 'Hallo DeutschKraft Team! I want to inquire about German courses.');
-    window.open(`https://wa.me/4915200000000?text=${encodedMsg}`, '_blank');
+    window.open(`https://wa.me/919318397686?text=${encodedMsg}`, '_blank');
     setIsOpen(false);
   };
 
@@ -34,10 +34,10 @@ export const FloatingWhatsApp: React.FC = () => {
             <div className="flex items-center justify-between border-b border-slate-200/60 dark:border-slate-800/60 pb-3 mb-3">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-lg">
-                  DK
+                  GLS
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-[#200e4f] dark:text-white">DeutschKraft Admissions</h4>
+                  <h4 className="font-bold text-sm text-[#200e4f] dark:text-white">GLS Admissions</h4>
                   <p className="text-xs text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" /> Online Now
                   </p>
