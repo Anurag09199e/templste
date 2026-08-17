@@ -52,14 +52,14 @@ export const Ausbildung: React.FC = () => {
             PAID VOCATIONAL TRAINING IN GERMANY
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white leading-tight">
-            Ausbildung Programs with <br className="hidden sm:block" /><span className="text-gradient">Up to €1,150 Monthly Stipend</span>
+            Ausbildung Programs with <br className="hidden sm:block" /><span className="text-gradient"><span className="italic">Up to €1,150</span> Monthly Stipend</span>
           </h1>
           <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
             Germany's dual training system pays you from day one while you learn on the job. Zero tuition, a recognised qualification, and real work experience by the time you finish.
           </p>
           <div className="pt-4">
             <Link to="/contact">
-              <button className="inline-flex items-center justify-center gap-2 bg-[#200e4f] text-white hover:bg-amber-500 font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all hover:-translate-y-1 active:translate-y-0 text-sm tracking-wide">
+              <button className="inline-flex items-center justify-center gap-2 font-extrabold px-8 py-4 rounded-xl transition-all hover:-translate-y-1 active:translate-y-0 text-sm tracking-wide bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
                 Check Your Eligibility <ArrowRight className="w-5 h-5" />
               </button>
             </Link>
@@ -85,12 +85,12 @@ export const Ausbildung: React.FC = () => {
             {[...GALLERY_ITEMS, ...GALLERY_ITEMS, ...GALLERY_ITEMS].map((item, i) => (
               <div
                 key={`${item.id}-${i}`}
-                className="w-[280px] h-[200px] sm:w-[350px] sm:h-[250px] rounded-3xl overflow-hidden relative shrink-0 shadow-lg border-4 border-white dark:border-slate-800"
+                className="h-[250px] sm:h-[320px] lg:h-[380px] w-auto inline-block rounded-[32px] overflow-hidden relative shrink-0 shadow-2xl border-4 border-white dark:border-slate-800"
               >
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover"
+                  className="h-full w-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               </div>
@@ -178,7 +178,7 @@ export const Ausbildung: React.FC = () => {
 
               <div className="pt-6">
                 <Link to="/contact">
-                  <button className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all hover:-translate-y-1 active:translate-y-0 text-[15px] flex items-center justify-center sm:justify-start gap-2 w-full sm:w-auto">
+                  <button className="hover: hover: font-extrabold px-8 py-4 rounded-xl transition-all hover:-translate-y-1 active:translate-y-0 text-[15px] flex items-center justify-center sm:justify-start gap-2 w-full sm:w-auto bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
                     Check Your Eligibility <ArrowRight className="w-5 h-5" />
                   </button>
                 </Link>
@@ -212,57 +212,6 @@ export const Ausbildung: React.FC = () => {
 
           </div>
         </section>
-
-        {/* Programs Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          {AUSBILDUNG_PROGRAMS.map((prog) => (
-            <GlassCard key={prog.id} className="p-8 border border-slate-200/80 dark:border-slate-800 flex flex-col justify-between">
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="px-3 py-1 bg-emerald-500/10 text-emerald-500 font-extrabold text-xs rounded-lg border border-emerald-500/20">
-                    {prog.field}
-                  </span>
-                  <LevelBadge level={prog.requiredLevel} size="md" />
-                </div>
-
-                <h3 className="text-2xl font-extrabold font-heading text-[#200e4f] dark:text-white mb-2">
-                  {prog.title}
-                </h3>
-
-                <p className="text-xs text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                  {prog.description}
-                </p>
-
-                <div className="bg-slate-100/80 dark:bg-slate-900/80 p-4 rounded-2xl mb-6 space-y-2 border border-slate-200/60 dark:border-slate-800">
-                  <div className="flex items-center justify-between text-xs font-bold">
-                    <span className="text-slate-500">Year 1 Monthly Stipend:</span>
-                    <span className="text-emerald-500 font-extrabold">{prog.monthlyStipendYear1}</span>
-                  </div>
-                  <div className="flex items-center justify-between text-xs font-bold">
-                    <span className="text-slate-500">Year 3 Monthly Stipend:</span>
-                    <span className="text-emerald-500 font-extrabold">{prog.monthlyStipendYear3}</span>
-                  </div>
-                </div>
-
-                <ul className="space-y-2 text-xs font-semibold text-slate-700 dark:text-slate-300 mb-6">
-                  {prog.keyBenefits.map((b, i) => (
-                    <li key={i} className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between">
-                <span className="text-xs text-slate-400 font-bold">Duration: {prog.durationYears} Years</span>
-                <Link to="/book-demo">
-                  <GradientButton size="sm" icon={ArrowRight}>Apply for Ausbildung</GradientButton>
-                </Link>
-              </div>
-            </GlassCard>
-          ))}
-        </div>
 
         {/* FAQ Section */}
         <section className="relative z-10 px-4 mt-24 pb-10">
@@ -342,7 +291,7 @@ export const Ausbildung: React.FC = () => {
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold font-heading text-white leading-[1.1] tracking-tight drop-shadow-md">
-                  Ready to Start Your <br className="hidden lg:block" />
+                  Ready to Start Your
                   <span className="italic font-medium opacity-90">Ausbildung Journey?</span>
                 </h2>
 
@@ -352,7 +301,7 @@ export const Ausbildung: React.FC = () => {
 
                 <div className="pt-2 sm:pt-5 flex items-center gap-4">
                   <Link to="/contact">
-                    <button className="bg-[#f5f0e6] text-[#200e4f] hover:bg-[#e8dec7] font-bold px-8 py-3.5 rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group">
+                    <button className="font-bold px-8 py-3.5 rounded-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
                       Check Your Eligibility
                       <ArrowRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                     </button>
@@ -369,3 +318,4 @@ export const Ausbildung: React.FC = () => {
     </div>
   );
 };
+

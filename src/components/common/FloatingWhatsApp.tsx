@@ -72,7 +72,7 @@ export const FloatingWhatsApp: React.FC = () => {
               />
               <button
                 type="submit"
-                className="p-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl transition-colors"
+                className="p-2 bg-emerald-500 hover:bg-emerald-600 rounded-xl transition-colors bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30"
               >
                 <Send className="w-4 h-4" />
               </button>

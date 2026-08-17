@@ -75,7 +75,7 @@ export const ExamCard: React.FC<ExamCardProps> = ({ exam }) => {
                 {/* CTA Button */}
                 <div className="pt-2">
                     <Link to={exam.link}>
-                        <button className="w-full bg-[#f9f7f1] hover:bg-white text-[#200e4f] border-2 border-slate-200 hover:border-amber-500 font-extrabold px-6 py-4 rounded-xl transition-all shadow-sm flex items-center justify-between group-hover:shadow-md">
+                        <button className="w-full bg-[#f9f7f1] hover: border-2 border-slate-200 hover:border-amber-500 font-extrabold px-6 py-4 rounded-xl transition-all shadow-sm flex items-center justify-between group-hover:shadow-md bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
                             {exam.ctaText}
                             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1 text-amber-500" />
                         </button>

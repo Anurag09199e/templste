@@ -4,7 +4,7 @@ import a2Img from '../img/a2.webp';
 import b1Img from '../img/b1.webp';
 import b2Img from '../img/b2.webp';
 import c1img from '../img/c1.webp';
-import c2img from '../img/c2.webp';
+import c2img from '../img/c02.webp';
 import ausbildung1Img from '../img/ausbildung.webp';
 import ausbildung2Img from '../img/ausbildung-2.webp';
 import ausbildung3Img from '../img/ausbildung-3.webp';
@@ -63,16 +63,16 @@ export const COURSES: Course[] = [
   {
     id: 'a1-grundstufe',
     level: 'A1',
-    title: 'A1 Beginner German',
-    germanTitle: 'A1 GRUNDSTUFE – START DEUTSCH 1',
+    title: 'German for Beginners – A1',
+    germanTitle: 'Deutsch für Anfänger – A1',
     shortDesc: 'Start from zero and build real confidence with the German language. This level focuses on everyday vocabulary, basic sentence structure, and simple conversations — designed for complete beginners with no prior German knowledge.',
     fullDesc: 'No prior knowledge needed. GLS builds your foundation from your first "Hallo" to real conversations: vocabulary, grammar, and confidence, all structured around how you\'ll actually use German in Germany..',
     durationHours: 80,
     durationWeeks: 8,
     durationString: '50–90 Days (Weekday/Weekend) · Available Online & Offline',
     classDurationString: 'Class Duration: 90 mins (weekdays) / 150 mins (weekends)',
-    priceEUR: 349,
-    priceLocal: '€349 / ₹28,500',
+
+
     recommendedFor: 'Complete beginners, prospective students aiming for Studienkolleg, job seekers preparing for Germany, and individuals applying for a Family Reunion (Spouse) Visa needing the Goethe-Zertifikat A1.',
     outcomes: [
       'Hold basic conversations: greetings, introductions, and everyday questions',
@@ -146,16 +146,16 @@ export const COURSES: Course[] = [
   {
     id: 'a2-grundstufe-2',
     level: 'A2',
-    title: 'A2 Elementary German',
-    germanTitle: 'A2 GRUNDSTUFE 2 – GOETHE ZERTIFIKAT A2',
+    title: 'Elementary German – A2',
+    germanTitle: 'Deutsch für Fortgeschrittene – A2',
     shortDesc: 'Move beyond the basics into everyday fluency. You\'ll learn to talk about your routine, family, work, and surroundings, while strengthening grammar fundamentals needed for the Goethe A2 exam.',
     fullDesc: 'A2 elevates your language skills from simple phrases to connected sentences. Express past events, navigate public transportation, talk about health, career history, and handle routine social situations in Germany.',
     durationHours: 90,
     durationWeeks: 9,
     durationString: '55–90 Days (Weekday/Weekend) · Available Online & Offline',
     classDurationString: 'Class Duration: 90 mins (weekdays) / 150 mins (weekends)',
-    priceEUR: 399,
-    priceLocal: '€399 / ₹32,000',
+
+
     recommendedFor: 'Learners who completed A1 or possess elementary vocabulary.',
     outcomes: [
       'Describe your background, environment, and daily routine with ease',
@@ -175,7 +175,7 @@ export const COURSES: Course[] = [
     badgeTag: 'Essential Step',
     image: a2Img,
     ctaText: 'Get Free Course Guidance',
-    trustText: 'Trusted by 10,000+ students across 14 years',
+    trustText: 'Trusted by 10,000+ students across 13 years',
     learningFeaturesSubtitle: "From basic phrases to confident everyday conversations, here's what the Deutsch A2 Grundstufe course covers.",
     learningFeatures: [
       { icon: 'Users', title: 'Expanded Everyday Conversations', description: 'Talk more naturally about your work, environment, and daily life.' },
@@ -195,16 +195,16 @@ export const COURSES: Course[] = [
   {
     id: 'b1-mittelstufe-1',
     level: 'B1',
-    title: 'B1 Intermediate German',
-    germanTitle: 'B1 ZERTIFIKAT DEUTSCH – GOETHE & TELC B1',
+    title: 'Intermediate German – B1',
+    germanTitle: 'Deutsch für die Mittelstufe – B1',
     shortDesc: 'This is where German starts working for your career. Gain the independence to hold detailed conversations at work, university, or in daily life, a key requirement for admissions, job applications, and settling into life in Germany.',
     fullDesc: 'This is where German starts working for your career — hold detailed conversations at work, university, or in daily life across Germany. B1 is the turning point where you become an independent user of the German language. Crucial for spouse visa, student visa, job applications, and citizenship eligibility in Germany.',
     durationHours: 120,
     durationWeeks: 12,
     durationString: '80–105 Days (Weekday/Weekend) · Available Online & Offline',
     classDurationString: 'Class Duration: 90 mins (weekdays) / 150 mins (weekends)',
-    priceEUR: 499,
-    priceLocal: '€499 / ₹39,500',
+
+
     recommendedFor: 'Students planning university enrollment in Germany, Job seekers, and Spouse Visa applicants.',
     outcomes: [
       'Communicate confidently in academic, professional, and social settings',
@@ -224,7 +224,7 @@ export const COURSES: Course[] = [
     badgeTag: 'High Career Demand',
     image: b1Img,
     ctaText: 'Get Free Course Guidance',
-    trustText: 'Trusted by 10,000+ students across 14 years',
+    trustText: 'Trusted by 10,000+ students across 13 years',
     learningFeaturesSubtitle: "From everyday German to real independence, here's what the Deutsch B1 Mittelstufe course covers.",
     learningFeatures: [
       { icon: 'MessageCircle', title: 'University & Work-Ready German', description: 'Communicate confidently in academic and professional settings.' },
@@ -244,26 +244,26 @@ export const COURSES: Course[] = [
   {
     id: 'b2-mittelstufe-2',
     level: 'B2',
-    title: 'B2 Upper Intermediate',
-    germanTitle: 'B2 GOETHE-ZERTIFIKAT / TELC B2 PROFESSIONAL',
+    title: 'B2.1 + B2.2 | Upper Intermediate German',
+    germanTitle: 'Deutsch für die obere Mittelstufe – B2',
     shortDesc: 'Step into fluency that works for you — professionally and personally. At this level, you\'ll navigate workplace discussions, academic settings, and complex conversations with genuine confidence, not just textbook German.',
-    fullDesc: 'Navigate workplace discussions, academic settings, and complex conversations with confidence — not just textbook German. B2 German is required by most German universities, medical licensing bodies (Approbation), and engineering firms. Gain fluency to converse spontaneously without strain for native speakers.',
+    fullDesc: 'Build confident, fluent German for workplace discussions, academic settings, and complex conversations. Move from strong B1 foundations to full B2 proficiency, with practical German you can use beyond the classroom.',
     durationHours: 140,
     durationWeeks: 14,
     durationString: '80 Days (Weekdays) · Available Online & Offline',
     classDurationString: 'Class Duration: 90 mins (Mon–Friday)',
-    priceEUR: 599,
-    priceLocal: '€599 / ₹47,000',
+
+
     recommendedFor: 'Doctors, Nurses, Engineers, IT Professionals, and Master degree applicants.',
     outcomes: [
       'Discuss detailed topics and technical subjects with clarity',
       'Interact naturally with native speakers without constant hesitation'
     ],
     syllabusModules: [
-      { moduleNumber: 1, title: 'Advanced Grammar & Connectors', topics: ['Two-part connectors (je... desto, sowohl... als auch)', 'Nomen-Verb-Verbindungen', 'Subjunctive I & II (Konjunktiv I for indirect speech)'] },
-      { moduleNumber: 2, title: 'Business & Academic German', topics: ['Technical vocabulary', 'Presentation techniques in German', 'Writing argumentative essays & formal complaints'] },
-      { moduleNumber: 3, title: 'Partizipialattribute & Nuance', topics: ['Extended participle clauses', 'Modal particles (denn, doch, ja, mal)', 'Nuanced expressions in negotiations'] },
-      { moduleNumber: 4, title: 'B2 Exam & Interview Drill', topics: ['Intensive B2 speaking prep with native German trainers', 'Full Telc/Goethe B2 practice sets'] }
+      { moduleNumber: 1, title: '📌 B2.1 | Advanced Grammar & Connectors', topics: ['Two-part connectors such as je... desto and sowohl... als auch', 'Nomen-Verb-Verbindungen', 'Konjunktiv I & II', 'Complex sentence structures'] },
+      { moduleNumber: 2, title: '📌 B2.1 | Business & Academic German', topics: ['Technical vocabulary', 'Presentation techniques in German', 'Argumentative writing', 'Formal complaints and professional communication'] },
+      { moduleNumber: 3, title: '📌 B2.2 | Nuance & Advanced Expression', topics: ['Partizipialattribute', 'Extended participle clauses', 'Modal particles such as denn, doch, ja, mal', 'Nuanced expressions for discussions and negotiations'] },
+      { moduleNumber: 4, title: '📌 B2.2 | Fluency & Real-World German', topics: ['Extended conversations and discussions', 'Professional communication', 'Academic communication', 'Presentations, debates, and spontaneous speaking'] }
     ],
     goethePrepIncluded: true,
     upcomingBatchDate: '2026-09-01',
@@ -273,8 +273,8 @@ export const COURSES: Course[] = [
     badgeTag: 'Professional Standard',
     image: b2Img,
     ctaText: 'Get Free Course Guidance',
-    trustText: 'Trusted by 10,000+ students across 14 years',
-    learningFeaturesSubtitle: "From confident conversation to professional fluency, here's what the Deutsch B2 Fortgeschrittene Mittelstufe course covers.",
+    trustText: 'Trusted by 10,000+ students across 13 years',
+    learningFeaturesSubtitle: "From confident conversation to professional fluency, build the grammar, vocabulary, communication skills, and accuracy needed to complete B2 German with confidence.",
     learningFeatures: [
       { icon: 'Users', title: 'Professional Fluency', description: 'Hold detailed conversations at work and in academic settings.' },
       { icon: 'Clock', title: 'Understanding Complex Texts', description: 'Grasp the main ideas in technical or detailed material.' },
@@ -283,6 +283,8 @@ export const COURSES: Course[] = [
       { icon: 'ShoppingBag', title: 'Workplace & Academic Readiness', description: 'Handle discussions, meetings, and coursework in German.' }
     ],
     faqs: [
+      { question: 'What is the difference between B2.1 and B2.2?', answer: 'B2.1 builds your B2 foundation through advanced grammar, vocabulary, and communication skills. B2.2 develops greater fluency, accuracy, and confidence to complete the full B2 level.' },
+      { question: 'Do I have to take B2.1 and B2.2 together?', answer: 'B2.1 and B2.2 are the two stages of the complete B2 course. Your placement level determines where you should begin.' },
       { question: 'Do I need B1 before joining B2?', answer: 'Yes, B2 assumes solid B1-level grammar and everyday communication skills.' },
       { question: 'Which exam does B2 prepare me for?', answer: 'Goethe-Zertifikat B2 and telc B2 Professional.' },
       { question: 'Is B2 enough for German university admission?', answer: 'Not for programs taught in German — most universities require C1 level. B2 is a stepping stone toward that requirement.' },
@@ -293,26 +295,26 @@ export const COURSES: Course[] = [
   {
     id: 'c1-oberstufe-1',
     level: 'C1',
-    title: 'C1 Advanced German',
-    germanTitle: 'C1 GOETHE-ZERTIFIKAT / TESTDAF / DSH PREP',
+    title: 'C1.1 + C1.2 | Advanced German',
+    germanTitle: 'C1 Advanced German',
     shortDesc: 'Built for those heading into academic research, executive roles, or legal and technical fields. This level sharpens your ability to express complex ideas precisely in writing, in meetings, and in high-stakes conversations.',
-    fullDesc: 'Built for academic research, executive roles, and technical fields, express complex ideas precisely, in writing and in high-stakes conversations. Only 5% of German learners reach this level of mastery.',
+    fullDesc: 'Build the precision, fluency, and confidence to handle demanding academic, professional, and everyday situations in German. Express complex ideas clearly, understand sophisticated language, and communicate effectively in high-stakes conversations.',
     durationHours: 160,
     durationWeeks: 16,
     durationString: '80 Days (Weekdays) · Available Online & Offline',
     classDurationString: 'Class Duration: 90 mins (Mon–Friday)',
-    priceEUR: 699,
-    priceLocal: '€699 / ₹55,000',
+
+
     recommendedFor: 'University students needing TestDaF / DSH-2, Executives, Medical Specialists.',
     outcomes: [
       'Follow and contribute to demanding academic or professional discussions',
       'Express nuanced ideas fluently, without searching for words'
     ],
     syllabusModules: [
-      { moduleNumber: 1, title: 'Academic Discourse & Syntax', topics: ['Complex nominal style (Nominalstil)', 'Advanced passive constructions', 'Stylistic refining'] },
-      { moduleNumber: 2, title: 'Scientific & Socio-Political Analysis', topics: ['Analyzing research publications', 'Debating economic policy', 'Formulating hypotheses'] },
-      { moduleNumber: 3, title: 'Idiomatic & Rhetorical Mastery', topics: ['Rhetoric devices in public speaking', 'German literature & historical context', 'Advanced writing style'] },
-      { moduleNumber: 4, title: 'TestDaF / DSH Intensive Prep', topics: ['TestDaF computer-based & paper-based simulation', 'Graph description & scientific argument writing'] }
+      { moduleNumber: 1, title: '📌 C1.1 | Academic Discourse & Syntax', topics: ['Complex nominal style (Nominalstil)', 'Advanced passive constructions', 'Stylistic refining'] },
+      { moduleNumber: 2, title: '📌 C1.1 | Scientific & Socio-Political Analysis', topics: ['Analyzing research publications', 'Debating economic policy', 'Formulating hypotheses'] },
+      { moduleNumber: 3, title: '📌 C1.2 | Idiomatic & Rhetorical Mastery', topics: ['Rhetoric devices in public speaking', 'German literature & historical context', 'Advanced writing style'] },
+      { moduleNumber: 4, title: '📌 C1.2 | Advanced Communication & Fluency', topics: ['TestDaF computer-based & paper-based simulation', 'Graph description & scientific argument writing'] }
     ],
     goethePrepIncluded: true,
     upcomingBatchDate: '2026-09-10',
@@ -322,7 +324,7 @@ export const COURSES: Course[] = [
     badgeTag: 'Academic Mastery',
     image: c1img,
     ctaText: 'Get Free Course Guidance',
-    trustText: 'Trusted by 10,000+ students across 14 years',
+    trustText: 'Trusted by 10,000+ students across 13 years',
     learningFeaturesSubtitle: "From professional fluency to academic precision, here's what the Deutsch C1 Fortgeschrittenenkurs course covers.",
     learningFeatures: [
       { icon: 'MessageCircle', title: 'Precision in Complex Topics', description: 'Express nuanced ideas fluently in technical or legal contexts.' },
@@ -333,6 +335,7 @@ export const COURSES: Course[] = [
     ],
     faqs: [
       { question: 'Do I need B2 before joining C1?', answer: 'Yes, C1 builds on B2-level fluency and comprehension.' },
+      { question: 'What is the difference between C1.1 and C1.2?', answer: 'C1.1 builds advanced fluency and language foundations, while C1.2 focuses on precision, nuance, and complete C1 proficiency. Together, they make up the full C1 level.' },
       { question: 'Which exam does C1 prepare me for?', answer: 'Goethe-Zertifikat C1, TestDaF, and DSH.' },
       { question: 'Is C1 enough for German university admission?', answer: 'Yes — most German universities require C1-level proficiency (via TestDaF Level 4 in all sections, or DSH-2 or higher) for programs taught in German.' },
       { question: 'Do I need C1 if my program is taught in English?', answer: 'Not necessarily — English-taught programs usually require proof of English proficiency (TOEFL/IELTS) instead, though some universities may still ask for basic German (A1/A2) for daily life and integration.' },
@@ -342,16 +345,16 @@ export const COURSES: Course[] = [
   {
     id: 'c2-oberstufe-2',
     level: 'C2',
-    title: 'C2 Native Mastery',
-    germanTitle: 'C2 GROSSES DEUTSCHES SPRACHDIPLOM (GDS)',
+    title: 'German Proficiency – C2',
+    germanTitle: 'Deutsch auf höchstem Niveau – C2',
     shortDesc: 'Final step to learn German that feels indistinguishable from a native speaker\'s. This level is for those aiming for top MNC roles in Germany or full academic and professional integration into German-speaking life.',
     fullDesc: 'German that feels indistinguishable from a native speaker\'s — for top MNC roles or full academic and professional integration into German-speaking life. This is the highest qualification recognizing native-level mastery.',
     durationHours: 160,
     durationWeeks: 16,
     durationString: '80 Days (Weekdays)  · Available Online & Offline',
     classDurationString: 'Class Duration: 90 mins (Mon–Friday)',
-    priceEUR: 799,
-    priceLocal: '€799 / ₹64,000',
+
+
     recommendedFor: 'Translators, University Lecturers, Diplomats, Literature Scholars.',
     outcomes: [
       'Understand virtually anything heard or read, without effort',
@@ -371,7 +374,7 @@ export const COURSES: Course[] = [
     badgeTag: 'Ultimate Distinction',
     image: c2img,
     ctaText: 'Get Free Course Guidance',
-    trustText: 'Trusted by 10,000+ students across 14 years',
+    trustText: 'Trusted by 10,000+ students across 13 years',
     learningFeaturesSubtitle: "From advanced fluency to near-native mastery, here's what the Deutsch C2 Oberstufe course covers.",
     learningFeatures: [
       { icon: 'MessageCircle', title: 'Near-Native Comprehension', description: 'Understand virtually anything heard or read, without effort.' },
@@ -517,7 +520,7 @@ export const UPCOMING_BATCHES: UpcomingBatch[] = [
     mode: 'Online Live',
     seatsLeft: 4,
     instructor: 'Arjun Sharma',
-    priceEUR: 349
+
   },
   {
     id: 'batch-a2-aug',
@@ -527,7 +530,7 @@ export const UPCOMING_BATCHES: UpcomingBatch[] = [
     mode: 'Online Live',
     seatsLeft: 3,
     instructor: 'Hannah Schneider',
-    priceEUR: 399
+
   },
   {
     id: 'batch-b1-sep',
@@ -537,7 +540,7 @@ export const UPCOMING_BATCHES: UpcomingBatch[] = [
     mode: 'Hybrid Campus',
     seatsLeft: 5,
     instructor: 'Hannah Schneider',
-    priceEUR: 499
+
   },
   {
     id: 'batch-b2-sep',
@@ -547,7 +550,7 @@ export const UPCOMING_BATCHES: UpcomingBatch[] = [
     mode: 'Online Live',
     seatsLeft: 2,
     instructor: 'Dr. Klaus Weber',
-    priceEUR: 599
+
   },
   {
     id: 'batch-c1-sep',
@@ -557,7 +560,7 @@ export const UPCOMING_BATCHES: UpcomingBatch[] = [
     mode: 'Online Live',
     seatsLeft: 6,
     instructor: 'Dr. Klaus Weber',
-    priceEUR: 699
+
   }
 ];
 

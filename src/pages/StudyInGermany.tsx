@@ -80,7 +80,7 @@ export const StudyInGermany: React.FC = () => {
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-xl mx-auto mb-6">
               Our education advisors review your transcripts, APS status, and recommend the exact CEFR level required for your target master's or bachelor's degree in Germany.
             </p>
-            <Link to="/book-demo">
+            <Link to="/contact">
               <GradientButton icon={ArrowRight}>Book Free Academic Counseling</GradientButton>
             </Link>
           </GlassCard>
@@ -90,3 +90,4 @@ export const StudyInGermany: React.FC = () => {
     </div>
   );
 };
+

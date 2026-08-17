@@ -21,10 +21,11 @@ export const Contact: React.FC = () => {
             Get In Touch
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
-            Contact Our <span className="text-gradient">Admissions Team</span>
+            Contact  <span className="text-gradient">Our</span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-400">
-            Have questions about batch starting dates, Goethe exam preparation, or university admissions in Germany? We're here to help.
+            Have questions about batch timings, Goethe exam preparation, or career placement in Germany? Whether you're just starting your German journey or ready to talk Ausbildung and job placement, we're here to help.
+
           </p>
         </div>
 
@@ -66,7 +67,7 @@ export const Contact: React.FC = () => {
                   <Clock className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-[#200e4f] dark:text-white font-bold">Working Hours</strong>
-                    <span>Mon - Sat: 09:00 AM - 08:00 PM (CET / IST)</span>
+                    <span>Mon - Sat: 09:00 AM - 07:00 PM ( IST)</span>
                   </div>
                 </li>
               </ul>

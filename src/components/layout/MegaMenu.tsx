@@ -114,7 +114,7 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onClose }) => {
             </ul>
           </div>
           <Link
-            to="/book-demo"
+            to="/contact"
             onClick={onClose}
             className="mt-4 w-full py-2 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold text-xs rounded-xl text-center shadow-md hover:brightness-110"
           >
@@ -126,3 +126,4 @@ export const MegaMenu: React.FC<MegaMenuProps> = ({ onClose }) => {
     </motion.div>
   );
 };
+

@@ -381,7 +381,7 @@ export const ExamHub: React.FC = () => {
 
                             <div className="pt-2 sm:pt-5 flex items-center justify-center gap-4">
                                 <Link to="/contact">
-                                    <button className="bg-[#f5f0e6] text-[#200e4f] hover:bg-[#e8dec7] font-bold px-8 py-3.5 rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group">
+                                    <button className="font-bold px-8 py-3.5 rounded-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
                                         Find the Right Exam
                                         <ArrowRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                                     </button>

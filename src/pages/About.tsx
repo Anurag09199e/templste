@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 import { TRAINERS } from '../data/mockData';
 import { motion } from 'framer-motion';
 import about1 from '../img/about-1.webp';
-import about2 from '../img/about-2.webp';
 import about3 from '../img/about-3.webp';
 import about01 from '../img/about-01.webp';
 import img3 from '../img/img-3.webp';
+import nsdcImg from '../img/NSDC.png';
 
 export const About: React.FC = () => {
   return (
@@ -50,11 +50,11 @@ export const About: React.FC = () => {
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-[5.5rem] font-extrabold font-heading text-[#200e4f] dark:text-white leading-[1.05] mb-8 tracking-tight relative z-10">
-            14 Years of Building <br className="hidden md:block" /> Careers <span className="text-amber-500 dark:text-amber-400">That Matter</span>
+            13 Years of Building <br className="hidden md:block" /> Careers <span className="text-amber-500 italic dark:text-amber-400">That Matter</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-slate-500 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto relative z-10">
-            German Language Studio (GLS) is a premier linguistic and career consultancy based in Gulmohar Park, New Delhi. For over 14 years, we've helped more than 10,000 students and professionals move beyond language classes into real careers in Germany — with a 90% success rate across Goethe-Zertifikat, TestDaF, and ÖSD exams.
+            German Language Studio (GLS) is a premier linguistic and career consultancy based in Gulmohar Park, New Delhi. For over 13 years, we've helped more than 10,000 students and professionals move beyond language classes into real careers in Germany — with a 90% success rate across Goethe-Zertifikat, TestDaF, and ÖSD exams.
           </p>
         </div>
 
@@ -104,20 +104,12 @@ export const About: React.FC = () => {
         {/* Founder Story */}
         <div className="py-20 mb-10 overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left: Overlapping Landscape Images */}
-            <div className="relative h-[500px] flex justify-center items-center">
-              {/* Image 1 (Left/Bottom) */}
-              <div className="absolute left-0 bottom-6 w-[60%] h-[320px] rounded-[32px] overflow-hidden shadow-2xl z-10 border-[6px] border-white dark:border-slate-900">
-                <img src={about2} alt="Swati - Founder" className="w-full h-full object-cover" />
-              </div>
-
-              {/* Image 2 (Right/Top) */}
-              <div className="absolute right-4 top-4 w-[60%] h-[380px] rounded-[32px] overflow-hidden shadow-xl z-0">
-                <img src={about1} alt="GLS Office" className="w-full h-full object-cover" />
-              </div>
+            {/* Left: Single Image */}
+            <div className="relative w-full max-w-[450px] mx-auto rounded-[32px] overflow-hidden shadow-2xl z-10 border-[6px] border-white dark:border-slate-900 group">
+              <img src={about1} alt="Swati - Founder" className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105 block" />
 
               {/* Floating Badge */}
-              <div className="absolute bottom-16 right-8 z-20 bg-white dark:bg-slate-800 rounded-full py-2.5 px-5 shadow-2xl flex items-center gap-3 border border-slate-100 dark:border-slate-700">
+              {/* <div className="absolute bottom-6 right-6 z-20 bg-white dark:bg-slate-800 rounded-full py-2.5 px-5 shadow-2xl flex items-center gap-3 border border-slate-100 dark:border-slate-700 hover:scale-105 transition-transform duration-300">
                 <div className="flex -space-x-3">
                   <div className="w-9 h-9 rounded-full border-2 border-white dark:border-slate-800 overflow-hidden"><img src="https://i.pravatar.cc/100?img=1" alt="avatar" /></div>
                   <div className="w-9 h-9 rounded-full border-2 border-white dark:border-slate-800 overflow-hidden"><img src="https://i.pravatar.cc/100?img=2" alt="avatar" /></div>
@@ -126,6 +118,17 @@ export const About: React.FC = () => {
                 <div>
                   <p className="text-[13px] font-extrabold text-[#200e4f] dark:text-white leading-tight">10,000+</p>
                   <p className="text-[10px] text-slate-500 font-medium">Alumni</p>
+                </div>
+              </div> */}
+
+              {/* Floating NSDC Badge */}
+              <div className="absolute bottom-6 left-4 sm:left-6 z-20 bg-white dark:bg-slate-800 rounded-full py-2.5 px-4 sm:px-5 shadow-2xl flex items-center gap-2 sm:gap-3 border border-slate-100 dark:border-slate-700 hover:scale-105 transition-transform duration-300">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-slate-50 border border-slate-200 shadow-inner overflow-hidden flex items-center justify-center shrink-0 p-1">
+                  <img src={nsdcImg} alt="NSDC" className="w-full h-full object-contain" />
+                </div>
+                <div>
+                  <p className="text-[11px] sm:text-[13px] font-extrabold text-[#200e4f] dark:text-white leading-tight">Collaborating with</p>
+                  <p className="text-[10px] sm:text-[12px] text-amber-500 font-bold uppercase tracking-wider mt-0.5">NSDC</p>
                 </div>
               </div>
             </div>
@@ -142,10 +145,12 @@ export const About: React.FC = () => {
 
               <div className="space-y-5 text-base md:text-[17px] text-slate-500 dark:text-slate-400 leading-relaxed">
                 <p>
-                  Swati founded GLS in 2013 after a career path that took her from business management studies at Bangalore University into the world of German-English translation at AXA Business. Fluent in both Spanish and German, she went on to live and study in Germany, an experience that shaped GLS's core philosophy: language fluency alone isn't enough — students need cultural competence and a clear career pathway actually to succeed abroad.
+                  Swati founded GLS in 2013 after a career path that took her from business management studies at Bangalore University into German-English translation at AXA Business. Fluent in German, she went on to live and study in Germany, an experience that shaped GLS's core philosophy: language fluency alone isn't enough. Students need cultural competence, practical preparation, and a clear career pathway to truly succeed abroad.Her international experience continued through volunteering with AFS and collaborating with Kosmos Kids at the Max Planck Institute for Solar System Research. She has also worked as a strategic advisor to several German language institutes, helping shape their approach to language education and student development.
                 </p>
                 <p>
-                  Her international work continued through volunteering with AFS and collaborating with Kosmos Kids at the Max Planck Institute for Solar System Research, deepening her commitment to bridging India and the German-speaking world through education.
+                  Her work has also extended into large-scale language education initiatives. As part of an NSDC project, Swati signed an MOU for a pilot German language training programme in Bhubaneswar, designed to train 200 students.
+                  Together, these experiences have shaped Swati's vision for GLS: to bridge India and the German-speaking world through meaningful, practical education that prepares students for what comes after the classroom.
+
                 </p>
               </div>
             </div>
@@ -171,7 +176,7 @@ export const About: React.FC = () => {
               Our Vision
             </h3>
             <p className="text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-              To be India's most trusted bridge to Germany, empowering students and professionals with the linguistic precision, cultural competence, and career pathways to build lives that matter in the DACH region.
+              To become India’s most trusted bridge to Germany, creating meaningful opportunities for skilled people to build better careers, improve their livelihoods, and contribute to a stronger India-Germany workforce.
             </p>
           </GlassCard>
 
@@ -183,7 +188,9 @@ export const About: React.FC = () => {
               Our Mission
             </h3>
             <p className="text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-              We deliver rigorous CEFR-aligned instruction (A1 to C2) with a focus on industry-specific German for Healthcare, IT, and Engineering. Backed by 14 years of experience and a 90% exam success rate, we guide every student from language mastery to real career outcomes — through Ausbildung, Masters, or direct job placement in Germany.
+              To equip students and skilled professionals with industry-relevant German language skills, cultural competence and access to fair employment pathways in Germany.
+              From A1 to C2, exam preparation to Ausbildung and direct job placement, we connect the right people with the right opportunities through ethical, transparent and fair recruitment.
+
             </p>
           </GlassCard>
         </div>
@@ -452,36 +459,7 @@ export const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Heritage Section */}
-        <div className="glass-card rounded-4xl p-8 sm:p-12 border border-slate-200/80 dark:border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-6 space-y-4">
-            <span className="text-xs font-bold text-amber-500 uppercase">German Educational Standards</span>
-            <h2 className="text-3xl font-extrabold font-heading text-[#200e4f] dark:text-white">
-              Why Our Students Consistently Outperform
-            </h2>
-            <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-              Standard language centers focus only on rote memorization. At DeutschKraft, we emphasize real-life situational immersion, phonetics correction, official Goethe mock exam simulations, and intercultural coaching.
-            </p>
-            <ul className="space-y-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500" /> Max 12 Students per class for max speaking time
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500" /> 1-on-1 feedback on Goethe essay writing
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500" /> Direct partnerships with German universities & hospitals
-              </li>
-            </ul>
-          </div>
-          <div className="lg:col-span-6 rounded-3xl overflow-hidden shadow-2xl border border-slate-700/50">
-            <img
-              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
-              alt="DeutschKraft Classroom"
-              className="w-full h-80 object-cover"
-            />
-          </div>
-        </div>
+
 
         {/* About Page FAQ Section */}
         <section className="py-20 relative">
@@ -500,7 +478,7 @@ export const About: React.FC = () => {
                 How long has GLS been operating?
               </h4>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed pl-7">
-                German Language Studio was founded in 2013 by Director Swati and has spent over 14 years training students and professionals for successful careers in Germany.
+                German Language Studio was founded in 2013 by Director Swati and has spent over 13 years training students and professionals for successful careers in Germany.
               </p>
             </GlassCard>
 
@@ -606,8 +584,8 @@ export const About: React.FC = () => {
               </p>
 
               <div className="pt-2 sm:pt-5 flex items-center gap-4">
-                <Link to="/book-demo">
-                  <button className="bg-white text-[#1f1a14] hover:bg-gray-100 font-bold px-8 py-3.5 rounded-xl shadow-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group">
+                <Link to="/contact">
+                  <button className="font-bold px-8 py-3.5 rounded-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
                     Book Free Consultation
                     <ArrowRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                   </button>

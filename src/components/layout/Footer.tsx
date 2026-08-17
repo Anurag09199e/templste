@@ -52,12 +52,13 @@ export const Footer: React.FC = () => {
               German Courses
             </h4>
             <ul className="space-y-3 text-sm text-slate-600 font-medium tracking-wide">
-              <li><Link to="/courses#A1" className="hover:text-amber-600 transition-colors">A1</Link></li>
-              <li><Link to="/courses#A2" className="hover:text-amber-600 transition-colors">A2</Link></li>
-              <li><Link to="/courses#B1" className="hover:text-amber-600 transition-colors">B1</Link></li>
-              <li><Link to="/courses#B2" className="hover:text-amber-600 transition-colors">B2</Link></li>
-              <li><Link to="/courses#C1" className="hover:text-amber-600 transition-colors">C1</Link></li>
-              <li><Link to="/courses#C2" className="hover:text-amber-600 transition-colors">C2</Link></li>
+              <li><Link to="/courses#A1" className="hover:text-amber-600 transition-colors">Deutsch für Anfänger – A1</Link></li>
+              <li><Link to="/courses#A2" className="hover:text-amber-600 transition-colors">Deutsch für Fortgeschrittene – A2</Link></li>
+              <li><Link to="/courses#B1" className="hover:text-amber-600 transition-colors">Deutsch für die Mittelstufe – B1</Link></li>
+              <li><Link to="/courses#B2" className="hover:text-amber-600 transition-colors">Deutsch für die obere Mittelstufe – B2</Link></li>
+              <li><Link to="/courses#C1" className="hover:text-amber-600 transition-colors">Deutsch für Fortgeschrittene – C1</Link></li>
+              <li><Link to="/courses#C2" className="hover:text-amber-600 transition-colors">Deutsch auf höchstem Niveau – C2
+              </Link></li>
             </ul>
           </div>
 

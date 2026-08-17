@@ -171,8 +171,8 @@ export const GermanCourses: React.FC = () => {
           </p>
 
           <div className="relative z-10">
-            <Link to="/book-demo">
-              <button className="bg-slate-900 border border-slate-700 hover:bg-slate-800 text-white font-extrabold px-8 py-4 rounded-xl shadow-2xl transition-all hover:-translate-y-1 active:translate-y-0 text-sm tracking-wide">
+            <Link to="/contact">
+              <button className="hover: font-extrabold px-8 py-4 rounded-xl transition-all hover:-translate-y-1 active:translate-y-0 text-sm tracking-wide bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
                 Find the Right Exam
               </button>
             </Link>
@@ -183,3 +183,4 @@ export const GermanCourses: React.FC = () => {
     </div>
   );
 };
+

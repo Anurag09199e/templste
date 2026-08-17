@@ -11,8 +11,8 @@ export interface Course {
   durationWeeks: number;
   durationString?: string;
   classDurationString?: string;
-  priceEUR: number;
-  priceLocal: string;
+
+
   recommendedFor: string;
   outcomes: string[];
   syllabusModules: {
@@ -93,7 +93,7 @@ export interface UpcomingBatch {
   mode: 'Online Live' | 'Hybrid Campus';
   seatsLeft: number;
   instructor: string;
-  priceEUR: number;
+
 }
 
 export interface GalleryItem {

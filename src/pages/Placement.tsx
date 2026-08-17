@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Briefcase, GraduationCap, Award, Compass, Languages, Target, HeartPulse, Settings, Coffee, Wrench, Library, BookOpen, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { GradientButton } from '../components/common/GradientButton';
+
 import placement from '../img/placement-2.webp';
 import placementImg from '../img/placement.webp';
 import img3 from '../img/img-3.webp';
@@ -64,11 +65,11 @@ export const Placement: React.FC = () => {
                         </div>
 
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-sans font-bold text-[#200e4f] dark:text-white leading-[1.15] tracking-tight">
-                            Learning German is just the beginning. <span className="text-gradient italic">Knowing where it can take you changes everything.</span>
+                            Connecting Skilled Professionals With <span className="text-gradient">The Right Employers Through <span className='italic'>Fair Placements</span></span>
                         </h1>
 
                         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-sans font-medium leading-relaxed max-w-2xl mx-auto xl:mx-0">
-                            Learning German is only the first step. We help you understand your career options, choose the right pathway, prepare your profile and move towards opportunities that fit your goals.
+                            Learning German is only the first step. We help you understand your career options, choose the right pathway, prepare your profile, and connect you with suitable employers through fair and transparent placement practices.
                         </p>
 
                         <div className="pt-4 flex justify-center xl:justify-start">
@@ -79,20 +80,7 @@ export const Placement: React.FC = () => {
                             </Link>
                         </div>
 
-                        <div className="flex flex-wrap items-center justify-center xl:justify-start gap-4 pt-4 text-xs sm:text-[14px] font-bold text-[#200e4f] dark:text-slate-300 relative z-10">
-                            <div className="flex items-center gap-2 bg-[#f5f0e6] dark:bg-slate-900/60 px-4 py-2 rounded-xl shadow-sm border border-slate-200/50">
-                                <span className="w-2 h-2 rounded-full bg-amber-500"></span> German Language
-                            </div>
-                            <div className="flex items-center gap-2 bg-[#f5f0e6] dark:bg-slate-900/60 px-4 py-2 rounded-xl shadow-sm border border-slate-200/50">
-                                <span className="w-2 h-2 rounded-full bg-orange-500"></span> Career Guidance
-                            </div>
-                            <div className="flex items-center gap-2 bg-[#f5f0e6] dark:bg-slate-900/60 px-4 py-2 rounded-xl shadow-sm border border-slate-200/50">
-                                <span className="w-2 h-2 rounded-full bg-red-500"></span> Profile Building
-                            </div>
-                            <div className="flex items-center gap-2 bg-[#f5f0e6] dark:bg-slate-900/60 px-4 py-2 rounded-xl shadow-sm border border-slate-200/50">
-                                <span className="w-2 h-2 rounded-full bg-emerald-500"></span> Placement Support
-                            </div>
-                        </div>
+
                     </motion.div>
 
                     {/* Right Hero Graphic */}
@@ -118,7 +106,7 @@ export const Placement: React.FC = () => {
                     <div className="text-center mb-16">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#200e4f] dark:text-white font-heading tracking-tight leading-tight">
                             We don't just teach you German. <br className="hidden md:block" />
-                            <span className="text-amber-500">We help you figure out what you're learning it for.</span>
+                            <span className="text-amber-500">We help you figure out what you're <span className=' italic'>learning </span>it for.</span>
                         </h2>
                         <p className="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 font-medium">
                             Before recommending a path, we look at you.
@@ -127,78 +115,87 @@ export const Placement: React.FC = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-12 relative">
                         {/* 1. Education */}
-                        <div className="bg-white dark:bg-slate-900 rounded-[24px] p-6 shadow-xl border border-slate-100 dark:border-slate-800 hover:-translate-y-2 transition-transform duration-300">
-                            <div className="w-12 h-12 bg-amber-100 dark:bg-amber-500/20 rounded-full flex items-center justify-center mb-6">
-                                <GraduationCap className="w-6 h-6 text-amber-600 dark:text-amber-500" />
+                        <div className="bg-white dark:bg-slate-900 rounded-[24px] p-6 shadow-xl border border-slate-100 dark:border-slate-800 hover:-translate-y-3 hover:shadow-2xl hover:border-amber-500/30 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="w-12 h-12 bg-amber-100 dark:bg-amber-500/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-amber-500 transition-all duration-300 relative z-10">
+                                <GraduationCap className="w-6 h-6 text-amber-600 dark:text-amber-500 group-hover:text-white transition-colors duration-300" />
                             </div>
-                            <h3 className="text-lg font-bold text-[#200e4f] dark:text-white mb-2 leading-tight">Your education</h3>
-                            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">What have you studied?</p>
+                            <h3 className="text-lg font-bold text-[#200e4f] dark:text-white mb-2 leading-tight relative z-10">Your education</h3>
+                            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium relative z-10">What have you studied?</p>
                         </div>
 
                         {/* 2. Experience */}
-                        <div className="bg-white dark:bg-slate-900 rounded-[24px] p-6 shadow-xl border border-slate-100 dark:border-slate-800 hover:-translate-y-2 transition-transform duration-300">
-                            <div className="w-12 h-12 bg-orange-100 dark:bg-orange-500/20 rounded-full flex items-center justify-center mb-6">
-                                <Award className="w-6 h-6 text-orange-600 dark:text-orange-500" />
+                        <div className="bg-white dark:bg-slate-900 rounded-[24px] p-6 shadow-xl border border-slate-100 dark:border-slate-800 hover:-translate-y-3 hover:shadow-2xl hover:border-orange-500/30 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="w-12 h-12 bg-orange-100 dark:bg-orange-500/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-orange-500 transition-all duration-300 relative z-10">
+                                <Award className="w-6 h-6 text-orange-600 dark:text-orange-500 group-hover:text-white transition-colors duration-300" />
                             </div>
-                            <h3 className="text-lg font-bold text-[#200e4f] dark:text-white mb-2 leading-tight">Your experience</h3>
-                            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">What can you already do?</p>
+                            <h3 className="text-lg font-bold text-[#200e4f] dark:text-white mb-2 leading-tight relative z-10">Your experience</h3>
+                            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium relative z-10">What can you already do?</p>
                         </div>
 
                         {/* 3. Interests */}
-                        <div className="bg-white dark:bg-slate-900 rounded-[24px] p-6 shadow-xl border border-slate-100 dark:border-slate-800 hover:-translate-y-2 transition-transform duration-300">
-                            <div className="w-12 h-12 bg-red-100 dark:bg-red-500/20 rounded-full flex items-center justify-center mb-6">
-                                <Compass className="w-6 h-6 text-red-600 dark:text-red-500" />
+                        <div className="bg-white dark:bg-slate-900 rounded-[24px] p-6 shadow-xl border border-slate-100 dark:border-slate-800 hover:-translate-y-3 hover:shadow-2xl hover:border-red-500/30 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="w-12 h-12 bg-red-100 dark:bg-red-500/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-red-500 transition-all duration-300 relative z-10">
+                                <Compass className="w-6 h-6 text-red-600 dark:text-red-500 group-hover:text-white transition-colors duration-300" />
                             </div>
-                            <h3 className="text-lg font-bold text-[#200e4f] dark:text-white mb-2 leading-tight">Your interests</h3>
-                            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">What kind of work do you see yourself doing?</p>
+                            <h3 className="text-lg font-bold text-[#200e4f] dark:text-white mb-2 leading-tight relative z-10">Your interests</h3>
+                            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium relative z-10">What kind of work do you see yourself doing?</p>
                         </div>
 
                         {/* 4. German Level */}
-                        <div className="bg-white dark:bg-slate-900 rounded-[24px] p-6 shadow-xl border border-slate-100 dark:border-slate-800 hover:-translate-y-2 transition-transform duration-300">
-                            <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-500/20 rounded-full flex items-center justify-center mb-6">
-                                <Languages className="w-6 h-6 text-emerald-600 dark:text-emerald-500" />
+                        <div className="bg-white dark:bg-slate-900 rounded-[24px] p-6 shadow-xl border border-slate-100 dark:border-slate-800 hover:-translate-y-3 hover:shadow-2xl hover:border-emerald-500/30 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-500/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-emerald-500 transition-all duration-300 relative z-10">
+                                <Languages className="w-6 h-6 text-emerald-600 dark:text-emerald-500 group-hover:text-white transition-colors duration-300" />
                             </div>
-                            <h3 className="text-lg font-bold text-[#200e4f] dark:text-white mb-2 leading-tight">Your German level</h3>
-                            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">Where are you starting from?</p>
+                            <h3 className="text-lg font-bold text-[#200e4f] dark:text-white mb-2 leading-tight relative z-10">Your German level</h3>
+                            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium relative z-10">Where are you starting from?</p>
                         </div>
 
                         {/* 5. Goals */}
-                        <div className="bg-white dark:bg-slate-900 rounded-[24px] p-6 shadow-xl border border-slate-100 dark:border-slate-800 hover:-translate-y-2 transition-transform duration-300">
-                            <div className="w-12 h-12 bg-blue-100 dark:bg-blue-500/20 rounded-full flex items-center justify-center mb-6">
-                                <Target className="w-6 h-6 text-blue-600 dark:text-blue-500" />
+                        <div className="bg-white dark:bg-slate-900 rounded-[24px] p-6 shadow-xl border border-slate-100 dark:border-slate-800 hover:-translate-y-3 hover:shadow-2xl hover:border-blue-500/30 transition-all duration-300 group cursor-pointer relative overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="w-12 h-12 bg-blue-100 dark:bg-blue-500/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-500 transition-all duration-300 relative z-10">
+                                <Target className="w-6 h-6 text-blue-600 dark:text-blue-500 group-hover:text-white transition-colors duration-300" />
                             </div>
-                            <h3 className="text-lg font-bold text-[#200e4f] dark:text-white mb-2 leading-tight">Your goals</h3>
-                            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">What does your future in Germany look like?</p>
+                            <h3 className="text-lg font-bold text-[#200e4f] dark:text-white mb-2 leading-tight relative z-10">Your goals</h3>
+                            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium relative z-10">What does your future in Germany look like?</p>
                         </div>
                     </div>
 
-                    <div className="text-center max-w-3xl mx-auto">
-                        <div className="inline-block p-[3px] rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 shadow-xl">
-                            <div className="bg-white dark:bg-[#11131a] px-8 py-5 rounded-[14px]">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="text-center max-w-3xl mx-auto mt-6"
+                    >
+                        <div className="inline-block p-[3px] rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 shadow-xl hover:shadow-orange-500/40 hover:scale-105 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                            <div className="bg-white dark:bg-[#11131a] px-8 py-5 rounded-[14px] group-hover:bg-white/95 dark:group-hover:bg-[#11131a]/90 transition-colors duration-300">
                                 <p className="text-lg sm:text-xl font-bold text-[#200e4f] dark:text-white font-heading">
                                     From there, we help you understand your options and build a realistic pathway forward.
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </section>
 
-                {/* Placement Image Section */}
-                <section className="mt-8 mb-20 max-w-6xl mx-auto relative z-10 px-4">
-                    <div className="relative rounded-[40px] overflow-hidden p-2 bg-gradient-to-tr from-amber-500/20 via-orange-500/10 to-red-500/20 backdrop-blur-xl shadow-2xl border border-white/20 dark:border-slate-800">
-                        <img
-                            src={placementImg}
-                            alt="Placement Options"
-                            className="w-full h-auto object-cover rounded-[32px]"
-                        />
-                    </div>
+                {/* Placement Infographic Section */}
+                <section className="mt-8 mb-20 max-w-[1400px] w-full mx-auto relative z-10 px-4 md:px-8 flex justify-center">
+                    <img
+                        src={placementImg}
+                        alt="The GLS Career Journey"
+                        className="w-full max-w-6xl rounded-[32px] shadow-2xl border border-slate-100 dark:border-slate-800 object-contain"
+                    />
                 </section>
 
                 {/* What We Actually Help With Section */}
                 <section className="mt-24 mb-20 max-w-7xl mx-auto z-10 relative px-4">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#200e4f] dark:text-white font-heading tracking-tight leading-tight uppercase">
-                            WHAT WE ACTUALLY <span className="text-amber-500">HELP WITH</span>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#200e4f] dark:text-white font-heading tracking-tight leading-tight">
+                            What We Actually <span className="italic text-amber-500">Help With</span>
                         </h2>
                         <div className="flex items-center justify-center gap-4 mt-6">
                             <div className="h-[1px] w-12 bg-amber-500/50"></div>
@@ -217,7 +214,7 @@ export const Placement: React.FC = () => {
                                 <span className="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-500/20 dark:to-orange-500/20 flex items-center justify-center text-amber-600 dark:text-amber-500 font-black text-xl shadow-sm border border-amber-200 dark:border-amber-500/30">
                                     01
                                 </span>
-                                <h3 className="text-xl sm:text-2xl font-black text-[#200e4f] dark:text-white leading-tight">
+                                <h3 className=" sm:text-2xl font-black text-[#200e4f] dark:text-white leading-tight">
                                     Career Direction
                                 </h3>
                             </div>
@@ -400,7 +397,7 @@ export const Placement: React.FC = () => {
                                 </p>
 
                                 <div className="pt-2 sm:pt-5 flex items-center gap-4">
-                                    <Link to="/book-demo">
+                                    <Link to="/contact">
                                         <GradientButton size="lg" icon={ArrowRight}>
                                             Book Free Consultation
                                         </GradientButton>
@@ -415,3 +412,4 @@ export const Placement: React.FC = () => {
         </div>
     );
 };
+

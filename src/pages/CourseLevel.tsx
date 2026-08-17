@@ -86,12 +86,9 @@ export const CourseLevel: React.FC = () => {
                         </div> */}
 
                         <div className="flex flex-col sm:flex-row sm:items-center gap-6 pt-2">
-                            <div className="mr-4">
-                                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Course Fee</p>
-                                <p className="text-3xl font-black text-[#200e4f] dark:text-white tracking-tight">{course.priceLocal}</p>
-                            </div>
+
                             <div className="flex flex-col gap-2 shrink-0 flex-grow sm:flex-grow-0">
-                                <Link to="/book-demo">
+                                <Link to="/contact">
                                     <GradientButton icon={ArrowRight} className="w-full h-14 text-lg px-8">
                                         {course.ctaText || 'Book Free Demo'}
                                     </GradientButton>
@@ -152,8 +149,8 @@ export const CourseLevel: React.FC = () => {
                             {course.learningFeatures.map((feat, idx) => {
                                 const Icon = iconMap[feat.icon as keyof typeof iconMap] || CheckCircle2;
                                 return (
-                                    <div key={idx} className="bg-[#f5f0e6] dark:bg-[#11131a] rounded-[24px] p-6 border border-slate-200 dark:border-slate-800 shadow-xl hover:-translate-y-1 transition-transform duration-300">
-                                        <div className="w-12 h-12 rounded-2xl bg-[#f9f7f1] dark:bg-slate-800 mb-6 flex items-center justify-center text-amber-500 border border-amber-500/10 shadow-sm">
+                                    <div key={idx} className="group overflow-hidden relative bg-[#f5f0e6] dark:bg-[#11131a] rounded-[24px] p-6 border border-slate-200 dark:border-slate-800 shadow-xl hover:shadow-2xl hover:-translate-y-2 hover:border-amber-500/50 transition-all duration-300">
+                                        <div className="w-12 h-12 rounded-2xl bg-[#f9f7f1] dark:bg-slate-800 mb-6 flex items-center justify-center text-amber-500 border border-amber-500/10 shadow-sm group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 relative z-10">
                                             <Icon className="w-6 h-6" />
                                         </div>
                                         <h4 className="text-[#200e4f] dark:text-white font-black text-lg mb-3 leading-tight tracking-tight">
@@ -186,7 +183,7 @@ export const CourseLevel: React.FC = () => {
 
                         <div className="bg-[#f5f0e6] dark:bg-slate-900/60 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 shadow-lg">
                             <h3 className="text-xl font-bold font-heading text-[#200e4f] dark:text-white mb-6 flex items-center gap-3">
-                                <CheckCircle2 className="w-6 h-6 text-emerald-500" /> Learning Outcomes
+                                Learning Outcomes
                             </h3>
                             <ul className="space-y-4">
                                 {course.outcomes.map((outcome, idx) => (
@@ -235,11 +232,6 @@ export const CourseLevel: React.FC = () => {
                             ))}
                         </div>
 
-                        <div className="pt-8">
-                            <Link to="/courses" className="text-amber-600 hover:text-amber-700 font-bold flex items-center gap-2">
-                                <ArrowLeft className="w-4 h-4" /> Compare all levels in Course Hub
-                            </Link>
-                        </div>
                     </div>
 
                 </div>
@@ -248,20 +240,41 @@ export const CourseLevel: React.FC = () => {
             {course.faqs && (
                 <section className="py-24 bg-[#f9f7f1] dark:bg-[#11131a] mt-12 border-t border-slate-100 dark:border-slate-800/50">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="text-center mb-16">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-center mb-16"
+                        >
                             <h2 className="text-3xl lg:text-4xl font-black font-heading text-[#200e4f] dark:text-white mb-4">
                                 Frequently Asked Questions
                             </h2>
                             <p className="text-slate-500 font-medium">
                                 Everything you need to know about the {course.germanTitle} course.
                             </p>
-                        </div>
+                        </motion.div>
 
-                        <div className="space-y-4">
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, margin: "-50px" }}
+                            variants={{
+                                visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+                                hidden: { opacity: 0 }
+                            }}
+                            className="space-y-4"
+                        >
                             {course.faqs.map((faq, idx) => (
-                                <div key={idx} className="bg-[#f5f0e6] dark:bg-slate-900 rounded-[20px] p-6 sm:p-8 shadow-sm border border-slate-200 dark:border-slate-800">
-                                    <h4 className="font-bold text-lg text-[#200e4f] dark:text-white flex items-start gap-4 mb-3 leading-tight tracking-tight">
-                                        <div className="w-7 h-7 rounded-full bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20">
+                                <motion.div
+                                    variants={{
+                                        visible: { opacity: 1, y: 0 },
+                                        hidden: { opacity: 0, y: 20 }
+                                    }}
+                                    key={idx}
+                                    className="group bg-[#f5f0e6] dark:bg-slate-900 rounded-[20px] p-6 sm:p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-200 dark:border-slate-800 hover:border-amber-500/50"
+                                >
+                                    <h4 className="font-bold text-lg text-[#200e4f] dark:text-white flex items-start gap-4 mb-3 leading-tight tracking-tight group-hover:text-amber-500 transition-colors duration-300">
+                                        <div className="w-7 h-7 rounded-full bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20 group-hover:bg-amber-500 group-hover:text-white group-hover:scale-110 transition-all duration-300">
                                             <span className="text-[13px] font-black">Q</span>
                                         </div>
                                         {faq.question}
@@ -269,9 +282,9 @@ export const CourseLevel: React.FC = () => {
                                     <p className="text-[#55536B] dark:text-slate-400 leading-relaxed pl-11 font-medium text-[15px]">
                                         {faq.answer}
                                     </p>
-                                </div>
+                                </motion.div>
                             ))}
-                        </div>
+                        </motion.div>
                     </div>
                 </section>
 
@@ -319,7 +332,7 @@ export const CourseLevel: React.FC = () => {
                             </p>
 
                             <div className="pt-5 flex items-center gap-4">
-                                <Link to="/book-demo">
+                                <Link to="/contact">
                                     <GradientButton size="lg" icon={ArrowRight}>
                                         Book Free Consultation
                                     </GradientButton>
@@ -333,3 +346,4 @@ export const CourseLevel: React.FC = () => {
         </div>
     );
 };
+

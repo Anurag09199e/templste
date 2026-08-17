@@ -72,12 +72,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 
       {/* Pricing & CTA */}
       <div className="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between gap-3">
-        <div>
-          <span className="text-[10px] text-slate-400 font-semibold uppercase block">Course Fee</span>
-          <span className="text-lg font-extrabold text-[#200e4f] dark:text-white font-heading">
-            {course.priceLocal}
-          </span>
-        </div>
+        
 
         <Link to={`/courses/${course.level.toLowerCase()}`}>
           <GradientButton size="sm" icon={ArrowRight}>

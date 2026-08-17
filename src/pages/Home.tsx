@@ -141,7 +141,7 @@ export const Home: React.FC = () => {
               </p>
 
               <div className="pt-2 sm:pt-5 flex items-center gap-4">
-                <Link to="/book-demo">
+                <Link to="/contact">
                   <GradientButton size="lg" icon={ArrowRight}>
                     Book Free Consultation
                   </GradientButton>
@@ -154,3 +154,4 @@ export const Home: React.FC = () => {
     </div>
   );
 };
+

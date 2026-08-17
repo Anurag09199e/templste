@@ -39,7 +39,7 @@ export const B2Course: React.FC = () => {
             </div>
 
             <div className="pt-4 flex items-center gap-4">
-              <Link to="/book-demo">
+              <Link to="/contact">
                 <GradientButton size="lg" icon={ArrowRight}>
                   Enroll in B2 Upper Intermediate
                 </GradientButton>
@@ -55,12 +55,7 @@ export const B2Course: React.FC = () => {
                 className="w-full h-64 object-cover rounded-2xl mb-4"
               />
               <div className="flex items-center justify-between font-heading">
-                <div>
-                  <span className="text-xs text-slate-400 font-bold block">Tuition Fee</span>
-                  <span className="text-2xl font-extrabold text-[#200e4f] dark:text-white">
-                    {course.priceLocal}
-                  </span>
-                </div>
+                
                 <span className="px-3 py-1 bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-xs font-bold rounded-lg">
                   {course.mode}
                 </span>
@@ -102,3 +97,4 @@ export const B2Course: React.FC = () => {
     </div>
   );
 };
+

@@ -50,12 +50,12 @@ export const Navbar: React.FC = () => {
       path: '/courses',
       hasDropdown: true,
       subItems: [
-        { name: 'A1', path: '/courses/a1' },
-        { name: 'A2', path: '/courses/a2' },
-        { name: 'B1', path: '/courses/b1' },
-        { name: 'B2', path: '/courses/b2' },
-        { name: 'C1', path: '/courses/c1' },
-        { name: 'C2', path: '/courses/c2' },
+        { name: 'Deutsch für Anfänger – A1', path: '/courses/a1' },
+        { name: 'Deutsch für Fortgeschrittene – A2', path: '/courses/a2' },
+        { name: 'Deutsch für die Mittelstufe – B1', path: '/courses/b1' },
+        { name: 'Deutsch für die obere Mittelstufe – B2', path: '/courses/b2' },
+        { name: 'Deutsch für Fortgeschrittene – C1', path: '/courses/c1' },
+        { name: 'Deutsch auf höchstem Niveau – C2', path: '/courses/c2' },
       ],
     },
     {
@@ -154,7 +154,7 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/contact"
-              className="hidden sm:flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-amber-500 to-orange-600 hover:brightness-110 text-white rounded-full shadow-md shadow-orange-500/20 transition-all font-semibold text-[13px] tracking-wide border border-amber-500/50"
+              className="hidden sm:flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-[#BD181E] to-[#e8b44b] hover:brightness-110 text-white rounded-full shadow-md shadow-orange-500/20 transition-all font-semibold text-[13px] tracking-wide border border-[#e8b44b]/50"
             >
               Contact Us
             </Link>

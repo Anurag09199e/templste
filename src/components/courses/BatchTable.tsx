@@ -68,7 +68,7 @@ export const BatchTable: React.FC = () => {
                 </td>
 
                 <td className="py-4 px-6 text-right">
-                  <Link to="/book-demo">
+                  <Link to="/contact">
                     <GradientButton size="sm">
                       Reserve Spot
                     </GradientButton>
@@ -82,3 +82,4 @@ export const BatchTable: React.FC = () => {
     </div>
   );
 };
+
