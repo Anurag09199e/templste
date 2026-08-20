@@ -100,24 +100,24 @@ export const Home: React.FC = () => {
       {/* 12. Final Contact CTA Banner */}
       <section className="py-20 relative px-4">
         <div
-          className="max-w-[1400px] mx-auto rounded-[32px] shadow-2xl relative overflow-hidden md:min-h-[6`00px] flex items-center bg-[#0B0F19]"
+          className="max-w-[1400px] mx-auto rounded-[32px] shadow-2xl relative overflow-hidden min-h-[450px] md:min-h-[600px] flex items-center bg-[#0B0F19]"
         >
           {/* Background Image Mockup */}
-          <div className="w-full relative md:absolute md:inset-0 md:z-0">
+          <div className="absolute inset-0 z-0">
             <img
               src={img3}
               alt="Train passing"
-              className="w-full h-auto object-contain block md:h-full md:object-cover"
+              className="w-full h-full object-cover opacity-60 md:opacity-100"
             />
-            {/* Dark gradient mapping to the right to make the white text legible */}
-            <div className="absolute inset-0 bg-black/40 md:bg-transparent md:bg-gradient-to-r md:from-transparent "></div>
+            {/* Dark gradient for text legibility, specially on mobile */}
+            <div className="absolute inset-0 bg-black/50 md:bg-black/20"></div>
           </div>
 
-          <div className="absolute inset-0 z-10 w-full px-6 flex flex-col justify-center md:flex-none md:static md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-12 md:gap-8 md:my-10">
+          <div className="relative z-10 w-full px-6 py-12 flex flex-col justify-center items-center text-center md:items-start md:text-left md:block md:w-auto md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-12 md:gap-8 md:my-10">
             <div className="hidden md:block md:col-span-4 lg:col-span-5">{/* Empty spacing for the left image element */}</div>
 
             {/* Right column for the text content */}
-            <div className="md:col-span-8 lg:col-span-7 flex flex-col justify-center space-y-6 relative">
+            <div className="md:col-span-8 lg:col-span-7 flex flex-col justify-center items-center md:items-start space-y-6 relative">
 
               {/* Paper Airplane and dotted path SVG */}
               <div className="absolute -top-[70px] left-[-30px] w-full h-[100px] pointer-events-none hidden md:block">
@@ -142,9 +142,10 @@ export const Home: React.FC = () => {
 
               <div className="pt-2 sm:pt-5 flex items-center gap-4">
                 <Link to="/contact">
-                  <GradientButton size="lg" icon={ArrowRight}>
+                  <button className="font-bold px-8 py-3.5 rounded-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
                     Book Free Consultation
-                  </GradientButton>
+                    <ArrowRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                  </button>
                 </Link>
               </div>
             </div>

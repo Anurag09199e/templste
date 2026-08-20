@@ -11,6 +11,7 @@ import about3 from '../img/about-3.webp';
 import about01 from '../img/about-01.webp';
 import img3 from '../img/img-3.webp';
 import nsdcImg from '../img/NSDC.png';
+import whatsapp from '../img/whatapp.webp';
 
 export const About: React.FC = () => {
   return (
@@ -204,7 +205,7 @@ export const About: React.FC = () => {
               alt="Students Background"
               className="w-full h-full object-cover opacity-200 dark:opacity-100"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#faf9f6] via-transparent to-[#faf9f6] dark:from-slate-950 dark:via-transparent dark:to-slate-950"></div>
+            <div className="absolute inset-0  dark:from-slate-950 dark:via-transparent dark:to-slate-950"></div>
           </div>
 
           {/* Section Header */}
@@ -228,7 +229,7 @@ export const About: React.FC = () => {
             <div className="absolute top-[3%] left-[2%] w-[330px] bg-[#E5DDD5] rounded-[24px] shadow-2xl overflow-hidden transform -rotate-6 hover:-translate-y-2 transition-transform duration-300 z-20 border-4 border-white dark:border-slate-800">
               <div className="bg-[#075E54] text-white px-4 py-3 flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-slate-300 overflow-hidden shrink-0">
-                  <img src="https://i.pravatar.cc/100?img=11" className="w-full h-full object-cover" alt="Ruchir" />
+                  <img src={whatsapp} className="w-full h-full object-cover" alt="Ruchir" />
                 </div>
                 <div className="leading-tight flex-1">
                   <p className="font-bold text-[13px]">Ruchir</p>
@@ -272,11 +273,6 @@ export const About: React.FC = () => {
                 <div className="bg-white pt-2 pb-1.5 px-3 rounded-xl rounded-tl-none text-[12px] text-[#200e4f] shadow-sm mr-auto w-auto relative z-10 flex flex-col">
                   <p>👍👍👍</p>
                   <div className="text-right text-[10px] text-slate-400 mt-0.5 -mb-0.5 self-end flex items-center">18:40 <span className="inline-block ml-0.5"><svg className="w-3 h-3 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 13l4 4L19 7M5 13l4 4L19 7" /></svg></span></div>
-                </div>
-
-                {/* WhatsApp Badge Overlay */}
-                <div className="absolute -bottom-4 -right-4 w-14 h-14 bg-[#25D366] rounded-full text-white flex items-center justify-center shadow-lg border-[4px] border-white dark:border-slate-800 z-30">
-                  <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.76.46 3.43 1.3 4.95L2 22l5.31-1.39c1.47.78 3.14 1.2 4.73 1.2 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.46 14.18c-.23.63-1.3 1.19-1.8 1.25-.49.06-1.12.2-3.15-.65-2.45-1.03-4.04-3.55-4.16-3.71-.12-.16-1-1.33-1-2.54s.64-1.8.87-2.05c.23-.25.5-.31.67-.31.17 0 .34 0 .49.01.17.01.4-.07.63.48.24.57.81 1.97.88 2.13.08.16.12.35.02.55-.1.2-.16.32-.32.51-.16.19-.34.42-.48.55-.16.16-.33.34-.14.67.19.33.85 1.41 1.83 2.29 1.26 1.14 2.3 1.49 2.63 1.65.33.16.53.14.73-.08.2-.23.86-1 .1 1.25 1.34 1.47 1.22.42.16.48-.65zm.36-.18" /></svg>
                 </div>
               </div>
             </div>
@@ -328,10 +324,7 @@ export const About: React.FC = () => {
                   <div className="text-right text-[10px] text-slate-400 mt-0.5 -mb-0.5 self-end">17:53</div>
                 </div>
 
-                {/* WhatsApp Badge Overlay Top Left */}
-                <div className="absolute top-0 left-0 w-14 h-14 bg-[#25D366] rounded-full text-white flex items-center justify-center shadow-lg border-[4px] border-white z-40 transform -translate-x-6 translate-y-12">
-                  <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.76.46 3.43 1.3 4.95L2 22l5.31-1.39c1.47.78 3.14 1.2 4.73 1.2 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.46 14.18c-.23.63-1.3 1.19-1.8 1.25-.49.06-1.12.2-3.15-.65-2.45-1.03-4.04-3.55-4.16-3.71-.12-.16-1-1.33-1-2.54s.64-1.8.87-2.05c.23-.25.5-.31.67-.31.17 0 .34 0 .49.01.17.01.4-.07.63.48.24.57.81 1.97.88 2.13.08.16.12.35.02.55-.1.2-.16.32-.32.51-.16.19-.34.42-.48.55-.16.16-.33.34-.14.67.19.33.85 1.41 1.83 2.29 1.26 1.14 2.3 1.49 2.63 1.65.33.16.53.14.73-.08.2-.23.86-1 .1 1.25 1.34 1.47 1.22.42.16.48-.65zm.36-.18" /></svg>
-                </div>
+
 
                 <div className="flex justify-center relative z-10 pt-4">
                   <div className="bg-[#E1F3FB] text-slate-600 text-[10px] px-3 py-1 rounded-lg shadow-sm font-semibold">Yesterday</div>

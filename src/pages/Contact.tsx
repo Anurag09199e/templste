@@ -21,11 +21,10 @@ export const Contact: React.FC = () => {
             Get In Touch
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-[#200e4f] dark:text-white">
-            Contact  <span className="text-gradient">Our</span>
+            Contact  <span className="text-gradient">Us</span>
           </h1>
           <p className="text-base text-slate-600 dark:text-slate-400">
             Have questions about batch timings, Goethe exam preparation, or career placement in Germany? Whether you're just starting your German journey or ready to talk Ausbildung and job placement, we're here to help.
-
           </p>
         </div>
 
