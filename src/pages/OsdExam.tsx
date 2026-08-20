@@ -416,19 +416,19 @@ export const OsdExam: React.FC = () => {
                 {/* Final CTA Banner */}
                 <section className="py-20 relative px-4 text-center">
                     <div
-                        className="max-w-[1400px] mx-auto rounded-[32px] shadow-2xl relative overflow-hidden md:min-h-[500px] flex items-center justify-center bg-[#0B0F19]"
+                        className="max-w-[1400px] mx-auto rounded-[32px] shadow-2xl relative overflow-hidden min-h-[450px] md:min-h-[500px] flex items-center justify-center bg-[#0B0F19]"
                     >
                         {/* Background Image Mockup */}
                         <div className="absolute inset-0 z-0">
                             <img
                                 src={img3}
-                                alt="GLS Academy"
+                                alt="ÖSD Certificate Preparation"
                                 className="w-full h-full object-cover opacity-60"
                             />
-                            <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+                            <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
                         </div>
 
-                        <div className="relative z-10 w-full px-6 flex flex-col justify-center items-center text-center grid-cols-1 md:my-10 space-y-6">
+                        <div className="relative z-10 w-full px-6 py-12 flex flex-col justify-center items-center text-center grid-cols-1 md:my-10 space-y-6">
 
                             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white leading-[1.1] tracking-tight drop-shadow-md">
                                 Your ÖSD Certificate <br className="hidden lg:block" />

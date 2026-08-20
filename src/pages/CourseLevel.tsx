@@ -291,24 +291,24 @@ export const CourseLevel: React.FC = () => {
             )}
             <section className="py-20 relative px-4">
                 <div
-                    className="max-w-[1400px] mx-auto rounded-[32px] shadow-2xl relative overflow-hidden min-h-[600px] flex items-center"
+                    className="max-w-[1400px] mx-auto rounded-[32px] shadow-2xl relative overflow-hidden min-h-[450px] md:min-h-[600px] flex items-center bg-[#0B0F19]"
                 >
                     {/* Background Image Mockup */}
                     <div className="absolute inset-0 z-0">
                         <img
                             src={ctaBgImage}
                             alt="Train passing"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover opacity-60 md:opacity-100"
                         />
-                        {/* Dark gradient mapping to the right to make the white text legible */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent "></div>
+                        {/* Dark gradient for text legibility, specially on mobile */}
+                        <div className="absolute inset-0 bg-black/50 md:bg-gradient-to-r md:from-transparent "></div>
                     </div>
 
-                    <div className="relative z-10 w-full px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-12 gap-8 my-10">
+                    <div className="relative z-10 w-full px-6 py-12 flex flex-col justify-center items-center text-center md:items-start md:text-left md:block md:w-auto md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-12 gap-8 md:my-10">
                         <div className="hidden md:block md:col-span-4 lg:col-span-5">{/* Empty spacing for the left image element */}</div>
 
                         {/* Right column for the text content */}
-                        <div className="md:col-span-8 lg:col-span-7 flex flex-col justify-center space-y-6 relative">
+                        <div className="md:col-span-8 lg:col-span-7 flex flex-col justify-center items-center md:items-start space-y-6 relative">
 
                             {/* Paper Airplane and dotted path SVG */}
                             <div className="absolute -top-[70px] left-[-30px] w-full h-[100px] pointer-events-none hidden md:block">
