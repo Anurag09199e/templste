@@ -42,7 +42,7 @@ export const Contact: React.FC = () => {
                   <MapPin className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-[#200e4f] dark:text-white font-bold">Address</strong>
-                    <span>B 78, Basement, Gulmohar Park, New Delhi, 110049</span>
+                    <span>B 78, Basement, Gulmohar Park, New Delhi, 110049<br />(28°33'23.5"N 77°12'44.9"E)</span>
                   </div>
                 </li>
 
@@ -73,15 +73,17 @@ export const Contact: React.FC = () => {
             </GlassCard>
 
             {/* Interactive Location Visual */}
-            <div className="rounded-3xl overflow-hidden glass-card p-4 border border-slate-800 text-center">
-              <div className="w-full h-48 bg-slate-800 rounded-2xl flex items-center justify-center text-slate-400 text-xs font-semibold relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 to-orange-500/20" />
-                <div className="relative z-10 text-center space-y-1">
-                  <MapPin className="w-8 h-8 text-amber-500 mx-auto animate-bounce" />
-                  <span className="block text-white font-bold">New Delhi Office</span>
-                  <span className="text-[10px] text-slate-300">Interactive Location Map</span>
-                </div>
-              </div>
+            <div className="rounded-3xl overflow-hidden glass-card p-2 border border-amber-500/20 dark:border-slate-800 text-center bg-white/50 dark:bg-slate-900/50">
+              <iframe
+                src="https://maps.google.com/maps?q=28%C2%B033'23.5%22N+77%C2%B012'44.9%22E&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="220"
+                style={{ border: 0, borderRadius: '1.25rem' }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="GLS New Delhi Office Location"
+              ></iframe>
             </div>
           </div>
 

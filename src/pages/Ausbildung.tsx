@@ -272,26 +272,15 @@ export const Ausbildung: React.FC = () => {
               <div className="absolute inset-0 bg-black/50 md:bg-black/20"></div>
             </div>
 
-            <div className="relative z-10 w-full px-6 py-12 flex flex-col justify-center items-center text-center md:items-start md:text-left md:block md:w-auto md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-12 md:gap-8 md:my-10">
-              <div className="hidden md:block md:col-span-4 lg:col-span-5">{/* Empty spacing for the left image element */}</div>
+            <div className="relative z-10 w-full px-6 py-12 flex flex-col md:flex-row md:justify-end items-center text-center md:text-left md:px-12 lg:px-20 md:my-10 space-y-6 md:space-y-0">
 
-              {/* Right column for the text content */}
-              <div className="md:col-span-8 lg:col-span-7 flex flex-col justify-center items-center md:items-start space-y-6 relative">
 
-                {/* Paper Airplane and dotted path SVG */}
-                <div className="absolute -top-[70px] left-[-30px] w-full h-[100px] pointer-events-none hidden md:block">
-                  <svg className="w-full h-full text-white" viewBox="0 0 500 100" fill="none" preserveAspectRatio="none">
-                    {/* The curved trajectory */}
-                    <path d="M 0 90 Q 200 10 400 30" stroke="currentColor" strokeWidth="2" strokeDasharray="8 8" fill="transparent" strokeDashoffset="0" className="opacity-70" />
-                  </svg>
-                  {/* Airplane icon placed at the end of the line */}
-                  <svg className="absolute top-[18px] right-[70px] w-8 h-8 text-white transform -rotate-12 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-                  </svg>
-                </div>
+
+              <div className="flex flex-col justify-center items-center md:items-start space-y-6 relative w-full md:max-w-2xl z-10 ">
 
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold font-heading text-white leading-[1.1] tracking-tight drop-shadow-md">
                   Ready to Start Your
+                  <br className="hidden lg:block" />
                   <span className="italic font-medium opacity-90">Ausbildung Journey?</span>
                 </h2>
 
@@ -299,7 +288,7 @@ export const Ausbildung: React.FC = () => {
                   Talk to our team and find out which program fits your background, your German level, and your goals. No pressure, just clarity on your next step.
                 </p>
 
-                <div className="pt-2 sm:pt-5 flex items-center gap-4">
+                <div className="pt-2 sm:pt-5 flex items-center justify-center md:justify-start gap-4">
                   <Link to="/contact">
                     <button className="font-bold px-8 py-3.5 rounded-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
                       Check Your Eligibility

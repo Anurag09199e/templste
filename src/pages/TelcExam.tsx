@@ -448,24 +448,26 @@ export const TelcExam: React.FC = () => {
                             <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
                         </div>
 
-                        <div className="relative z-10 w-full px-6 py-12 flex flex-col justify-center items-center text-center grid-cols-1 md:my-10 space-y-6">
+                        <div className="relative z-10 w-full px-6 py-12 flex flex-col md:flex-row md:justify-end items-center text-center md:text-left md:px-12 lg:px-20 md:my-10 space-y-6 md:space-y-0">
+                            <div className="flex flex-col justify-center items-center md:items-start space-y-6 relative w-full md:max-w-2xl z-10 ">
 
-                            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white leading-[1.1] tracking-tight drop-shadow-md">
-                                Your telc Certificate <br className="hidden lg:block" />
-                                <span className="italic font-medium opacity-90 text-amber-400">Starts With One Class</span>
-                            </h2>
+                                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white leading-[1.1] tracking-tight drop-shadow-md">
+                                    Your telc Certificate <br className="hidden lg:block" />
+                                    <span className="italic font-medium opacity-90 text-amber-400">Starts With One Class</span>
+                                </h2>
 
-                            <p className="text-sm md:text-base lg:text-lg text-gray-200 font-medium max-w-[650px] leading-relaxed drop-shadow-sm mt-3">
-                                From A1 to your exam day, GLS builds your German around what the telc exam actually tests, including the specialised Pflege track if you're healthcare-bound.
-                            </p>
+                                <p className="text-sm md:text-base lg:text-lg text-gray-200 font-medium max-w-[650px] leading-relaxed drop-shadow-sm mt-3">
+                                    From A1 to your exam day, GLS builds your German around what the telc exam actually tests, including the specialised Pflege track if you're healthcare-bound.
+                                </p>
 
-                            <div className="pt-2 sm:pt-5 flex items-center justify-center gap-4">
-                                <Link to="/contact">
-                                    <button className="font-bold px-8 py-3.5 rounded-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
-                                        Book a Free Consultation
-                                        <ArrowRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                                    </button>
-                                </Link>
+                                <div className="pt-2 sm:pt-5 flex items-center justify-center md:justify-start gap-4">
+                                    <Link to="/contact">
+                                        <button className="font-bold px-8 py-3.5 rounded-xl transition-all hover:scale-105 active:scale-95 text-[15px] flex items-center group bg-gradient-to-r from-[#BD181E] to-[#e8b44b] text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:brightness-110 border border-[#e8b44b]/30">
+                                            Book a Free Consultation
+                                            <ArrowRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
