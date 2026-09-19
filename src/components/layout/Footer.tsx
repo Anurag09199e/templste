@@ -30,14 +30,18 @@ export const Footer: React.FC = () => {
 
             <div className="flex items-center gap-4 pt-2">
               <a
-                href="#"
+                href="https://www.instagram.com/germanlanguagestudio/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white border border-slate-200 text-slate-500 hover:text-amber-500 hover:border-amber-400 shadow-sm flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/110189354/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white border border-slate-200 text-slate-500 hover:text-amber-500 hover:border-amber-400 shadow-sm flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1"
                 aria-label="LinkedIn"
               >
@@ -57,8 +61,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/courses#B1" className="hover:text-amber-600 transition-colors">Deutsch für die Mittelstufe – B1</Link></li>
               <li><Link to="/courses#B2" className="hover:text-amber-600 transition-colors">Deutsch für die obere Mittelstufe – B2</Link></li>
               <li><Link to="/courses#C1" className="hover:text-amber-600 transition-colors">Deutsch für Fortgeschrittene – C1</Link></li>
-              <li><Link to="/courses#C2" className="hover:text-amber-600 transition-colors">Deutsch auf höchstem Niveau – C2
-              </Link></li>
+              <li><Link to="/courses#C2" className="hover:text-amber-600 transition-colors">Deutsch auf höchstem Niveau – C2</Link></li>
             </ul>
           </div>
 
@@ -84,11 +87,16 @@ export const Footer: React.FC = () => {
                 <span className="text-xl">📍</span>
                 <span className="font-medium mt-0.5">B 78, Basement, Gulmohar Park, New Delhi, 110049</span>
               </li>
-              <li className="flex items-center gap-3">
-                <span className="text-xl">✉️</span>
-                <a href="mailto:director@germanlanguagestudio.com" className="font-medium hover:text-amber-600 transition-colors tracking-wide">
-                  director@germanlanguagestudio.com
-                </a>
+              <li className="flex items-start gap-3">
+                <span className="text-xl shrink-0 mt-0.5">✉️</span>
+                <div className="flex flex-col gap-2">
+                  <a href="mailto:info@germanlanguagestudio.com" className="font-medium hover:text-amber-600 transition-colors tracking-wide">
+                    info@germanlanguagestudio.com
+                  </a>
+                  <a href="mailto:ausbuildung@germanlanguagestudio.com" className="font-medium hover:text-amber-600 transition-colors tracking-wide">
+                    ausbuildung@germanlanguagestudio.com
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

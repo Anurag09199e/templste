@@ -50,7 +50,7 @@ export const Contact: React.FC = () => {
                   <Phone className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-[#200e4f] dark:text-white font-bold">Phone / WhatsApp</strong>
-                    <span>+91 93183 97686</span>
+                    <span>+91 93183 71661</span>
                   </div>
                 </li>
 
@@ -58,7 +58,8 @@ export const Contact: React.FC = () => {
                   <Mail className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-[#200e4f] dark:text-white font-bold">Email</strong>
-                    <span>director@germanlanguagestudio.com</span>
+                    <span className="block"><a href="mailto:info@germanlanguagestudio.com" className="hover:text-amber-500 transition-colors">info@germanlanguagestudio.com</a></span>
+                    <span className="block mt-1 pt-1 border-t border-amber-500/10 dark:border-slate-800"><a href="mailto:ausbuildung@germanlanguagestudio.com" className="hover:text-amber-500 transition-colors">ausbuildung@germanlanguagestudio.com</a></span>
                   </div>
                 </li>
 

@@ -15,7 +15,7 @@ export const FloatingWhatsApp: React.FC = () => {
   const handleSend = (e: React.FormEvent) => {
     e.preventDefault();
     const encodedMsg = encodeURIComponent(message || 'Hallo DeutschKraft Team! I want to inquire about German courses.');
-    window.open(`https://wa.me/919318397686?text=${encodedMsg}`, '_blank');
+    window.open(`https://wa.me/919318371661?text=${encodedMsg}`, '_blank');
     setIsOpen(false);
   };
 
